@@ -1,0 +1,32 @@
+
+/* Custom styles for the page */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #323946; /* slate-900 */
+    text-align: justify;
+    text-justify: inter-word; /* balances spacing between words */
+}
+/* Style for the background gradient effect */
+.gradient-bg {
+    background-image: radial-gradient(circle at top, rgba(14, 165, 233, 0.1), transparent 40%),
+                        radial-gradient(circle at bottom right, rgba(56, 189, 248, 0.1), transparent 50%);
+}
+/* Custom animation for cards */
+.fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Apply animation delay to sections */
+.section-card:nth-child(1) { animation-delay: 0.2s; }
+.section-card:nth-child(2) { animation-delay: 0.4s; }
+.section-card:nth-child(3) { animation-delay: 0.6s; }

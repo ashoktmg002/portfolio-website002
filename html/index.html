@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashok Tamang</title>
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- flaticons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+
+    <!-- cutom css -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">AshokTamang</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#datascience">Data Science</a>
+            <a href="#portfolio">Projects</a>
+        </nav>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Ashok Tamang</h1>
+            <h3>I'm a <span class="multiple-text"></span></h3>
+            <p>My field of interests are Data Science, Physics, Economics, and Business</p>
+            <div class="social-media"> 
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alyohinfrimon@gmail.com" target="_blank"><i class='bx bx-envelope'></i></a>
+                <a href="https://www.instagram.com/ashoktamang002/"><i class='bx bxl-instagram-alt'></i></a>   
+                <a href="https://www.facebook.com/ashok.tamang.112749"><i class='bx bxl-facebook'></i></a>                
+                <a href="viber://chat?number=%2B9779808350367"><i class="fa-brands fa-viber"></i></a>
+                <a href="https://wa.me/9779808350367" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <a href="../images/cv.pdf" download class="btn">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="../images/home.PNG" alt="">
+        </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="../images/about.PNG" alt="">
+        </div>
+ 
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Computer Engineer, Data Science Practitioner</h3>
+            <p>I am Ashok Tamang, a Computer Engineer and Data Science enthusiast with a deep curiosity to explore interdisciplinary knowledge across computer science, physics, economics, and business. 
+                I earned my Bachelor’s degree in Computer Engineering from the National College of Engineering, Lalitpur, and have further strengthened my foundation through Data Science with Python training.
+            </p>
+            <a href="about_me.html" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <section class="datascience" id="datascience">
+        <h2 class="heading">The Field of <span>Data Science</span></h2>
+
+        <div class="datascience-container">
+            <h3>Data Science</h3>
+            <p class="intro-text">
+                Data Science is the interdisciplinary field that combines statistics, mathematics, computer science, and domain knowledge to extract insights and actionable knowledge from structured and unstructured data. It is at the core of modern technologies like AI, machine learning, predictive analytics, and big data systems.
+            </p>
+
+            <div class="content-block">
+                <h3>The Data Science Lifecycle</h3>
+                <p>The process of data science isn't a single step but a full lifecycle. While a project might not always follow this exact order, these stages represent the complete workflow.</p>
+                
+                <h4>1. Business Understanding & Problem Formulation</h4>
+                <p>This is the most critical step. Before touching any data, a data scientist must understand the problem they are trying to solve. The problem must be translated into a specific, measurable data science question, like "Can we predict which customers are likely to stop using our service in the next three months?"</p>
+
+                <h4>2. Data Acquisition</h4>
+                <p>Once the problem is defined, the next step is to gather the necessary data. This data can come from various sources:</p>
+                <ul>
+                    <li><strong>Internal Sources:</strong> Company databases (SQL), customer relationship management (CRM) systems, and internal logs.</li>
+                    <li><strong>External Sources:</strong> Public APIs (e.g., social media data), government datasets, web scraping, or third-party data providers.</li>
+                </ul>
+
+                <h4>3. Data Preparation (Cleaning & Wrangling)</h4>
+                <p>Raw data is almost always messy, incomplete, and inconsistent. This stage, which often consumes up to 80% of a data scientist's time, involves:</p>
+                <ul>
+                    <li><strong>Cleaning:</strong> Handling missing values, correcting errors, and removing duplicate entries.</li>
+                    <li><strong>Transformation:</strong> Converting data into a suitable format (e.g., changing text categories into numbers).</li>
+                    <li><strong>Feature Engineering:</strong> Creating new variables (features) from existing ones that can improve model performance. For instance, deriving a customer's "age" from their "date of birth."</li>
+                </ul>
+                
+                <h4>4. Exploratory Data Analysis (EDA)</h4>
+                <p>In this stage, the data scientist acts like a detective, exploring the cleaned data to find patterns, relationships, and anomalies. This is done using statistical analysis and data visualization tools.</p>
+
+                <h4>5. Modeling</h4>
+                <p>This is where machine learning comes into play. Based on the insights from EDA, the data scientist selects and builds a model to solve the problem.</p>
+                <ul>
+                    <li><strong>Model Selection:</strong> Choosing the right algorithm for the task (e.g., linear regression for prediction, a decision tree for classification).</li>
+                    <li><strong>Training:</strong> The model "learns" from a portion of the data (the training set) to identify patterns.</li>
+                    <li><strong>Testing:</strong> The model's performance is evaluated on a separate portion of data it has never seen before (the testing set) to ensure it can generalize to new, real-world scenarios.</li>
+                </ul>
+
+                <h4>6. Evaluation</h4>
+                <p>After building the model, it's crucial to evaluate its performance using statistical metrics. For a classification model, this could be accuracy, precision, and recall. The key question is: "How well does this model solve the original business problem?"</p>
+                
+                <h4>7. Deployment & Monitoring</h4>
+                <p>A model is only useful if it's put into production. Deployment means integrating the model into a company's systems. After deployment, it's essential to monitor the model's performance over time, as its accuracy can degrade as new data comes in. Models often need to be retrained periodically.</p>
+            </div>
+
+            <div class="content-block">
+                <h3>Core Disciplines and Required Knowledge</h3>
+                <ul>
+                    <li><strong>Mathematics & Statistics:</strong> This is the foundation. Concepts like probability, linear algebra, calculus, and statistical inference are essential for understanding how algorithms work and for validating results.</li>
+                    <li><strong>Computer Science & Programming:</strong> A data scientist needs strong programming skills, especially in languages like Python or R. This includes knowledge of data structures, algorithms, and databases (primarily SQL for data retrieval).</li>
+                    <li><strong>Machine Learning & AI:</strong> This involves understanding various algorithms for tasks like classification, regression, and clustering. This includes supervised learning, unsupervised learning, and deep learning.</li>
+                    <li><strong>Domain Expertise:</strong> A data scientist must understand the context of the business or field they're working in (e.g., finance, healthcare, marketing). This knowledge helps in defining problems correctly and interpreting results meaningfully.</li>
+                    <li><strong>Data Visualization & Communication:</strong> It's not enough to find an insight; a data scientist must be able to communicate it clearly to stakeholders, often through visualizations (charts, graphs) and storytelling.</li>
+                </ul>
+            </div>
+
+            <div class="content-block">
+                <h3>Key Roles in the Data Ecosystem</h3>
+                <p>The term "data scientist" is often used broadly, but several specialized roles exist within the field.</p>
+                <table class="roles-table">
+                    <thead>
+                        <tr>
+                            <th>Role</th>
+                            <th>Primary Focus</th>
+                            <th>Key Skills</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Data Analyst</strong></td>
+                            <td>Analyzes historical data to answer business questions ("What happened?").</td>
+                            <td>SQL, Excel, Tableau/Power BI, Statistics</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Data Scientist</strong></td>
+                            <td>Uses advanced statistical and machine learning models to make predictions ("What will happen?").</td>
+                            <td>Python/R, Machine Learning, Statistics, SQL</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Data Engineer</strong></td>
+                            <td>Builds and maintains the infrastructure and data pipelines that store and deliver data.</td>
+                            <td>SQL, Python, Big Data (Spark, Hadoop), Cloud Platforms</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Machine Learning Engineer</strong></td>
+                            <td>Deploys and scales machine learning models into production environments.</td>
+                            <td>Software Engineering, Python, Cloud (AWS, Azure), MLOps</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="content-block">
+                <h3>Applications and Impact</h3>
+                <p>Data science is transforming nearly every industry:</p>
+                 <ul>
+                    <li><strong>E-commerce:</strong> Recommendation engines (like on Netflix and Amazon) are powered by data science to suggest products you might like.</li>
+                    <li><strong>Finance:</strong> Banks use machine learning models to detect fraudulent transactions in real time and assess credit risk.</li>
+                    <li><strong>Healthcare:</strong> Data science helps in predicting diseases from medical imaging, personalizing treatment plans, and accelerating drug discovery.</li>
+                    <li><strong>Transportation:</strong> Self-driving cars use complex algorithms to interpret their surroundings, and logistics companies optimize delivery routes.</li>
+                </ul>
+            </div>
+
+            <div class="content-block">
+                <h3>Challenges and the Future</h3>
+                <p>The field is rapidly evolving and faces several challenges, including data privacy, ethical concerns about AI bias, and the need for model interpretability (the "black box" problem).</p>
+                <p>The future of data science points towards:</p>
+                <ul>
+                    <li><strong>Generative AI:</strong> Models like GPT-4 are changing how we interact with data and generate insights.</li>
+                    <li><strong>AutoML (Automated Machine Learning):</strong> Tools that automate the process of building and deploying models, making data science more accessible.</li>
+                    <li><strong>Responsible AI:</strong> A growing emphasis on creating fair, transparent, and accountable AI systems.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+     <!-- portfolio section design -->
+      <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="../images/portfolio1.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4> Bluechips Stocks Price Trend Forecast</h4>
+                    <p>Using LSTM Recurrent Neural Network 
+                    </p>
+                    <a href="forecast.html"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="../images/portfolio2.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>stock Price Trend Forecast</h4>
+                    <p>Using LSTM Recurrent Neural Network
+                    </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            
+            <div class="portfolio-box">
+                <img src="../images/portfolio3.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Stock Price Trend Forecast</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetu
+                        r adipisicing elit. Fugit, corrupti! Ad dolorum perspiciatis
+                        , modi, laborum blanditiis deserunt nulla corporis itaque labore
+                         cumque odit quasi, laboriosam ratione exercitationem rem ipsum mollitia?
+                    </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <!-- 
+            <div class="portfolio-box">
+                <img src="../images/portfolio4.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetu
+                        r adipisicing elit. Fugit, corrupti! Ad dolorum perspiciatis
+                        , modi, laborum blanditiis deserunt nulla corporis itaque labore
+                         cumque odit quasi, laboriosam ratione exercitationem rem ipsum mollitia?
+                    </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+             -->
+            <!-- 
+            <div class="portfolio-box">
+                <img src="../images/portfolio5.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetu
+                        r adipisicing elit. Fugit, corrupti! Ad dolorum perspiciatis
+                        , modi, laborum blanditiis deserunt nulla corporis itaque labore
+                         cumque odit quasi, laboriosam ratione exercitationem rem ipsum mollitia?
+                    </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+             -->
+            <!-- 
+            <div class="portfolio-box">
+                <img src="../images/portfolio6.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetu
+                        r adipisicing elit. Fugit, corrupti! Ad dolorum perspiciatis
+                        , modi, laborum blanditiis deserunt nulla corporis itaque labore
+                         cumque odit quasi, laboriosam ratione exercitationem rem ipsum mollitia?
+                    </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+             -->
+        </div>
+      </section>
+
+      <!-- footer design  -->
+      <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 by Ashok Tamang | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+      </footer>
+
+      <!-- scroll reveal  -->
+      <script src="https://unpkg.com/scrollreveal"></script>
+
+      <!-- typed js  -->
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+      <!-- custom js -->
+      <script src="../js/script.js"></script>
+
+</body>
+
+</html>
