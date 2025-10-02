@@ -37,7 +37,7 @@ body {
 .hero {
   text-align: center;
   padding: 60px 20px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .hero h1 {
@@ -119,17 +119,22 @@ strong {
   transition: transform 0.3s ease-in-out;
 }
 
+.card h4 {
+  text-align: justify;
+  text-justify: inter-word; /* balances spacing between words */
+}
+
 .card:hover {
-    transform: translateY(5px);
+  transform: translateY(5px);
 }
 
 .stock-section {
-    margin-bottom: 40px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 .stock-section:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 
