@@ -8,73 +8,97 @@
 </head>
 <body>
   <div class="container">
-    <h1 class="card">An Automated NEPSE Bluechips Stocks 7 Days Price Trend Forecast Using LSTM RNN</h1>
+    <header class="hero">
+      <h1>NEPSE Bluechip Stock Forecast</h1>
+      <p class="subtitle">A 7-Day Price Trend Forecast Using an Automated LSTM RNN Pipeline</p>
+    </header>
 
     <div class="card">
+      <h2>Forecasts & Model Performance</h2>
 
-      <h2>Forecasts</h2>
-      <h3>CBBL - Forecast & Performance</h3>
-      <div class="plot-container" id="cbbl-forecast-container">
-        <!-- <p class="loading" id="cbbl-evaluation-loading">Loading CBBL Forecast chart...</p> -->
-        <img id="cbbl-forecast-image" src="images/bluechipStocks/CBBL_forecast_plot.png" alt="CBBL Stock Forecast Plot">
-      </div>
-      <div class="plot-container" id="cbbl-evaluation-container">
-        <!-- <p class="loading" id="cbbl-evaluation-loading">Loading CBBL evaluation chart...</p> -->
-        <img id="cbbl-evaluation-image" src="images/bluechipStocks/CBBL_evaluation_plot.png" alt="CBBL Model Evaluation Plot">
-      </div>
-
-      <h3>CIT - Forecast & Performance</h3>
-      <div class="plot-container" id="cit-forecast-container">
-        <!-- <p class="loading" id="cit-forecast-loading">Loading CIT forecast...</p> -->
-        <img id="cit-forecast-image" src="images/bluechipStocks/CIT_forecast_plot.png" alt="CIT Stock Forecast Plot">
-      </div>
-      <div class="plot-container" id="cit-evaluation-container">
-        <!-- <p class="loading" id="cit-evaluation-loading">Loading CIT evaluation chart...</p> -->
-        <img id="cit-evaluation-image" src="images/bluechipStocks/CIT_evaluation_plot.png" alt="CIT Model Evaluation Plot">
+      <div class="stock-section">
+        <h3>CBBL - Forecast & Performance</h3>
+        <div class="plots-grid">
+          <div class="plot-container">
+            <h4>7-Day Forecast</h4>
+            <img id="cbbl-forecast-image" src="images/bluechipStocks/CBBL_forecast_plot.png" alt="CBBL Stock Forecast Plot">
+          </div>
+          <div class="plot-container">
+            <h4>Model Evaluation</h4>
+            <img id="cbbl-evaluation-image" src="images/bluechipStocks/CBBL_evaluation_plot.png" alt="CBBL Model Evaluation Plot">
+          </div>
+        </div>
       </div>
 
-      <h3>MNBBL - Forecast & Performance</h3>
-      <div class="plot-container" id="mnbbl-forecast-container">
-        <!-- <p class="loading" id="cit-forecast-loading">Loading MNBBL forecast...</p> -->
-        <img id="mnbbl-forecast-image" src="images/bluechipStocks/MNBBL_forecast_plot.png" alt="MNBBL Stock Forecast Plot">
-      </div>
-      <div class="plot-container" id="cit-evaluation-container">
-        <!-- <p class="loading" id="cit-evaluation-loading">Loading CIT evaluation chart...</p> -->
-        <img id=" mnbbl-evaluation-image" src="images/bluechipStocks/MNBBL_evaluation_plot.png" alt="MNBBL Model Evaluation Plot">
-      </div>
-
-      <h3>SHL - Forecast & Performance</h3>
-      <div class="plot-container" id="shl-forecast-container">
-        <!-- <p class="loading" id="shl-forecast-loading">Loading SHL forecast...</p> -->
-        <img id="shl-forecast-image" src="images/bluechipStocks/SHL_forecast_plot.png" alt="SHL Stock Forecast Plot">
-      </div>
-      <div class="plot-container" id="shl-evaluation-container">
-        <!-- <p class="loading" id="shl-evaluation-loading">Loading SHL evaluation chart...</p> -->
-        <img id="shl-evaluation-image" src="images/bluechipStocks/SHL_evaluation_plot.png" alt="SHL Model Evaluation Plot">
+      <div class="stock-section">
+        <h3>CIT - Forecast & Performance</h3>
+        <div class="plots-grid">
+          <div class="plot-container">
+            <h4>7-Day Forecast</h4>
+            <img id="cit-forecast-image" src="images/bluechipStocks/CIT_forecast_plot.png" alt="CIT Stock Forecast Plot">
+          </div>
+          <div class="plot-container">
+            <h4>Model Evaluation</h4>
+            <img id="cit-evaluation-image" src="images/bluechipStocks/CIT_evaluation_plot.png" alt="CIT Model Evaluation Plot">
+          </div>
+        </div>
       </div>
 
-       <h3>RBCL - Forecast & Performance</h3>
-      <div class="plot-container" id="rbcl-forecast-container">
-        <!-- <p class="loading" id="rbcl-forecast-loading">Loading RBCL forecast...</p> -->
-        <img id="rbcl-forecast-image" src="images/bluechipStocks/RBCL_forecast_plot.png" alt="RBCL Stock Forecast Plot">
-      </div>
-      <div class="plot-container" id="rbcl-evaluation-container">
-        <!-- <p class="loading" id="rbcl-evaluation-loading">Loading RBCL evaluation chart...</p> -->
-        <img id="rbcl-evaluation-image" src="images/bluechipStocks/RBCL_evaluation_plot.png" alt="RBCL Model Evaluation Plot">
-      </div>
-
-       <h3>NLIC - Forecast & Performance</h3>
-      <div class="plot-container" id="nlic-forecast-container">
-        <!-- <p class="loading" id="nlic-forecast-loading">Loading NLIC forecast...</p> -->
-        <img id="nlic-forecast-image" src="images/bluechipStocks/NLIC_forecast_plot.png" alt="NLIC Stock Forecast Plot">
-      </div>
-      <div class="plot-container" id="nlic-evaluation-container">
-        <!-- <p class="loading" id="nlic-evaluation-loading">Loading NLIC evaluation chart...</p> -->
-        <img id="nlic-evaluation-image" src="images/bluechipStocks/NLIC_evaluation_plot.png" alt="NLIC Model Evaluation Plot">
+      <div class="stock-section">
+        <h3>MNBBL - Forecast & Performance</h3>
+        <div class="plots-grid">
+          <div class="plot-container">
+            <h4>7-Day Forecast</h4>
+            <img id="mnbbl-forecast-image" src="images/bluechipStocks/MNBBL_forecast_plot.png" alt="MNBBL Stock Forecast Plot">
+          </div>
+          <div class="plot-container">
+            <h4>Model Evaluation</h4>
+            <img id="mnbbl-evaluation-image" src="images/bluechipStocks/MNBBL_evaluation_plot.png" alt="MNBBL Model Evaluation Plot">
+          </div>
+        </div>
       </div>
 
+      <div class="stock-section">
+        <h3>SHL - Forecast & Performance</h3>
+        <div class="plots-grid">
+          <div class="plot-container">
+            <h4>7-Day Forecast</h4>
+            <img id="shl-forecast-image" src="images/bluechipStocks/SHL_forecast_plot.png" alt="SHL Stock Forecast Plot">
+          </div>
+          <div class="plot-container">
+            <h4>Model Evaluation</h4>
+            <img id="shl-evaluation-image" src="images/bluechipStocks/SHL_evaluation_plot.png" alt="SHL Model Evaluation Plot">
+          </div>
+        </div>
+      </div>
 
+      <div class="stock-section">
+        <h3>RBCL - Forecast & Performance</h3>
+        <div class="plots-grid">
+          <div class="plot-container">
+            <h4>7-Day Forecast</h4>
+            <img id="rbcl-forecast-image" src="images/bluechipStocks/RBCL_forecast_plot.png" alt="RBCL Stock Forecast Plot">
+          </div>
+          <div class="plot-container">
+            <h4>Model Evaluation</h4>
+            <img id="rbcl-evaluation-image" src="images/bluechipStocks/RBCL_evaluation_plot.png" alt="RBCL Model Evaluation Plot">
+          </div>
+        </div>
+      </div>
 
+      <div class="stock-section">
+        <h3>NLIC - Forecast & Performance</h3>
+        <div class="plots-grid">
+          <div class="plot-container">
+            <h4>7-Day Forecast</h4>
+            <img id="nlic-forecast-image" src="images/bluechipStocks/NLIC_forecast_plot.png" alt="NLIC Stock Forecast Plot">
+          </div>
+          <div class="plot-container">
+            <h4>Model Evaluation</h4>
+            <img id="nlic-evaluation-image" src="images/bluechipStocks/NLIC_evaluation_plot.png" alt="NLIC Model Evaluation Plot">
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="card">
@@ -135,38 +159,6 @@
         <li><strong>Interactive Frontend:</strong> Develop a dynamic dashboard using a JavaScript charting library (e.g., Chart.js).</li>
       </ul>
     </div>
-
   </div>
-  <!--
-  <script>
-    function fetchImage(apiUrl, imgId, loadingId) {
-      const imgElement = document.getElementById(imgId);
-      const loadingElement = document.getElementById(loadingId);
-      fetch(apiUrl)
-        .then(response => {
-          if (!response.ok) { throw new Error('Image not available yet.'); }
-          return response.blob();
-        })
-        .then(imageBlob => {
-          const objectURL = URL.createObjectURL(imageBlob);
-          imgElement.src = objectURL;
-          imgElement.style.display = 'block';
-          loadingElement.style.display = 'none';
-        })
-        .catch(error => {
-          console.error('Error fetching image:', error);
-          loadingElement.textContent = 'Could not load chart. Please check back later.';
-        });
-    }
-
-    document.addEventListener("DOMContentLoaded", function() {
-      const serverBaseUrl = 'http://127.0.0.1:5000';
-      fetchImage(serverBaseUrl + '/forecast/NABIL', 'nabil-forecast-image', 'nabil-forecast-loading');
-      fetchImage(serverBaseUrl + '/evaluation/NABIL', 'nabil-evaluation-image', 'nabil-evaluation-loading');
-      fetchImage(serverBaseUrl + '/forecast/NLIC', 'nlic-forecast-image', 'nlic-forecast-loading');
-      fetchImage(serverBaseUrl + '/evaluation/NLIC', 'nlic-evaluation-image', 'nlic-evaluation-loading');
-    });
-  </script>
-  -->
 </body>
 </html>
