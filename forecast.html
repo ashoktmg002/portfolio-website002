@@ -99,13 +99,28 @@
           </div>
         </div>
       </div>
+
+      <div class="stock-section">
+        <h3>EBL - Forecast & Performance</h3>
+        <div class="plots-grid">
+          <div class="plot-container">
+            <h4>7-Day Forecast</h4>
+            <img id="ebl-forecast-image" src="images/bluechipStocks/EBL_forecast_plot.png" alt="EBL Stock Forecast Plot">
+          </div>
+          <div class="plot-container">
+            <h4>Model Evaluation</h4>
+            <img id="ebl-evaluation-image" src="images/bluechipStocks/EBL_evaluation_plot.png" alt="EBL Model Evaluation Plot">
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <div class="card">
       <h2>Project Overview</h2>
       <h3>Abstract</h3>
       <p>The volatility and complexity of financial markets necessitate the use of advanced computational tools for accurate, data-driven forecasting. This project presents the design, development, and implementation of a scalable, fully automated pipeline for forecasting the price of bluechips stocks listed on the Nepal Stock Exchange (NEPSE). The system leverages a Long Short-Term Memory (LSTM) recurrent neural network, a model architecture adept at capturing temporal dependencies in time-series data. A unique, dedicated model is trained for each individual stock to ensure specialized and accurate predictions.</p><br>
-      <p>The pipeline automates the entire workflow: daily data acquisition via an efficient incremental web scraper, data cleaning and feature engineering, conditional model retraining to conserve computational resources, and the generation of predictive visualizations. The final 15-day forecast and a model performance evaluation chart are served via a dynamic web API, making the insights readily accessible for integration into a web-based dashboard.</p>
+      <p>The pipeline automates the entire workflow: daily data acquisition via an efficient incremental web scraper, data cleaning and feature engineering, conditional model retraining to conserve computational resources, and the generation of predictive visualizations. The final 7-day forecast and a model performance evaluation chart are served via a dynamic web API, making the insights readily accessible for integration into a web-based dashboard.</p>
     </div>
 
     <div class="card">
