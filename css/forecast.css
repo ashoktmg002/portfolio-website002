@@ -37,6 +37,7 @@ body {
 .hero {
   text-align: center;
   padding: 60px 20px;
+  margin-bottom: 30px;
 }
 
 .hero h1 {
@@ -88,7 +89,8 @@ p,
 li {
   font-size: 1.05em;
   color: var(--muted);
-  text-align: left; /* Changed from justify for better readability */
+  text-align: justify;
+  text-justify: inter-word;
   line-height: 1.7;
 }
 
@@ -131,7 +133,7 @@ strong {
 }
 
 
-/* --- PLOT CONTAINER & RESPONSIVE GRID (THE FIX) --- */
+/* --- PLOT CONTAINER & RESPONSIVE GRID --- */
 .plots-grid {
   display: grid;
   grid-template-columns: 1fr; /* Mobile First: 1 column by default */
@@ -139,7 +141,7 @@ strong {
 }
 
 .plot-container {
-  min-height: auto; /* REMOVED fixed min-height to allow natural scaling */
+  min-height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -157,8 +159,8 @@ strong {
 
 img {
   max-width: 100%;
-  height: auto; /* Ensures aspect ratio is maintained */
-  display: block; /* Removes any extra space below the image */
+  height: auto;
+  display: block;
   border-radius: 8px;
 }
 
