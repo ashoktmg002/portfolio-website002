@@ -36,11 +36,11 @@ body {
 /* --- Hero Header Section --- */
 .hero {
   text-align: center;
-  padding: 60px 20px;
+  padding: 20px 10px;
   /* margin-bottom: 30px; */
 }
 
-.hero h1 {
+.hero h3 {
   font-size: 3em;
   font-weight: 800;
   background: linear-gradient(90deg, #fff, #b0c4de);
@@ -57,9 +57,12 @@ body {
   margin: 0 auto;
 }
 
-
+h6 {
+  text-align: justify;
+  text-justify: inter-word;
+}
 /* --- General Typography --- */
-h2 {
+h3 {
   font-size: 2em;
   margin-top: 20px;
   margin-bottom: 24px;
@@ -71,14 +74,14 @@ h2 {
   color: transparent;
 }
 
-h3 {
+h4 {
   font-size: 1.5em;
   margin-top: 20px;
   margin-bottom: 16px;
   color: #fff;
 }
 
-h4 {
+h5 {
     font-size: 1.1em;
     color: var(--accent2);
     margin-bottom: 12px;
@@ -119,7 +122,7 @@ strong {
   transition: transform 0.3s ease-in-out;
 }
 
-.card h4 {
+.card h5 {
   text-align: justify;
   text-justify: inter-word; /* balances spacing between words */
 }
