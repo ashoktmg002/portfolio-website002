@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  background-color: var(--bg-dark);
+  background-color: #323946;
   background-image: radial-gradient(circle at 1px 1px, var(--bg-light) 1px, transparent 0);
   background-size: 20px 20px;
   color: #e6eef8;
