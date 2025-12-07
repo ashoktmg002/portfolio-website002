@@ -1,0 +1,17 @@
+requests
+pandas
+beautifulsoup4
+lxml
+seaborn
+matplotlib
+pandas-ta
+scikit-learn
+tensorflow
+nepali-datetime
+joblib
+Flask
+APScheduler
+Flask-CORS
+Pillow
+pytz
+visualkeras
