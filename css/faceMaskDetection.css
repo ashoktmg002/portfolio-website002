@@ -93,7 +93,7 @@
     display: block;
     width: 100%;
     max-width: 100%;
-    height: auto;
+    height: 100%;
 
     /* Overflow handling */
     overflow: hidden;
@@ -103,7 +103,7 @@
 
 .mask-project .card img {
     width: 100%;
-    height: auto;
+    height: 100;
     display: block;
     object-fit: contain;
     border-radius: 8px;
