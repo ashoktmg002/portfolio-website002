@@ -54,8 +54,8 @@ ScrollReveal().reveal('.home-content p, .about-content',  { origin: 'right' });
 /* typed js */
 const typed = new Typed('.multiple-text', {
     strings: ['Computer Engineer', 'Data Science Practitioner'],
-    typeSpeed: 70,
-    backSpeed: 70,
-    backDelay: 700,
+    typeSpeed: 80,
+    backSpeed: 80,
+    backDelay: 600,
     loop:true
 });
