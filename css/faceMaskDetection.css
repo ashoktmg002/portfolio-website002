@@ -1,0 +1,213 @@
+/* =====================================================
+   GLOBAL RESET
+===================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* =====================================================
+   PROJECT WRAPPER
+===================================================== */
+.mask-project {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Prevent flex/grid overflow issues */
+.mask-project * {
+    min-width: 0;
+}
+
+/* =====================================================
+   HERO SECTION
+===================================================== */
+.mask-project .hero {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.mask-project .hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.mask-project .hero p {
+    font-size: 1.2rem;
+}
+
+/* =====================================================
+   SECTIONS
+===================================================== */
+.mask-project .section {
+    padding: 50px 10%;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.mask-project .section.light {
+    background-color: #ffffff;
+}
+
+.mask-project .section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1e3c72;
+}
+
+.mask-project .section p {
+    font-size: 1.05rem;
+    margin-bottom: 15px;
+}
+
+.mask-project .section ul {
+    list-style: disc;
+    margin-left: 25px;
+}
+
+.mask-project .section ul li {
+    margin-bottom: 10px;
+}
+
+/* =====================================================
+   CARDS
+===================================================== */
+.mask-project .card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #1e3c72;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+    /* Overflow handling */
+    overflow: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.mask-project .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.mask-project .card h3 {
+    margin-bottom: 10px;
+    color: #2a5298;
+}
+
+/* =====================================================
+   OUTPUT SECTION
+===================================================== */
+.mask-project .output-box {
+    margin-top: 20px;
+    padding: 30px;
+    background-color: #e3f2fd;
+    border-radius: 8px;
+    color: #0d47a1;
+    text-align: left;
+    font-weight: normal;
+}
+
+.mask-project .output-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.mask-project .output-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+.mask-project footer {
+    background-color: #1e3c72;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 0.9rem;
+}
+
+/* =====================================================
+   RESPONSIVE DESIGN
+===================================================== */
+@media (max-width: 768px) {
+    .mask-project .section {
+        padding: 40px 10%;
+    }
+
+    .mask-project .hero h1 {
+        font-size: 2rem;
+    }
+
+    .mask-project .hero p {
+        font-size: 1rem;
+    }
+
+    .mask-project .card {
+        padding: 15px;
+    }
+}
+
+/* =====================================================
+   TABLET & DESKTOP OPTIMIZATION
+===================================================== */
+@media (min-width: 768px) {
+    .mask-project .section {
+        padding: 70px 15%;
+    }
+
+    .mask-project .hero h1 {
+        font-size: 3.5em;
+    }
+
+    .mask-project .hero p {
+        font-size: 1.4em;
+    }
+
+    .mask-project .card {
+        padding: 30px;
+    }
+
+    .mask-project .output-grid {
+        gap: 25px;
+    }
+}
+
+/* =====================================================
+   ANIMATIONS
+===================================================== */
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}

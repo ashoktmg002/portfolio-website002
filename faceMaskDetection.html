@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Mask Detection using YOLOv8</title>
+    <link rel="stylesheet" href="css/faceMaskDetection.css">
+</head>
+
+<body>
+<div class="mask-project">
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Face Mask Detection System</h1>
+        <p>Real-Time Detection using YOLOv8 Deep Learning Algorithm</p>
+    </header>
+
+    <!-- Introduction -->
+    <section class="section">
+        <h2>Introduction</h2>
+        <p>
+            A <strong>Face Mask Detection System using YOLOv8</strong> is a computer vision–based application designed to automatically detect 
+            whether a person is wearing a face mask or not in images and video streams. The system classifies faces into 
+            <strong>Mask, No Mask,</strong> and <strong>Incorrectly Wearing</strong> categories in real time, enabling fast and reliable monitoring 
+            for public health and safety compliance.
+        </p>
+    </section>
+
+    <!-- Objectives -->
+    <section class="section light">
+        <h2>Objectives</h2>
+        <ul>
+            <li>Build a real-time face mask detection system using YOLOv8</li>
+            <li>Classify faces into Mask, No Mask, and Incorrectly Wearing</li>
+            <li>Achieve high accuracy with low inference time</li>
+            <li>Deploy a model suitable for real-world environments</li>
+        </ul>
+    </section>
+
+    <!-- Scope -->
+    <section class="section">
+        <h2>Scope</h2>
+        <ul>
+            <li>Detects multiple faces in a single image or video frame</li>
+            <li>Works with images, video files, and live camera feeds</li>
+            <li>Can be integrated with CCTV and surveillance systems</li>
+            <li>Extendable to other safety equipment detection</li>
+        </ul>
+    </section>
+
+    <!-- Methodology -->
+    <section class="section light">
+        <h2>Methodology</h2>
+
+        <div class="card">
+            <p>System Block Diagram</p>
+            <img src="images/faceMaskDetection/blockDiagram.jpg" alt="YOLOv8 Architecture">
+        </div>
+
+        <div class="card">
+            <h3>Algorithm Used: YOLOv8</h3>
+            <p>
+                YOLOv8 (You Only Look Once – Version 8) is a real-time computer vision algorithm developed by <strong>Ultralytics</strong>.
+                It follows a <strong>single-stage detector</strong> philosophy, performing object detection in one forward pass,
+                resulting in high speed and accuracy.
+            </p>
+        </div>
+
+        <div class="card">
+            <p>Working Architecture of YOLOv8</p>
+            <img src="images/faceMaskDetection/architecture.jpg" alt="Working Architecture of YOLOv8">
+        </div>
+
+        <div class="card">
+            <h3>YOLOv8 Architecture</h3>
+            <ul>
+                <li><strong>Backbone:</strong> Extracts important visual features</li>
+                <li><strong>Neck:</strong> Aggregates features at multiple scales</li>
+                <li><strong>Head:</strong> Predicts bounding boxes and class labels</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- Output -->
+    <section class="section">
+        <h2>Output</h2>
+        <ul>
+            <li>Detected faces displayed with bounding boxes</li>
+            <li>Labels: With Mask, Without Mask, Incorrectly Wearing</li>
+            <li>Confidence score shown for each detection</li>
+            <li>Works efficiently on real-time video streams</li>
+        </ul>
+
+      <div class="output-box">
+        <p>Sample Detection Output</p>
+
+        <div class="output-grid">
+          <img src="images/faceMaskDetection/output1.png" alt="Detection Output 1">
+          <img src="images/faceMaskDetection/output2.png" alt="Detection Output 2">
+          <img src="images/faceMaskDetection/output3.png" alt="Detection Output 3">
+          <img src="images/faceMaskDetection/output4.png" alt="Detection Output 4">
+          <img src="images/faceMaskDetection/output5.png" alt="Detection Output 5">
+          <img src="images/faceMaskDetection/output6.png" alt="Detection Output 6">
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Face Mask Detection System using YOLOv8 | Computer Vision Project</p>
+    </footer>
+</div>
+</body>
+</html>
