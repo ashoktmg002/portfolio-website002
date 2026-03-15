@@ -1,241 +1,571 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Legal Society & Research Centre</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Law Firm Website Template" name="keywords">
+        <meta content="Law Firm Website Template" name="description">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashok Tamang</title>
-    <!-- box icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- flaticons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    <!-- cutom css -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
 
-<body>
-    <header class="header">
-        <a href="#" class="logo">AshokTamang</a>
-        <i class='bx bx-menu' id="menu-icon"></i>
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#datascience">Data Science</a>
-            <a href="#portfolio">Projects</a>
-        </nav>
-    </header>
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600;1,700;1,800&family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap" rel="stylesheet">
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <!-- home section design --> 
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hello, It's Me</h3>
-            <h1>Ashok Tamang</h1>
-            <h3>I'm a <span class="multiple-text"></span></h3>
-            <p>My field of interests are Data Science, AI, Machine Leraning, Physics, Economics, and Business</p>
-            <div class="social-media"> 
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ashokmoktantamang002@gmail.com" target="_blank"><i class='bx bx-envelope'></i></a>
-                <a href="https://www.instagram.com/ashoktamang002/"><i class='bx bxl-instagram-alt'></i></a>   
-                <a href="https://www.facebook.com/ashok.tamang.112749"><i class='bx bxl-facebook'></i></a>                
-            </div>
-            <!-- <a href="images/homepage/cv.pdf" download class="btn">Download CV</a> -->
-        </div>
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
 
-        <div class="home-img">
-            <img src="images/homepage/home.PNG" alt="">
-        </div>
-    </section>
-
-    <!-- about section design -->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="images/homepage/about.PNG" alt="">
-        </div>
-
-        <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
-            <h3>Computer Engineer, DataScience Practitioner</h3>
-            <p>I am Ashok Tamang, a Computer Engineer and Data Science enthusiast with a deep curiosity to explore interdisciplinary knowledge across computer science, physics, economics, and business. 
-               I hold a Bachelor’s degree in Computer Engineering, and have completed specialized training in Data Science with Python.
-            </p>
-            <a href="about_me.html" class="btn">Read More</a>
-        </div>
-    </section>
-
-    <section class="datascience" id="datascience">
-        <h2 class="heading">The Field of <span>Data Science</span></h2>
-        <div class="datascience-container">
-            <h3>Data Science</h3>
-            <p class="intro-text">
-                Data Science is the interdisciplinary field that combines statistics, mathematics, computer science, and domain knowledge to extract insights and actionable knowledge from structured and unstructured data. It is at the core of modern technologies like AI, machine learning, predictive analytics, and big data systems.
-            </p>
-            <div class="content-block">
-                <h3>The Data Science Lifecycle</h3>
-                <p>The process of data science isn't a single step but a full lifecycle. While a project might not always follow this exact order, these stages represent the complete workflow.</p>
-                
-                <h4>1. Business Understanding & Problem Formulation</h4>
-                <p>This is the most critical step. Before touching any data, a data scientist must understand the problem they are trying to solve. The problem must be translated into a specific, measurable data science question, like "Can we predict which customers are likely to stop using our service in the next three months?"</p>
-
-                <h4>2. Data Acquisition</h4>
-                <p>Once the problem is defined, the next step is to gather the necessary data. This data can come from various sources:</p>
-                <ul>
-                    <li><strong>Internal Sources:</strong> Company databases (SQL), customer relationship management (CRM) systems, and internal logs.</li>
-                    <li><strong>External Sources:</strong> Public APIs (e.g., social media data), government datasets, web scraping, or third-party data providers.</li>
-                </ul>
-
-                <h4>3. Data Preparation (Cleaning & Wrangling)</h4>
-                <p>Raw data is almost always messy, incomplete, and inconsistent. This stage, which often consumes up to 80% of a data scientist's time, involves:</p>
-                <ul>
-                    <li><strong>Cleaning:</strong> Handling missing values, correcting errors, and removing duplicate entries.</li>
-                    <li><strong>Transformation:</strong> Converting data into a suitable format (e.g., changing text categories into numbers).</li>
-                    <li><strong>Feature Engineering:</strong> Creating new variables (features) from existing ones that can improve model performance. For instance, deriving a customer's "age" from their "date of birth."</li>
-                </ul>
-                
-                <h4>4. Exploratory Data Analysis (EDA)</h4>
-                <p>In this stage, the data scientist acts like a detective, exploring the cleaned data to find patterns, relationships, and anomalies. This is done using statistical analysis and data visualization tools.</p>
-
-                <h4>5. Modeling</h4>
-                <p>This is where machine learning comes into play. Based on the insights from EDA, the data scientist selects and builds a model to solve the problem.</p>
-                <ul>
-                    <li><strong>Model Selection:</strong> Choosing the right algorithm for the task (e.g., linear regression for prediction, a decision tree for classification).</li>
-                    <li><strong>Training:</strong> The model "learns" from a portion of the data (the training set) to identify patterns.</li>
-                    <li><strong>Testing:</strong> The model's performance is evaluated on a separate portion of data it has never seen before (the testing set) to ensure it can generalize to new, real-world scenarios.</li>
-                </ul>
-
-                <h4>6. Evaluation</h4>
-                <p>After building the model, it's crucial to evaluate its performance using statistical metrics. For a classification model, this could be accuracy, precision, and recall. The key question is: "How well does this model solve the original business problem?"</p>
-                
-                <h4>7. Deployment & Monitoring</h4>
-                <p>A model is only useful if it's put into production. Deployment means integrating the model into a company's systems. After deployment, it's essential to monitor the model's performance over time, as its accuracy can degrade as new data comes in. Models often need to be retrained periodically.</p>
-            </div>
-
-            <div class="content-block">
-                <h3>Core Disciplines and Required Knowledge</h3>
-                <ul>
-                    <li><strong>Mathematics & Statistics:</strong> This is the foundation. Concepts like probability, linear algebra, calculus, and statistical inference are essential for understanding how algorithms work and for validating results.</li>
-                    <li><strong>Computer Science & Programming:</strong> A data scientist needs strong programming skills, especially in languages like Python or R. This includes knowledge of data structures, algorithms, and databases (primarily SQL for data retrieval).</li>
-                    <li><strong>Machine Learning & AI:</strong> This involves understanding various algorithms for tasks like classification, regression, and clustering. This includes supervised learning, unsupervised learning, and deep learning.</li>
-                    <li><strong>Domain Expertise:</strong> A data scientist must understand the context of the business or field they're working in (e.g., finance, healthcare, marketing). This knowledge helps in defining problems correctly and interpreting results meaningfully.</li>
-                    <li><strong>Data Visualization & Communication:</strong> It's not enough to find an insight; a data scientist must be able to communicate it clearly to stakeholders, often through visualizations (charts, graphs) and storytelling.</li>
-                </ul>
-            </div>
-
-            <div class="content-block">
-                <h3>Key Roles in the Data Ecosystem</h3>
-                <p>The term "data scientist" is often used broadly, but several specialized roles exist within the field.</p>
-                <table class="roles-table">
-                    <thead>
-                        <tr>
-                            <th>Role</th>
-                            <th>Primary Focus</th>
-                            <th>Key Skills</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Data Analyst</strong></td>
-                            <td>Analyzes historical data to answer business questions ("What happened?").</td>
-                            <td>SQL, Excel, Tableau/Power BI, Statistics</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Data Scientist</strong></td>
-                            <td>Uses advanced statistical and machine learning models to make predictions ("What will happen?").</td>
-                            <td>Python/R, Machine Learning, Statistics, SQL</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Data Engineer</strong></td>
-                            <td>Builds and maintains the infrastructure and data pipelines that store and deliver data.</td>
-                            <td>SQL, Python, Big Data (Spark, Hadoop), Cloud Platforms</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Machine Learning Engineer</strong></td>
-                            <td>Deploys and scales machine learning models into production environments.</td>
-                            <td>Software Engineering, Python, Cloud (AWS, Azure), MLOps</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="content-block">
-                <h3>Applications and Impact</h3>
-                <p>Data science is transforming nearly every industry:</p>
-                 <ul>
-                    <li><strong>E-commerce:</strong> Recommendation engines (like on Netflix and Amazon) are powered by data science to suggest products you might like.</li>
-                    <li><strong>Finance:</strong> Banks use machine learning models to detect fraudulent transactions in real time and assess credit risk.</li>
-                    <li><strong>Healthcare:</strong> Data science helps in predicting diseases from medical imaging, personalizing treatment plans, and accelerating drug discovery.</li>
-                    <li><strong>Transportation:</strong> Self-driving cars use complex algorithms to interpret their surroundings, and logistics companies optimize delivery routes.</li>
-                </ul>
-            </div>
-
-            <div class="content-block">
-                <h3>Challenges and the Future</h3>
-                <p>The field is rapidly evolving and faces several challenges, including data privacy, ethical concerns about AI bias, and the need for model interpretability (the "black box" problem).</p>
-                <p>The future of data science points towards:</p>
-                <ul>
-                    <li><strong>Generative AI:</strong> Models like GPT-4 are changing how we interact with data and generate insights.</li>
-                    <li><strong>AutoML (Automated Machine Learning):</strong> Tools that automate the process of building and deploying models, making data science more accessible.</li>
-                    <li><strong>Responsible AI:</strong> A growing emphasis on creating fair, transparent, and accountable AI systems.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-     <!-- portfolio section design -->
-      <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Project</span></h2>
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="images/homepage/portfolio1.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4> BluechipStocks Price Trend Forecast</h4>
-                    <p>Using LSTM Recurrent Neural Network 
-                    </p>
-                    <a href="bluechipStocks.html"><i class='bx bx-link-external'></i></a>
+    <body>
+        <div class="wrapper">
+            <!-- Top Bar Start -->
+            <div class="top-bar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="logo">
+                                <img src="img/logo.png" alt="Logo">
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="top-bar-right">
+                                <div class="text">
+                                    <h2 data-key="time"></h2>
+                                    <p data-key="opening hours"></p>
+                                </div>
+                                <div class="text">
+                                    <h2 data-key="number"></h2>
+                                    <p data-key="number description"></p>
+                                </div>
+                                <div class="social-lang-group">
+                                    <div class="social">
+                                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=thokar.skt@gmail.com"><i class="fas fa-envelope"></i></a>
+                                        <a href="https://www.facebook.com/bishnukumar.thokar"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="https://www.instagram.com/bk_thokar/"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                    <div class="lang-switcher">
+                                        <button class="lang-toggle" onclick="this.closest('.lang-switcher').classList.toggle('open')">
+                                            <span class="lang-label">ENG</span>
+                                            <i class="fas fa-chevron-up lang-arrow"></i>
+                                        </button>
+                                        <div class="lang-dropdown">
+                                            <button class="lang-option" onclick="setLanguage('ne'); document.querySelector('.lang-label').textContent='NEP'; document.querySelector('.lang-switcher').classList.remove('open')">NEP</button>
+                                            <button class="lang-option" onclick="setLanguage('en'); document.querySelector('.lang-label').textContent='ENG'; document.querySelector('.lang-switcher').classList.remove('open')">ENG</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!-- Top Bar End -->
 
-            <div class="portfolio-box">
-                <img src="images/faceMaskDetection/faceMaskDetection.JPG" alt="">
-                <div class="portfolio-layer">
-                    <h4>Face Mask Detection</h4>
-                    <p>Using YOLOv8
-                    </p>
-                    <a href="faceMaskDetection.html"><i class='bx bx-link-external'></i></a>
+            <!-- Nav Bar Start -->
+            <div class="nav-bar">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <a href="#" class="navbar-brand">MENU</a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto">
+                                <a href="index.html" class="nav-item nav-link" data-key="home"></a>
+                                <a href="#about" class="nav-item nav-link" data-key="about"></a>
+                                <a href="#service" class="nav-item nav-link" data-key="practice"></a>
+                                <a href="#team" class="nav-item nav-link" data-key="attorneys"></a>
+                                <!-- <a href="portfolio.html" class="nav-item nav-link" data-key="case studies"></a> -->
+                                <a href="#contact" class="nav-item nav-link" data-key="contact"></a>
+                                <a href="#location" class="nav-item nav-link" data-key="location"></a>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
             </div>
+            <!-- Nav Bar End -->
             
-            <div class="portfolio-box">
-                <img src="images/homepage/portfolio3.jpeg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Bank Credit Default Prediction</h4>
-                    <p>Work in Progress
-                    </p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+            <!-- Carousel Start -->
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/c1.jpg" alt="Carousel Image">
+                        <div class="carousel-caption">
+                            <h1 class="animated fadeInLeft" data-key="justice"></h1>
+                            <p class="animated fadeInRight">Justice stands as the foundation of a fair society, ensuring every individual receives equal protection, dignity, and accountability under the rule of law.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/2.png" alt="Carousel Image">
+                        <div class="carousel-caption">
+                            <h1 class="animated fadeInLeft">We prepared to oppose for you</h1>
+                            <p class="animated fadeInRight">Our team is committed to defending your rights with determination, strategic advocacy, and unwavering dedication to achieving the best possible outcome.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/3.png" alt="Carousel Image">
+                        <div class="carousel-caption">
+                            <h1 class="animated fadeInLeft">We fight for your privilege</h1>
+                            <p class="animated fadeInRight">We stand firmly to protect your legal interests, advocating for your rights with integrity, expertise, and a strong commitment to justice.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!-- Carousel End -->
+            
+            
+            <!-- Top Feature Start-->
+            <div class="feature-top">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="feature-item">
+                                <i class="far fa-check-circle"></i>
+                                <h3>Legal</h3>
+                                <p>Government Approved</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="feature-item">
+                                <i class="fa fa-user-tie"></i>
+                                <h3>Attorneys</h3>
+                                <p>Expert Attorneys</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="feature-item">
+                                <i class="far fa-thumbs-up"></i>
+                                <h3>Success</h3>
+                                <p>High Case Win Rate</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="feature-item">
+                                <i class="far fa-handshake"></i>
+                                <h3>Support</h3>
+                                <p  id="about">Quick Support</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!-- Top Feature End-->
+            
+            <!-- About Start -->
+            <div class="about">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 col-md-6">
+                            <div class="about-img">
+                                <img src="img/about.jpg" alt="Image">
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-6">
+                            <div class="section-header">
+                                <h2>Learn About Us</h2>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    The Environment Law Society Nepal (ELS Nepal) brings together a dedicated group of seven legal professionals who practice independently as advocates and consultant lawyers across diverse fields of law, including civil law, family law, education law, business law, and criminal law. While each member maintains an individual legal practice, we unite under the common platform of ELS Nepal to promote, advocate, and strengthen the implementation of environmental law in Nepal.
+                                </p>
+                                <p>
+                                   Our collective mission is to safeguard environmental justice while also providing comprehensive legal support to individuals and organizations. Clients may approach us for professional legal representation and consultation on personal legal matters, where our advocates provide diligent and principled assistance grounded in legal expertise and ethical practice.
+                                   Beyond legal services, the Environment Law Society Nepal actively welcomes collaboration with legal professionals, conservationists, researchers, and international partners who share a commitment to environmental protection and sustainable development. Through collective effort, knowledge sharing, and strategic advocacy, we aim to strengthen environmental governance and ensure that the legal frameworks of today effectively protect the natural world for future generations.
+                                </p>
+                                <p>
+                                    Together, we strive to ensure that the laws of the present safeguard the environment of tomorrow.
+                                </p>
+                                <a class="btn" href="">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- About End -->
+
+
+            <!-- Service Start -->
+            <div class="service" id="service">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Our Practices Areas</h2>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item" id="cyber">
+                                <div class="service-icon">
+                                    <i class="fa fa-globe"></i>
+                                </div>
+                                <h3>Environment Law</h3>
+                                <p>
+                                    We provide legal expertise in environmental law, assisting clients with regulatory compliance, environmental impact assessments, and advocacy for sustainable practices to protect our planet for future generations.
+                                </p>
+                                <!-- <a class="btn" href="">Learn More</a> -->
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item" id="civil">
+                                <div class="service-icon">
+                                    <i class="fa fa-landmark"></i>
+                                </div>
+                                <h3>Civil Law</h3>
+                                <p>
+                                    We provide legal assistance in civil matters including property disputes, contractual disagreements, and claims for compensation, ensuring the protection of your legal rights through proper legal procedures.
+                                </p>
+                                <!-- <a class="btn" href="">Learn More</a> -->
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item" id="family">
+                                <div class="service-icon">
+                                    <i class="fa fa-users"></i>
+                                </div>
+                                <h3>Family Law</h3>
+                                <p>
+                                    Our services cover sensitive family matters such as divorce, child custody, inheritance, and marital disputes, handled with professionalism, confidentiality, and a focus on fair resolution.
+                                </p>
+                                <!-- <a class="btn" href="">Learn More</a> -->
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item" id="business">
+                                <div class="service-icon">
+                                    <i class="fa fa-hand-holding-usd"></i>
+                                </div>
+                                <h3>Business Law</h3>
+                                <p>
+                                    We assist businesses with legal compliance, contract drafting, dispute resolution, and corporate advisory services to ensure lawful and sustainable business operations.
+                                </p>
+                                <!-- <a class="btn" href="">Learn More</a> -->
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item" id="education">
+                                <div class="service-icon">
+                                    <i class="fa fa-graduation-cap"></i>
+                                </div>
+                                <h3>Education Law</h3>
+                                <p>
+                                    Our expertise includes handling legal issues related to educational institutions, student rights, regulatory compliance, and disputes within the education sector.
+                                </p>
+                                <!-- <a class="btn" href="">Learn More</a> -->
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item" id="criminal">
+                                <div class="service-icon">
+                                    <i class="fa fa-gavel"></i>
+                                </div>
+                                <h3>Criminal Law</h3>
+                                <p>
+                                    We provide strong legal representation in criminal matters, safeguarding the rights of individuals through strategic defense and professional advocacy before the courts.
+                                </p>
+                                <!-- <a class="btn" href="">Learn More</a> -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Service End -->
+                        
+            
+            <!-- Feature Start -->
+            <div class="feature">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="section-header">
+                                <h2>Why Choose Us</h2>
+                            </div>
+
+                            <div class="row align-items-center feature-item">
+                                <div class="col-5">
+                                    <div class="feature-icon">
+                                        <i class="fa fa-gavel"></i>
+                                    </div>
+                                </div>
+                                <div class="col-7">
+                                    <h3>Best Law Practices</h3>
+                                    <p>
+                                        Our firm follows the highest standards of legal practice, combining deep legal knowledge with strategic thinking to provide reliable representation. Every case is approached with professionalism, ethical integrity, and a commitment to protecting our clients’ rights.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row align-items-center feature-item">
+                                <div class="col-5">
+                                    <div class="feature-icon">
+                                        <i class="fa fa-balance-scale"></i>
+                                    </div>
+                                </div>
+                                <div class="col-7">
+                                    <h3>Efficiency & Trust</h3>
+                                    <p>
+                                        We prioritize transparent communication, timely legal services, and a trustworthy relationship with our clients. Our approach ensures that every legal matter is handled efficiently while maintaining the highest level of confidentiality and trust.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row align-items-center feature-item">
+                                <div class="col-5">
+                                    <div class="feature-icon">
+                                        <i class="far fa-smile"></i>
+                                    </div>
+                                </div>
+                                <div class="col-7">
+                                    <h3>Results You Deserve</h3>
+                                    <p>
+                                        Our goal is to secure the best possible outcome for every client. Through dedicated advocacy, careful legal analysis, and persistent representation, we strive to deliver results that protect your interests and uphold justice.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="feature-img">
+                                <img src="img/feature.jpg" alt="Feature">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Feature End -->
+            
+            
+            <!-- Team Start -->
+            <div class="team" id="team">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Meet Our Expert Attorneys</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/team1.png" alt="Team Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Bishnu Kumar Thokar</h2>
+                                    <p>Advocate | Consultant Lawyer</p>
+                                    <div class="team-social">
+                                        <a class="social-tw" href="mailto:you@example.com"><i class="fas fa-envelope"></i></a>                   
+                                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/team2.png" alt="Team Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Padam Bahadur Shrestha</h2>
+                                    <p>Advocate | Consultant Lawyer</p>
+                                    <div class="team-social">
+                                        <a class="social-tw" href="mailto:you@example.com"><i class="fas fa-envelope"></i></a>                   
+                                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/team3.png" alt="Team Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Satkon Shrestha</h2>
+                                    <p>Advocate | Consultant Lawyer</p>
+                                    <div class="team-social">
+                                        <a class="social-tw" href="mailto:you@example.com"><i class="fas fa-envelope"></i></a>                   
+                                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/team4.png" alt="Team Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Rajiv Phuyal</h2>
+                                    <p>Advocate | Consultant Lawyer</p>
+                                    <div class="team-social">
+                                        <a class="social-tw" href="mailto:you@example.com"><i class="fas fa-envelope"></i></a>                   
+                                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/team5.png" alt="Team Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Shanta Panta</h2>
+                                    <p>Advocate | Consultant Lawyer</p>
+                                    <div class="team-social">
+                                        <a class="social-tw" href="mailto:you@example.com"><i class="fas fa-envelope"></i></a>                   
+                                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/team6.JPG" alt="Team Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Joni Mainali</h2>
+                                    <p>Advocate | Consultant Lawyer</p>
+                                    <div class="team-social">
+                                        <a class="social-tw" href="mailto:you@example.com"><i class="fas fa-envelope"></i></a>                   
+                                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/team7.JPG" alt="Team Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Hardik Subedi</h2>
+                                    <p>Advocate | Consultant Lawyer</p>
+                                    <div class="team-social">
+                                        <a class="social-tw" href="mailto:you@example.com"><i class="fas fa-envelope"></i></a>                   
+                                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Team End -->
+
+            <!-- Footer Start -->
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="footer-location" id="location">
+                                <h2>Location</h2>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.6601719978057!2d85.3218513!3d27.696896199999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19af2e3e81ab%3A0xd88e7df89e40765!2sSupreme%20Court!5e0!3m2!1sen!2snp!4v1767767843965!5m2!1sen!2snp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-8">
+                            <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="footer-link">
+                                <h2>Services Areas</h2>
+                                <a href="#civil">Civil Law</a>
+                                <a href="#family">Family Law</a>
+                                <a href="#business">Business Law</a>
+                                <a href="#education">Education Law</a>
+                                <a href="#criminal">Criminal Law</a>
+                                <a href="#cyber">Cyber Law</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="footer-link">
+                                <h2>Useful Pages</h2>
+                                <a href="about.html">About Us</a>
+                                <a href="service.html">Practices</a>
+                                <a href="team.html">Attorneys</a>
+                                <a href="portfolio.html">Case Studies</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="footer-contact" id="contact">
+                                <h2>Contact Us</h2>
+                                <p><i class="fa fa-map-marker-alt"></i>Anamnagar, Kathmandu</p>
+                                <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
+                                <p><i class="fa fa-envelope"></i>thokar.skt@gmail.com</p>
+                                <div class="footer-social">
+                                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=thokar.skt@gmail.com"><i class="fas fa-envelope"></i></a>
+                                    <a href="https://www.facebook.com/bishnukumar.thokar"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.instagram.com/bk_thokar/"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="container footer-menu">
+                    <div class="f-menu">
+                        <a href="">Terms of use</a>
+                        <a href="">Privacy policy</a>
+                        <a href="">Cookies</a>
+                        <a href="">Help</a>
+                        <a href="">FQAs</a>
+                    </div>
+                </div>
+                 <div class="container copyright">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>&copy; <a href="#">Legal Society & Research Centre</a></p>
+                        </div>
+                        <div class="col-md-6">
+                             <p>All Right Reserved</p>
+                        </div>
+                    </div>
+            </div>
+            <!-- Footer End -->
+            
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
         </div>
-      </section>
 
-      <!-- footer design  -->
-      <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2025 by Ashok Tamang | All Rights Reserved.</p>
-        </div>
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
 
-        <div class="footer-iconTop">
-            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
-        </div>
-      </footer>
-
-      <!-- scroll reveal  -->
-      <script src="https://unpkg.com/scrollreveal"></script>
-
-      <!-- typed js  -->
-      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-      <!-- custom js -->
-      <script src="../js/script.js"></script>
-
-</body>
-
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script src="js/translate.js"></script>
+    </body>
 </html>
