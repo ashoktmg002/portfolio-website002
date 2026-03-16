@@ -10,6 +10,10 @@
     --heading-color: yellow;
 }
 
+html {
+  scroll-padding-top: 40px; /* adjust to your navbar height */
+}
+
 body {
     color: var(--text-color); /*text color */
     background: #ffffff;
@@ -261,7 +265,7 @@ a:focus {
 
 @media (min-width: 992px) {
     .top-bar {
-        padding: 0 60px;
+        padding: 0 18px;
     }
 }
 
@@ -765,7 +769,6 @@ a:focus {
 .feature-top {
     position: relative;
     background: var(--second-bg-color);
-    margin-bottom: 45px;
 }
 
 .feature-top .col-md-3 {
@@ -805,7 +808,7 @@ a:focus {
 }
 
 .feature-top .feature-item {
-    padding: 15px 0;
+    padding: 30px 0;
     text-align: center;
 }
 
@@ -834,7 +837,7 @@ a:focus {
 .about {
     position: relative;
     width: 100%;
-    padding: 45px 0;
+    padding-bottom: 45px;
 }
 
 .about .section-header {
@@ -895,7 +898,7 @@ a:focus {
 .service {
     position: relative;
     width: 100%;
-    padding: 45px 0 15px 0;
+    padding: 5px 0 15px 0;
     background: var(--second-bg-color);
 }
 
@@ -978,7 +981,7 @@ a:focus {
 .feature {
     position: relative;
     width: 100%;
-    padding: 45px 0;
+    padding: 5px 0;
     background: var(--bg-color);
 }
 
@@ -1056,7 +1059,7 @@ a:focus {
 .team {
     position: relative;
     width: 100%;
-    padding: 45px 0 15px 0;
+    padding: 5px 0 15px 0;
     background: var(--second-bg-color);
 }
 
@@ -1156,7 +1159,7 @@ a:focus {
 /*******************************/
 .portfolio {
     position: relative;
-    padding: 45px 0;
+    padding: 40px 0;
     background: #ffffff;
 }
 
@@ -1286,10 +1289,15 @@ a:focus {
 /*******************************/
 .footer {
     position: relative;
-    margin-top: 0px;
-    padding-top: 20px;
     background: var(--bg-color);
     color: #ffffff;
+}
+
+.footer .container {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
 }
 
 .footer .footer-location,
@@ -1449,7 +1457,6 @@ a:focus {
         height: 200px;
         border-radius: 8px;
         border-width: 1px;
-        /* padding-left: 50px; */
         margin-left: 50px;
     }
 
