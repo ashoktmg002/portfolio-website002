@@ -1182,6 +1182,19 @@ a:focus {
     color: #ffffff;
 }
 
+/* Mobile view fix */
+@media (max-width: 767px) {
+    .team .team-img {
+        height: auto;
+        aspect-ratio: 3 / 4;
+    }
+
+    .team .team-img img {
+        object-fit: cover;
+        object-position: center top;
+    }
+}
+
 /*******************************/
 /******** Portfolio CSS ********/
 /*******************************/
