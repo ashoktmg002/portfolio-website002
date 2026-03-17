@@ -840,6 +840,13 @@ a:focus {
     padding-bottom: 45px;
 }
 
+.about .container {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+}
+
 .about .section-header {
     margin-bottom: 30px;
 }
@@ -900,6 +907,13 @@ a:focus {
     width: 100%;
     padding: 5px 0 15px 0;
     background: var(--second-bg-color);
+}
+
+.service .container {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
 }
 
 .service .service-item {
@@ -985,6 +999,13 @@ a:focus {
     background: var(--bg-color);
 }
 
+.feature .container {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+}
+
 .feature .feature-item {
     margin-bottom: 30px;
 }
@@ -1061,6 +1082,13 @@ a:focus {
     width: 100%;
     padding: 5px 0 15px 0;
     background: var(--second-bg-color);
+}
+
+.team .container {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
 }
 
 /* Make the row a flex container so all columns stretch equally */
