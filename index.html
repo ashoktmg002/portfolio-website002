@@ -1227,6 +1227,25 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     document.querySelector('.nav-links').classList.remove('open');
   });
 });
+// Show team social overlay on tap for mobile
+document.querySelectorAll('.team-card').forEach(card => {
+  card.addEventListener('click', () => {
+    const overlay = card.querySelector('.team-social-overlay');
+    const imgOverlay = card.querySelector('.team-img-overlay');
+    const isVisible = overlay.style.opacity === '1';
+    // Close all other cards first
+    document.querySelectorAll('.team-card').forEach(c => {
+      c.querySelector('.team-social-overlay').style.opacity = '0';
+      c.querySelector('.team-img-overlay').style.opacity = '0';
+    });
+    // Toggle current card
+    if (!isVisible) {
+      overlay.style.opacity = '1';
+      imgOverlay.style.opacity = '1';
+    }
+  });
+});
+
 const navSections = document.querySelectorAll('section[id]');
 window.addEventListener('scroll', () => {
   let current = '';
