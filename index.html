@@ -81,11 +81,11 @@
   }
   #navbar .container { display: flex; align-items: center; justify-content: space-between; height: 70px; }
   .nav-logo { display: flex; align-items: center; gap: 14px; text-decoration: none; }
-  .nav-logo img { height: 42px; width: auto; }
+  .nav-logo img { height: 42px; width: auto; padding-bottom: 10px; }
   .nav-logo-text { display: flex; flex-direction: column; }
   .nav-logo-text .en-name { font-family: 'Cormorant Garamond', serif; font-size: 15px; font-weight: 600; color: var(--white); line-height: 1.2; }
   .nav-logo-text .ne-name { font-family: 'Noto Sans Devanagari', sans-serif; font-size: 11px; color: var(--gold); }
-  .nav-links { display: flex; align-items: center; gap: 4px; }
+  .nav-links { display: flex; align-items: center; }
   .nav-links a {
     color: var(--muted); text-decoration: none; font-size: 12px;
     font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase;
@@ -354,7 +354,6 @@
     .nav-links a { padding: 14px 20px; border-bottom: 1px solid rgba(255,255,255,0.05); }
     .nav-toggle { display: block; }
     .container { padding: 0 24px; }
-    #navbar { position: relative; }
     .slide-content { padding: 30px 24px 90px; }
     .slide-counter { left: 24px; }
     .hero-controls { right: 24px; }
@@ -432,7 +431,8 @@
       <a href="#about" data-key="about">About</a>
       <a href="#practice" data-key="practice">Practice</a>
       <a href="#team" data-key="attorneys">Attorneys</a>
-      <a href="#gallery">Gallery</a>
+      <a href="#gallery" data-key="gallery">Gallery</a>
+      <a href="#contact" data-key="location">Location</a>
       <a href="#contact" class="nav-cta" data-key="contact">Contact</a>
     </div>
   </div>
@@ -910,7 +910,7 @@ const translations = {
     "opening hours": "Opening Hour: Sunday - Friday",
     number: "+977 12346789",
     "number description": "Call Us For Consultation",
-    home: "Home", about: "About", practice: "Practice", attorneys: "Attorneys", contact: "Contact", location: "Location",
+    home: "Home", about: "About", practice: "Practice", attorneys: "Attorneys", gallery: "Gallery", contact: "Contact", location: "Location",
     carousel1: "We fight for your justice",
     "carousel1 desc": "Justice stands as the foundation of a fair society, ensuring every individual receives equal protection, dignity, and accountability under the rule of law.",
     carousel2: "We prepared to oppose for you",
@@ -967,7 +967,7 @@ const translations = {
     "opening hours": "सञ्चालन समय: आइतबार - शुक्रबार",
     number: "+९७७ १२३४५६७८९",
     "number description": "विज्ञ परामर्शका लागि सम्पर्क गर्नुहोस्",
-    home: "मुख्यपृष्ठ", about: "संस्थागत परिचय", practice: "कार्यक्षेत्र", attorneys: "कानून व्यवसायी", contact: "सम्पर्क", location: "अवस्थिति",
+    home: "मुख्यपृष्ठ", about: "संस्थागत परिचय", practice: "कार्यक्षेत्र", attorneys: "कानून व्यवसायी", gallery: "चित्रशाला", contact: "सम्पर्क", location: "अवस्थिति",
     carousel1: "हामी न्याय प्राप्तिको सङ्घर्षमा समर्पित छौँ",
     "carousel1 desc": "न्याय एक समतामूलक समाजको आधारस्तम्भ हो, जसले विधिको शासन अन्तर्गत प्रत्येक नागरिकको समान संरक्षण, मानवीय गरिमा र उत्तरदायित्व सुनिश्चित गर्दछ।",
     carousel2: "तपाईंको पक्षमा प्रवल पैरवीका लागि हामी सचेत छौँ",
@@ -1005,8 +1005,8 @@ const translations = {
     t: "हाम्रा विशेषज्ञ अधिवक्ताहरू",
     t1: "पदम बहादुर श्रेष्ठ", "t1 desc": "अधिवक्ता | परामर्शदाता कानून व्यवसायी",
     t2: "विष्णु कुमार थोकर", "t2 desc": "अधिवक्ता | परामर्शदाता कानून व्यवसायी",
-    t3: "षट्कोण श्रेष्ठ",    "t3 desc": "अधिवक्ता | परामर्शदाता कानून व्यवसायी",
-    t4: "राजु फुयाँल",       "t4 desc": "अधिवक्ता | परामर्शदाता कानून व्यवसायी",
+    t3: "षटकोण श्रेष्ठ",    "t3 desc": "अधिवक्ता | परामर्शदाता कानून व्यवसायी",
+    t4: "राजु फुयाल",       "t4 desc": "अधिवक्ता | परामर्शदाता कानून व्यवसायी",
     t5: "शान्ता पन्त",       "t5 desc": "अधिवक्ता | परामर्शदाता कानून व्यवसायी",
     t6: "जोनी मैनाली",       "t6 desc": "अधिवक्ता | परामर्शदाता कानून व्यवसायी",
     t7: "हार्दिक सुवेदी",    "t7 desc": "अधिवक्ता | परामर्शदाता कानून व्यवसायी",
