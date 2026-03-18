@@ -437,7 +437,7 @@
 <!-- HERO -->
 <section id="hero">
 
-  <div class="slide active" id="slide-0">
+  <div class="slide" id="slide-0">
     <div class="slide-bg" style="background-image: url('img/c1.png')"></div>
     <div class="slide-overlay"></div>
     <div class="slide-content">
@@ -1184,6 +1184,12 @@ function nextSlide() { goToSlide(currentSlide + 1); }
 function prevSlide() { goToSlide(currentSlide - 1); }
 function resetTimer() { clearInterval(slideTimer); slideTimer = setInterval(nextSlide, 6000); }
 resetTimer();
+
+// Trigger first slide animation on load
+window.addEventListener('load', () => {
+  slides[0].classList.add('active');
+  dots[0].classList.add('active');
+});
 
 // =============================================
 // HERO HEIGHT FIX
