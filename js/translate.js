@@ -30,8 +30,9 @@ const translations = {
     "feature4 desc": "Quick Support",
     //about
     a1: "Learn About Us",
-    "a1 desc1": "The Environment Law Society Nepal (ELS Nepal) brings together a dedicated group of seven legal professionals who practice independently as advocates and consultant lawyers across diverse fields of law, including civil law, family law, education law, business law, and criminal law. While each member maintains an individual legal practice, we unite under the common platform of ELS Nepal to promote, advocate, and strengthen the implementation of environmental law in Nepal.",
+    "a1 desc1": "The Environment Law Society Nepal (ELS Nepal) comprises a dedicated group of seven legal professionals practicing as advocates and consultant lawyers across a broad spectrum of legal fields, including civil law, family law, education law, business law, and criminal law. While each member maintains an independent legal practice, they are collectively united under the platform of ELS Nepal with the shared objective of promoting, advocating for, and strengthening the implementation of environmental law in Nepal.",
     "a1 desc2": "Our collective mission is to safeguard environmental justice while also providing comprehensive legal support to individuals and organizations. Clients may approach us for professional legal representation and consultation on personal legal matters, where our advocates provide diligent and principled assistance grounded in legal expertise and ethical practice. Beyond legal services, the Environment Law Society Nepal actively welcomes collaboration with legal professionals, conservationists, researchers, and international partners who share a commitment to environmental protection and sustainable development.",
+    "a1 desc3": "Learn More",
     //service
     s: "Our Practice Areas",
     s1: "Environment Law",
@@ -123,9 +124,10 @@ const translations = {
     feature4: "सहयोग",
     "feature4 desc": "द्रुत कानूनी सहायता",
     //about
-    a1: "हाम्रो बारेमा थप जान्नुहोस्",
-    "a1 desc1": "वातावरण कानून समाज नेपाल सात जना समर्पित कानूनी पेशेवरहरूको साझा संगठन हो, जसले देवानी, पारिवारिक, शैक्षिक, व्यावसायिक र फौजदारी कानून लगायतका विभिन्न क्षेत्रमा स्वतन्त्र रूपमा अधिवक्ता र परामर्शदाता वकीलको रूपमा काम गर्दै आउनुभएको छ। प्रत्येक सदस्यको व्यक्तिगत कानूनी अभ्यास रहे तापनि, हामी नेपालमा वातावरणीय कानूनको कार्यान्वयनलाई प्रवर्द्धन, वकालत र सुदृढ गर्न ELS नेपालको साझा मञ्चमा गोलबद्ध भएका छौं।",
-    "a1 desc2": "हाम्रो सामूहिक लक्ष्य वातावरणीय न्यायको रक्षा गर्नुका साथै व्यक्ति तथा संस्थाहरूलाई व्यापक कानूनी सहयोग प्रदान गर्नु हो। सेवाग्राहीहरूले व्यक्तिगत कानूनी मामिलाहरूमा पेशेवर कानूनी प्रतिनिधित्व र परामर्शका लागि हामीलाई सम्पर्क गर्न सक्नुहुन्छ, जहाँ हाम्रा अधिवक्ताहरूले कानूनी विशेषज्ञता र नैतिक अभ्यासमा आधारित रहेर लगनशीलताका साथ सहयोग प्रदान गर्नुहुनेछ। कानूनी सेवा बाहेक, एन्भाइरोन्मेन्ट ल सोसाइटी नेपालले वातावरणीय संरक्षण र दिगो विकासमा प्रतिबद्ध कानूनी पेशेवरहरू, संरक्षणविद्हरू, अनुसन्धानकर्ताहरू र अन्तर्राष्ट्रिय साझेदारहरूसँग सहकार्यका लागि सधैं स्वागत गर्दछ।",
+    a1: "हाम्रो बारेमा जान्नुहोस्",
+    "a1 desc1": "वातावरण कानून समाज नेपाल फौजदारी, देवानी, पारिवारिक, शिक्षा, र व्यावसायिक कानून जस्ता विभिन्न कानूनी क्षेत्रहरूमा अधिवक्ता र परामर्शदाता वकिलको रूपमा कार्यरत सात जना समर्पित कानुन व्यवसायीहरूको एउटा समूह हो। हाम्रा प्रत्येक सदस्यको आफ्नै स्वतन्त्र कानुनी अभ्यास भए तापनि, हामी नेपालमा वातावरणीय कानुनको प्रवर्द्धन, वकालत र यसको कार्यान्वयनलाई सुदृढ गर्ने साझा उद्देश्यका साथ वातावरण कानून समाज नेपाल को साझा मञ्चमा सामूहिक रूपमा आबद्ध छौँ।",
+    "a1 desc2": "हाम्रो सामूहिक लक्ष्य वातावरणीय न्यायको रक्षा गर्नुका साथै व्यक्ति तथा संस्थाहरूलाई कानुनी सहयोग प्रदान गर्नु हो। सेवाग्राहीहरूले व्यक्तिगत कानूनी मामिलाहरूमा व्यावसायिक कानूनी प्रतिनिधित्व र परामर्शका लागि हामीलाई सम्पर्क गर्न सक्नुहुन्छ, जहाँ हाम्रा अधिवक्ताहरूले कानुनी विज्ञता र नैतिक अभ्यासमा आधारित रहेर लगनशील र सिद्धान्तनिष्ठ सहयोग प्रदान गर्दछन्। व्यक्तिगत तथा संस्थागत कानुनी सेवाभन्दा बाहिर, वातावरण कानुन समाज नेपालले वातावरणीय संरक्षण र दिगो विकासप्रति प्रतिबद्धता साझा गर्ने कानूनी व्यवसायीहरू, संरक्षणविद्हरू, अनुसन्धानकर्ताहरू र अन्तर्राष्ट्रिय साझेदारहरूसँगको सहकार्यलाई हार्दिक स्वागत गर्दछ।",
+    "a1 desc3": "थप जान्नुहोस्",
     //service
     s: "हाम्रो कार्यक्षेत्रहरू",
     "s1": "वातावरण कानून",
