@@ -105,21 +105,28 @@
   .nav-toggle span { display: block; width: 24px; height: 1.5px; background: var(--white); margin: 5px 0; transition: all 0.3s; }
 
   /* ── HERO ── */
-  #hero { position: relative; min-height: 100vh; overflow: hidden; }
+  /* Height is set dynamically by JS to = 100vh minus topbar+navbar */
+  #hero { position: relative; min-height: 400px; overflow: hidden; }
   .slide { position: absolute; inset: 0; opacity: 0; transition: opacity 1.2s ease; }
   .slide.active { opacity: 1; z-index: 1; }
   .slide-bg { position: absolute; inset: 0; background-size: cover; background-position: center; transform: scale(1.05); transition: transform 8s ease; }
   .slide.active .slide-bg { transform: scale(1); }
   .slide-overlay { position: absolute; inset: 0; background: linear-gradient(105deg, rgba(13,13,13,0.90) 0%, rgba(13,13,13,0.65) 50%, rgba(13,13,13,0.40) 100%); }
-  .slide-content { position: relative; z-index: 2; height: 100vh; display: flex; align-items: center; padding: 0 40px; max-width: 1280px; margin: 0 auto; width: 100%; }
+  .slide-content {
+    position: absolute; inset: 0; z-index: 2;
+    display: flex; align-items: center;
+    padding: 40px 40px 100px;
+    max-width: 1280px; margin: 0 auto; width: 100%;
+    left: 50%; transform: translateX(-50%);
+  }
   .slide-inner { max-width: 680px; }
-  .slide-tag { display: inline-flex; align-items: center; gap: 10px; font-size: 11px; font-weight: 600; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; margin-bottom: 24px; opacity: 0; transform: translateY(20px); transition: all 0.8s 0.3s; }
+  .slide-tag { display: inline-flex; align-items: center; gap: 10px; font-size: 11px; font-weight: 600; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; margin-bottom: 20px; opacity: 0; transform: translateY(20px); transition: all 0.8s 0.3s; }
   .slide-tag::before { content: ''; width: 40px; height: 1px; background: var(--gold); }
   .slide.active .slide-tag { opacity: 1; transform: translateY(0); }
-  .slide-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(44px, 6vw, 88px); font-weight: 300; line-height: 1.0; color: var(--white); margin-bottom: 24px; opacity: 0; transform: translateY(30px); transition: all 0.9s 0.5s; }
+  .slide-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(36px, 5.5vw, 88px); font-weight: 300; line-height: 1.05; color: var(--white); margin-bottom: 16px; opacity: 0; transform: translateY(30px); transition: all 0.9s 0.5s; }
   .slide-title em { font-style: italic; color: var(--gold-light); display: block; }
   .slide.active .slide-title { opacity: 1; transform: translateY(0); }
-  .slide-desc { font-size: 15px; line-height: 1.8; color: var(--light-text); max-width: 520px; margin-bottom: 40px; opacity: 0; transform: translateY(20px); transition: all 0.8s 0.7s; }
+  .slide-desc { font-size: 15px; line-height: 1.7; color: var(--light-text); max-width: 520px; margin-bottom: 28px; opacity: 0; transform: translateY(20px); transition: all 0.8s 0.7s; }
   .slide.active .slide-desc { opacity: 1; transform: translateY(0); }
   .slide-actions { display: flex; gap: 16px; flex-wrap: wrap; opacity: 0; transform: translateY(20px); transition: all 0.8s 0.9s; }
   .slide.active .slide-actions { opacity: 1; transform: translateY(0); }
@@ -129,25 +136,25 @@
   .btn-outline-gold { background: transparent; color: var(--white); padding: 14px 36px; font-size: 12px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; border: 1px solid rgba(255,255,255,0.3); transition: all 0.3s; }
   .btn-outline-gold:hover { border-color: var(--gold); color: var(--gold); }
 
-  .hero-controls { position: absolute; bottom: 40px; right: 60px; z-index: 10; display: flex; align-items: center; gap: 16px; }
-  .hero-prev, .hero-next { width: 48px; height: 48px; background: rgba(255,255,255,0.05); border: 1px solid rgba(184,150,12,0.4); color: var(--gold); cursor: pointer; transition: all 0.3s; display: flex; align-items: center; justify-content: center; font-size: 14px; }
+  .hero-controls { position: absolute; bottom: 24px; right: 40px; z-index: 10; display: flex; align-items: center; gap: 12px; }
+  .hero-prev, .hero-next { width: 44px; height: 44px; background: rgba(255,255,255,0.05); border: 1px solid rgba(184,150,12,0.4); color: var(--gold); cursor: pointer; transition: all 0.3s; display: flex; align-items: center; justify-content: center; font-size: 14px; }
   .hero-prev:hover, .hero-next:hover { background: var(--gold); color: var(--dark); }
-  .hero-dots { position: absolute; bottom: 52px; left: 50%; transform: translateX(-50%); z-index: 10; display: flex; gap: 10px; }
+  .hero-dots { position: absolute; bottom: 36px; left: 50%; transform: translateX(-50%); z-index: 10; display: flex; gap: 10px; }
   .hero-dot { width: 6px; height: 6px; border-radius: 50%; background: rgba(255,255,255,0.3); cursor: pointer; transition: all 0.3s; border: none; }
   .hero-dot.active { background: var(--gold); width: 24px; border-radius: 3px; }
-  .slide-counter { position: absolute; bottom: 56px; left: 60px; z-index: 10; font-size: 11px; letter-spacing: 2px; color: var(--muted); }
+  .slide-counter { position: absolute; bottom: 38px; left: 40px; z-index: 10; font-size: 11px; letter-spacing: 2px; color: var(--muted); }
   .slide-counter span { color: var(--gold); font-size: 22px; font-family: 'Cormorant Garamond', serif; }
 
   /* ── STATS ── */
   #stats { background: var(--gold); overflow: hidden; }
   .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
-  .stat-item { padding: 28px 24px; display: flex; align-items: center; gap: 16px; border-right: 1px solid rgba(0,0,0,0.15); transition: background 0.3s; min-width: 0; }
+  .stat-item { padding: 24px 20px; display: flex; align-items: center; gap: 14px; border-right: 1px solid rgba(0,0,0,0.15); transition: background 0.3s; min-width: 0; }
   .stat-item:last-child { border-right: none; }
   .stat-item:hover { background: rgba(0,0,0,0.08); }
-  .stat-icon { width: 44px; height: 44px; min-width: 44px; background: rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; font-size: 18px; color: var(--dark); flex-shrink: 0; }
-  .stat-text { min-width: 0; overflow: hidden; }
-  .stat-text .stat-value { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 700; color: var(--dark); line-height: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .stat-text .stat-label { font-size: 10px; font-weight: 600; color: rgba(0,0,0,0.6); letter-spacing: 0.5px; line-height: 1.4; }
+  .stat-icon { width: 40px; height: 40px; min-width: 40px; background: rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; font-size: 17px; color: var(--dark); flex-shrink: 0; }
+  .stat-text { min-width: 0; }
+  .stat-text .stat-value { font-family: 'Cormorant Garamond', serif; font-size: clamp(18px, 2vw, 26px); font-weight: 700; color: var(--dark); line-height: 1.1; word-break: break-word; }
+  .stat-text .stat-label { font-size: 10px; font-weight: 600; color: rgba(0,0,0,0.6); letter-spacing: 0.5px; line-height: 1.4; word-break: break-word; }
 
   /* ── ABOUT ── */
   #about { padding: 120px 0; background: var(--dark-2); overflow: hidden; }
@@ -155,18 +162,19 @@
   .about-visual { position: relative; }
   .about-img-frame {
     position: relative; background: var(--dark-3);
-    border: 1px solid rgba(184,150,12,0.15); overflow: hidden;
+    border: 1px solid rgba(184,150,12,0.25); overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(184,150,12,0.08);
   }
   .about-img-frame::before {
     content: ''; position: absolute; inset: 0;
-    background: linear-gradient(135deg, rgba(184,150,12,0.06) 0%, transparent 60%);
+    background: linear-gradient(135deg, rgba(184,150,12,0.07) 0%, transparent 55%);
     z-index: 1; pointer-events: none;
   }
   .about-img-frame::after {
-    content: ''; position: absolute; top: -1px; left: -1px; right: -1px;
-    height: 3px; background: var(--gold); z-index: 2;
+    content: ''; position: absolute; top: 0; left: 0; right: 0;
+    height: 3px; background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold)); z-index: 2;
   }
-  .about-img-main { width: 100%; height: auto; display: block; object-fit: contain; object-position: center; padding: 24px; }
+  .about-img-main { width: 100%; height: auto; display: block; object-fit: contain; object-position: center; padding: 20px; }
   .about-content { padding-left: 20px; }
   .about-content p { color: var(--light-text); line-height: 1.9; margin-bottom: 20px; font-size: 15px; }
   .about-features { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 36px 0; }
@@ -199,7 +207,16 @@
   #why { padding: 120px 0; background: var(--dark-3); }
   .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
   .why-visual { position: relative; }
-  .why-img { width: 100%; aspect-ratio: 3/4; object-fit: cover; }
+  .why-img-frame {
+    position: relative; overflow: hidden;
+    border: 1px solid rgba(184,150,12,0.25);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(184,150,12,0.08);
+  }
+  .why-img-frame::after {
+    content: ''; position: absolute; top: 0; left: 0; right: 0;
+    height: 3px; background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold)); z-index: 2;
+  }
+  .why-img { width: 100%; aspect-ratio: 3/4; object-fit: cover; display: block; }
   .why-overlay-card { position: absolute; bottom: -30px; right: -30px; background: var(--gold); padding: 36px 40px; max-width: 280px; }
   .why-overlay-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 36px; font-weight: 700; color: var(--dark); line-height: 1; }
   .why-overlay-card p { font-size: 12px; color: rgba(0,0,0,0.7); font-weight: 500; letter-spacing: 1px; }
@@ -213,11 +230,11 @@
   /* ── TEAM ── */
   #team { padding: 120px 0; background: var(--dark); }
   .team-header { margin-bottom: 60px; }
-  .team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: rgba(184,150,12,0.1); }
-  .team-grid::after { content: ''; background: var(--dark); }
+  .team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: rgba(184,150,12,0.12); }
+  .team-grid::after { content: ''; background: var(--dark); display: block; }
   .team-card { background: var(--dark); overflow: hidden; position: relative; transition: all 0.4s; }
   .team-card:hover { transform: translateY(-6px); z-index: 2; }
-  .team-img-wrap { position: relative; overflow: hidden; aspect-ratio: 3/4; }
+  .team-img-wrap { position: relative; overflow: hidden; aspect-ratio: 3/4; background: var(--dark); }
   .team-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s; }
   .team-card:hover .team-img-wrap img { transform: scale(1.08); }
   .team-img-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(13,13,13,0.9) 0%, transparent 60%); opacity: 0; transition: opacity 0.4s; }
@@ -254,8 +271,25 @@
   .contact-detail-icon { width: 44px; height: 44px; background: rgba(184,150,12,0.1); display: flex; align-items: center; justify-content: center; color: var(--gold); font-size: 16px; flex-shrink: 0; }
   .contact-detail-item h4 { font-size: 11px; letter-spacing: 2px; color: var(--muted); font-weight: 600; margin-bottom: 4px; }
   .contact-detail-item span { color: var(--white); font-size: 14px; }
-  .map-wrap { height: 100%; min-height: 420px; overflow: hidden; }
-  .map-wrap iframe { width: 100%; height: 100%; min-height: 420px; border: none; filter: grayscale(30%) contrast(1.1); }
+
+  /* ── MAP ── */
+  .map-wrap {
+    height: 100%; min-height: 420px; overflow: hidden;
+    position: relative;
+    border: 1px solid rgba(184,150,12,0.25);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(184,150,12,0.08);
+  }
+  .map-wrap::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0;
+    height: 3px; background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold));
+    z-index: 2;
+  }
+  .map-wrap::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(135deg, rgba(184,150,12,0.04) 0%, transparent 50%);
+    z-index: 1; pointer-events: none;
+  }
+  .map-wrap iframe { width: 100%; height: 100%; min-height: 420px; border: none; filter: grayscale(20%) contrast(1.05) brightness(0.95); display: block; }
 
   /* ── FOOTER ── */
   .footer-bottom { background: var(--dark-2); border-top: 1px solid rgba(184,150,12,0.15); }
@@ -321,6 +355,9 @@
     .nav-toggle { display: block; }
     .container { padding: 0 24px; }
     #navbar { position: relative; }
+    .slide-content { padding: 30px 24px 90px; }
+    .slide-counter { left: 24px; }
+    .hero-controls { right: 24px; }
   }
   @media (max-width: 600px) {
     .practice-grid, .team-grid, .gallery-grid { grid-template-columns: 1fr; }
@@ -328,12 +365,22 @@
     .stat-item { border-right: none !important; border-bottom: 1px solid rgba(0,0,0,0.12); padding: 18px 20px; }
     .stat-item:last-child { border-bottom: none; }
     .footer-links-bar { grid-template-columns: 1fr; }
-    .top-info { display: none; }
     .footer-col { border-right: none; border-bottom: 1px solid rgba(184,150,12,0.1); }
     .about-content { padding-left: 0; }
-    .slide-counter { left: 24px; }
-    .hero-controls { right: 24px; bottom: 30px; }
-    .hero-dots { bottom: 42px; }
+    .slide-content { padding: 20px 20px 90px; align-items: center; }
+    .slide-inner { max-width: 100%; }
+    .slide-title { font-size: clamp(30px, 9vw, 50px); margin-bottom: 12px; }
+    .slide-desc { font-size: 13px; margin-bottom: 20px; max-width: 100%; }
+    .btn-primary-gold, .btn-outline-gold { padding: 11px 20px; font-size: 11px; }
+    .slide-tag { font-size: 10px; margin-bottom: 12px; }
+    .slide-counter { left: 20px; bottom: 24px; }
+    .hero-controls { right: 16px; bottom: 18px; }
+    .hero-dots { bottom: 30px; }
+    /* Top bar centred on mobile */
+    #top-bar .container { flex-direction: column; align-items: center; gap: 8px; }
+    .top-info { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+    .top-info-item { font-size: 11px; justify-content: center; }
+    .top-right { justify-content: center; }
   }
 </style>
 </head>
@@ -371,7 +418,7 @@
 <nav id="navbar">
   <div class="container">
     <a href="#" class="nav-logo">
-      <img src="logo.png" alt="ELS Nepal Logo">
+      <img src="img/logo.png" alt="ELS Nepal Logo">
       <div class="nav-logo-text">
         <span class="en-name">Environment Law Society Nepal</span>
         <span class="ne-name">वातावरण कानून समाज नेपाल</span>
@@ -395,7 +442,7 @@
 <section id="hero">
 
   <div class="slide active" id="slide-0">
-    <div class="slide-bg" style="background-image: url('c1.png')"></div>
+    <div class="slide-bg" style="background-image: url('img/c1.png')"></div>
     <div class="slide-overlay"></div>
     <div class="slide-content">
       <div class="slide-inner">
@@ -411,7 +458,7 @@
   </div>
 
   <div class="slide" id="slide-1">
-    <div class="slide-bg" style="background-image: url('c2.jpeg')"></div>
+    <div class="slide-bg" style="background-image: url('img/c2.jpeg')"></div>
     <div class="slide-overlay"></div>
     <div class="slide-content">
       <div class="slide-inner">
@@ -427,7 +474,7 @@
   </div>
 
   <div class="slide" id="slide-2">
-    <div class="slide-bg" style="background-image: url('c3.jpg')"></div>
+    <div class="slide-bg" style="background-image: url('img/c3.jpg')"></div>
     <div class="slide-overlay"></div>
     <div class="slide-content">
       <div class="slide-inner">
@@ -495,7 +542,7 @@
     <div class="about-grid">
       <div class="about-visual fade-up">
         <div class="about-img-frame">
-          <img src="about.jpg" alt="ELS Nepal Leadership" class="about-img-main">
+          <img src="img/about.jpg" alt="ELS Nepal Leadership" class="about-img-main">
         </div>
       </div>
       <div class="about-content fade-up">
@@ -503,7 +550,7 @@
         <h2 class="section-title">Championing <em>Environmental Justice</em> in Nepal</h2>
         <div class="divider"></div>
         <p data-key="a1 desc1">The Environment Law Society Nepal (ELS Nepal) comprises a dedicated group of seven legal professionals practicing as advocates and consultant lawyers across a broad spectrum of legal fields, including civil law, family law, education law, business law, and criminal law. While each member maintains an independent legal practice, they are collectively united under the platform of ELS Nepal with the shared objective of promoting, advocating for, and strengthening the implementation of environmental law in Nepal.</p>
-        <p data-key="a1 desc2">Our collective mission is to safeguard environmental justice while also providing comprehensive legal support to individuals and organizations. Clients may approach us for professional legal representation and consultation on personal legal matters, where our advocates provide diligent and principled assistance grounded in legal expertise and ethical practice.</p>
+        <p data-key="a1 desc2">Our collective mission is to safeguard environmental justice while also providing comprehensive legal support to individuals and organizations. Clients may approach us for professional legal representation and consultation on personal legal matters, where our advocates provide diligent and principled assistance grounded in legal expertise and ethical practice. Beyond legal services, the Environment Law Society Nepal actively welcomes collaboration with legal professionals, conservationists, researchers, and international partners who share a commitment to environmental protection and sustainable development.</p>
         <div class="about-features">
           <div class="about-feat"><i class="fas fa-leaf"></i><div><h4>Environmental Law</h4><p>Pioneering eco-legal advocacy</p></div></div>
           <div class="about-feat"><i class="fas fa-balance-scale"></i><div><h4>Civil &amp; Criminal</h4><p>Full-spectrum legal defense</p></div></div>
@@ -575,10 +622,12 @@
   <div class="container">
     <div class="why-grid">
       <div class="why-visual fade-up">
-        <img src="feature.jpg" alt="Why Choose ELS Nepal" class="why-img">
-        <div class="why-overlay-card">
-          <h3>ELS<br>Nepal</h3>
-          <p>TRUSTED LEGAL PARTNERS</p>
+        <div class="why-img-frame">
+          <img src="img/feature.jpg" alt="Why Choose ELS Nepal" class="why-img">
+          <div class="why-overlay-card">
+            <h3>ELS<br>Nepal</h3>
+            <p>TRUSTED LEGAL PARTNERS</p>
+          </div>
         </div>
       </div>
       <div class="why-content">
@@ -621,7 +670,7 @@
     <div class="team-grid">
       <div class="team-card fade-up">
         <div class="team-img-wrap">
-          <img src="profile5.jpg" alt="Padam Bahadur Shrestha">
+          <img src="img/team1.jpg" alt="Padam Bahadur Shrestha">
           <div class="team-img-overlay"></div>
           <div class="team-social-overlay">
             <a href="mailto:els.nepal@gmail.com"><i class="fas fa-envelope"></i></a>
@@ -636,7 +685,7 @@
       </div>
       <div class="team-card fade-up">
         <div class="team-img-wrap">
-          <img src="team2.JPG" alt="Bishnu Kumar Thokar">
+          <img src="img/team2.JPG" alt="Bishnu Kumar Thokar">
           <div class="team-img-overlay"></div>
           <div class="team-social-overlay">
             <a href="mailto:thokar.skt@gmail.com"><i class="fas fa-envelope"></i></a>
@@ -651,7 +700,7 @@
       </div>
       <div class="team-card fade-up">
         <div class="team-img-wrap">
-          <img src="team3.JPG" alt="Satkon Shrestha">
+          <img src="img/team3.JPG" alt="Satkon Shrestha">
           <div class="team-img-overlay"></div>
           <div class="team-social-overlay">
             <a href="#"><i class="fas fa-envelope"></i></a>
@@ -666,7 +715,7 @@
       </div>
       <div class="team-card fade-up">
         <div class="team-img-wrap">
-          <img src="team4.JPG" alt="Raju Phuyal">
+          <img src="img/team4.JPG" alt="Raju Phuyal">
           <div class="team-img-overlay"></div>
           <div class="team-social-overlay">
             <a href="#"><i class="fas fa-envelope"></i></a>
@@ -681,7 +730,7 @@
       </div>
       <div class="team-card fade-up">
         <div class="team-img-wrap">
-          <img src="team5.JPG" alt="Shanta Panta">
+          <img src="img/team5.JPG" alt="Shanta Panta">
           <div class="team-img-overlay"></div>
           <div class="team-social-overlay">
             <a href="#"><i class="fas fa-envelope"></i></a>
@@ -696,7 +745,7 @@
       </div>
       <div class="team-card fade-up">
         <div class="team-img-wrap">
-          <img src="team6.JPG" alt="Joni Mainali">
+          <img src="img/team6.JPG" alt="Joni Mainali">
           <div class="team-img-overlay"></div>
           <div class="team-social-overlay">
             <a href="#"><i class="fas fa-envelope"></i></a>
@@ -711,7 +760,7 @@
       </div>
       <div class="team-card fade-up">
         <div class="team-img-wrap">
-          <img src="team7.JPG" alt="Hardik Subedi">
+          <img src="img/team7.JPG" alt="Hardik Subedi">
           <div class="team-img-overlay"></div>
           <div class="team-social-overlay">
             <a href="#"><i class="fas fa-envelope"></i></a>
@@ -738,23 +787,23 @@
   </div>
   <div class="gallery-grid">
     <div class="gallery-item tall fade-up">
-      <img src="team1.jpg" alt="ELS Nepal Team">
+      <img src="img/g1.jpg" alt="ELS Nepal Team">
       <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
     </div>
     <div class="gallery-item fade-up">
-      <img src="c1.png" alt="Legal Proceedings">
+      <img src="img/g2.jpg" alt="Legal Proceedings">
       <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
     </div>
     <div class="gallery-item fade-up">
-      <img src="c2.jpeg" alt="Court Advocacy">
+      <img src="img/g3.jpg" alt="Court Advocacy">
       <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
     </div>
     <div class="gallery-item fade-up">
-      <img src="c3.jpg" alt="Environmental Law">
+      <img src="img/g4.jpg" alt="Environmental Law">
       <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
     </div>
     <div class="gallery-item fade-up">
-      <img src="about.jpg" alt="ELS Nepal About">
+      <img src="img/g5.jpg" alt="ELS Nepal About">
       <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
     </div>
   </div>
@@ -974,9 +1023,6 @@ const translations = {
 
 // =============================================
 // LANGUAGE TOGGLE
-// Button shows the language you will switch TO:
-//   Viewing English → button shows "NEP" → click → switches to Nepali → button shows "ENG"
-//   Viewing Nepali  → button shows "ENG" → click → switches to English → button shows "NEP"
 // =============================================
 let currentLang = 'en';
 
@@ -1027,9 +1073,23 @@ function resetTimer() { clearInterval(slideTimer); slideTimer = setInterval(next
 resetTimer();
 
 // =============================================
+// HERO HEIGHT FIX
+// Subtracts top bar + navbar from viewport height
+// so the hero section always fills exactly the
+// remaining visible screen on every device/resize
+// =============================================
+function fixHeroHeight() {
+  const topBar = document.getElementById('top-bar');
+  const navbar = document.getElementById('navbar');
+  const hero   = document.getElementById('hero');
+  const usedHeight = topBar.offsetHeight + navbar.offsetHeight;
+  hero.style.height = (window.innerHeight - usedHeight) + 'px';
+}
+fixHeroHeight();
+window.addEventListener('resize', fixHeroHeight);
+
+// =============================================
 // BACK TO TOP
-// Only appears after scrolling past 80% of viewport height (well past the hero)
-// Uses visibility + opacity so it never takes layout space
 // =============================================
 const backTop = document.getElementById('back-top');
 window.addEventListener('scroll', () => {
