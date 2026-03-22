@@ -3,278 +3,166 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About ELS Nepal | Environment Law Society Nepal</title>
-<meta name="description" content="Learn about Environment Law Society Nepal — our mission, governance, and legacy of environmental legal advocacy since 2077 BS.">
+<title>Bishnu Kumar Thokar — Advocate | Chief Consultant Lawyer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Outfit:wght@300;400;500;600&family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <style>
   :root {
-    --gold: #B8960C;
-    --gold-light: #D4AF37;
-    --dark: #0D0D0D;
-    --dark-2: #141414;
-    --dark-3: #1C1C1C;
-    --dark-4: #222222;
-    --light-text: #C8C8C8;
-    --muted: #888;
-    --white: #F9F7F2;
+    --gold: #B8960C; --gold-light: #D4AF37;
+    --dark: #0D0D0D; --dark-2: #141414; --dark-3: #1C1C1C;
+    --light-text: #C8C8C8; --muted: #777; --white: #F9F7F2;
   }
-
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
   body { background: var(--dark); color: var(--white); font-family: 'Outfit', sans-serif; font-weight: 300; overflow-x: hidden; }
-
-  ::-webkit-scrollbar { width: 5px; }
+  ::-webkit-scrollbar { width: 4px; }
   ::-webkit-scrollbar-track { background: var(--dark-2); }
-  ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 2px; }
 
-  .container { max-width: 1280px; margin: 0 auto; padding: 0 40px; }
+  body::before {
+    content: ''; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    opacity: 0.5;
+  }
 
-  .section-label {
-    display: inline-flex; align-items: center; gap: 12px;
-    font-size: 11px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase;
-    color: var(--gold); margin-bottom: 20px;
-  }
-  .section-label::before { content: ''; width: 30px; height: 1px; background: var(--gold); }
-  .section-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(34px, 4vw, 54px);
-    font-weight: 300; line-height: 1.1; color: var(--white);
-  }
-  .section-title em { font-style: italic; color: var(--gold-light); }
-  .divider { width: 60px; height: 2px; background: var(--gold); margin: 24px 0; }
+  /* TOP BAR */
+  #top-bar { background: var(--dark-2); border-bottom: 1px solid rgba(184,150,12,0.2); padding: 9px 0; font-size: 11.5px; position: relative; z-index: 10; }
+  #top-bar .inner { max-width: 1200px; margin: 0 auto; padding: 0 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+  .tb-left { display: flex; gap: 24px; align-items: center; }
+  .tb-item { display: flex; align-items: center; gap: 7px; color: var(--muted); }
+  .tb-item i { color: var(--gold); font-size: 10px; }
+  .tb-item span { color: var(--light-text); }
+  .tb-right { display: flex; align-items: center; gap: 14px; }
+  .pan-badge { font-size: 10px; letter-spacing: 1.5px; font-weight: 600; color: var(--gold); border: 1px solid rgba(184,150,12,0.3); padding: 3px 10px; }
+  .validity-dot { width: 7px; height: 7px; border-radius: 50%; background: #2ECC71; display: inline-block; margin-right: 6px; animation: pulse-green 2s infinite; }
+  @keyframes pulse-green { 0%,100% { box-shadow: 0 0 0 0 rgba(46,204,113,0.4); } 50% { box-shadow: 0 0 0 5px rgba(46,204,113,0); } }
 
-  /* ── NAVBAR ── */
-  #navbar {
-    position: sticky; top: 0; z-index: 1000;
-    background: rgba(13,13,13,0.97); backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(184,150,12,0.15);
-  }
-  #navbar .container { display: flex; align-items: center; justify-content: space-between; height: 70px; }
-  .nav-logo { display: flex; align-items: center; gap: 14px; text-decoration: none; }
-  .nav-logo img { height: 42px; width: auto; padding-bottom: 10px;}
-  .nav-logo-text { display: flex; flex-direction: column; }
-  .nav-logo-text .en-name { font-family: 'Cormorant Garamond', serif; font-size: 15px; font-weight: 600; color: var(--white); line-height: 1.2; }
-  .nav-logo-text .ne-name { font-family: 'Noto Sans Devanagari', sans-serif; font-size: 11px; color: var(--gold); }
-  .nav-right { display: flex; align-items: center; gap: 20px; }
-  .lang-btn {
-    background: transparent; border: 1px solid rgba(184,150,12,0.4);
-    color: var(--gold); padding: 5px 14px; font-size: 11px; font-weight: 600;
-    letter-spacing: 2px; cursor: pointer; font-family: 'Outfit', sans-serif; transition: all 0.3s;
-  }
+  .lang-btn { background: transparent; border: 1px solid rgba(184,150,12,0.4); color: var(--gold); padding: 5px 14px; font-size: 11px; font-weight: 600; letter-spacing: 2px; cursor: pointer; font-family: 'Outfit', sans-serif; transition: all 0.3s; }
   .lang-btn:hover { background: var(--gold); color: var(--dark); }
-  .nav-back {
-    display: inline-flex; align-items: center; gap: 10px;
-    color: var(--gold); text-decoration: none; font-size: 12px;
-    font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase;
-    transition: gap 0.3s;
-  }
-  .nav-back:hover { gap: 14px; }
-  .nav-back i { font-size: 11px; }
 
-  /* ── HERO ── */
-  #hero {
-    position: relative; min-height: 80vh;
-    display: flex; align-items: center; overflow: hidden;
-  }
+  /* HERO */
+  #hero { position: relative; min-height: 100vh; display: flex; align-items: center; overflow: hidden; }
   .hero-bg {
     position: absolute; inset: 0;
-    background: linear-gradient(135deg, var(--dark) 0%, var(--dark-3) 50%, var(--dark) 100%);
+    background: radial-gradient(ellipse 80% 60% at 70% 50%, rgba(184,150,12,0.06) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 40% at 20% 80%, rgba(184,150,12,0.04) 0%, transparent 60%),
+      linear-gradient(135deg, #0D0D0D 0%, #141414 50%, #111 100%);
   }
-  .hero-pattern {
-    position: absolute; inset: 0; opacity: 0.04;
-    background-image:
-      repeating-linear-gradient(0deg, transparent, transparent 60px, rgba(184,150,12,0.5) 60px, rgba(184,150,12,0.5) 61px),
-      repeating-linear-gradient(90deg, transparent, transparent 60px, rgba(184,150,12,0.5) 60px, rgba(184,150,12,0.5) 61px);
+  .hero-lines {
+    position: absolute; inset: 0; pointer-events: none;
+    background-image: linear-gradient(rgba(184,150,12,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(184,150,12,0.04) 1px, transparent 1px);
+    background-size: 80px 80px;
+    mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 20%, transparent 80%);
   }
-  .hero-glow {
-    position: absolute; top: -200px; right: -200px;
-    width: 700px; height: 700px; border-radius: 50%;
-    background: radial-gradient(circle, rgba(184,150,12,0.08) 0%, transparent 70%);
-    pointer-events: none;
-  }
-  .hero-content {
-    position: relative; z-index: 2; padding: 120px 0 100px;
-    max-width: 800px;
-  }
-  .hero-badge {
-    display: inline-flex; align-items: center; gap: 10px;
-    background: rgba(184,150,12,0.1); border: 1px solid rgba(184,150,12,0.3);
-    padding: 8px 20px; margin-bottom: 36px;
-    font-size: 11px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--gold);
-    opacity: 0; animation: fadeUp 0.8s 0.2s forwards;
-  }
-  .hero-badge i { font-size: 10px; }
-  .hero-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(38px, 5.5vw, 76px);
-    font-weight: 300; line-height: 1.05; color: var(--white);
-    margin-bottom: 28px;
-    opacity: 0; animation: fadeUp 0.9s 0.4s forwards;
-  }
-  .hero-title em { font-style: italic; color: var(--gold-light); }
-  .hero-subtitle {
-    font-size: clamp(15px, 1.6vw, 18px); line-height: 1.8;
-    color: var(--light-text); max-width: 680px;
-    opacity: 0; animation: fadeUp 0.8s 0.6s forwards;
-  }
-  .hero-subtitle strong { color: var(--gold); font-weight: 500; }
-  .hero-divider {
-    width: 80px; height: 1px;
-    background: linear-gradient(90deg, var(--gold), transparent);
-    margin: 40px 0;
-    opacity: 0; animation: fadeUp 0.8s 0.8s forwards;
-  }
-  .hero-stats {
-    display: flex; gap: 50px; flex-wrap: wrap;
-    opacity: 0; animation: fadeUp 0.8s 1s forwards;
-  }
-  .hero-stat .val {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 38px; font-weight: 700; color: var(--gold); line-height: 1;
-  }
-  .hero-stat .lbl { font-size: 11px; color: var(--muted); letter-spacing: 1.5px; text-transform: uppercase; margin-top: 4px; }
+  .hero-orb { position: absolute; border-radius: 50%; filter: blur(80px); pointer-events: none; }
+  .orb-1 { width: 600px; height: 600px; background: rgba(184,150,12,0.07); top: -100px; right: -100px; }
+  .orb-2 { width: 300px; height: 300px; background: rgba(184,150,12,0.05); bottom: 0; left: 20%; }
 
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(24px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
+  .hero-content { position: relative; z-index: 2; max-width: 1200px; margin: 0 auto; padding: 120px 40px 80px; display: grid; grid-template-columns: 1fr 420px; gap: 80px; align-items: center; width: 100%; }
+  .hero-eyebrow { display: inline-flex; align-items: center; gap: 12px; font-size: 10.5px; font-weight: 600; letter-spacing: 3.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 28px; }
+  .hero-eyebrow::before { content: ''; width: 36px; height: 1px; background: var(--gold); }
+  .hero-name { font-family: 'Cormorant Garamond', serif; font-size: clamp(52px, 7vw, 96px); font-weight: 300; line-height: 0.95; color: var(--white); margin-bottom: 6px; }
+  .hero-name em { font-style: italic; color: var(--gold-light); display: block; }
+  .hero-divider { width: 60px; height: 1px; background: var(--gold); margin: 28px 0; }
+  .hero-designation { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 400; font-style: italic; color: var(--light-text); line-height: 1.5; margin-bottom: 10px; }
+  .hero-firm { font-size: 13px; letter-spacing: 0.5px; color: var(--muted); margin-bottom: 36px; line-height: 1.7; }
+  .hero-firm strong { color: var(--gold); font-weight: 500; }
+  .hero-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 40px; }
+  .hero-tag { font-size: 10px; letter-spacing: 2px; font-weight: 600; text-transform: uppercase; padding: 6px 14px; border: 1px solid rgba(184,150,12,0.3); color: var(--muted); transition: all 0.3s; }
+  .hero-tag:hover { border-color: var(--gold); color: var(--gold); }
+  .hero-stats { display: flex; gap: 40px; }
+  .h-stat-num { font-family: 'Cormorant Garamond', serif; font-size: 48px; font-weight: 300; color: var(--gold); line-height: 1; }
+  .h-stat-label { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
 
-  /* ── REGISTRATION STRIP ── */
-  #reg-strip { background: var(--gold); overflow: hidden; }
-  .reg-strip-inner { display: grid; grid-template-columns: repeat(3, 1fr); }
-  .reg-item { padding: 24px 32px; display: flex; align-items: center; gap: 16px; border-right: 1px solid rgba(0,0,0,0.15); }
-  .reg-item:last-child { border-right: none; }
-  .reg-item i { font-size: 22px; color: var(--dark); opacity: 0.6; flex-shrink: 0; }
-  .reg-item .reg-label { font-size: 10px; font-weight: 600; color: rgba(0,0,0,0.55); letter-spacing: 1.5px; text-transform: uppercase; }
-  .reg-item .reg-value { font-family: 'Cormorant Garamond', serif; font-size: 18px; font-weight: 700; color: var(--dark); line-height: 1.2; }
+  .hero-card { background: var(--dark-2); border: 1px solid rgba(184,150,12,0.2); padding: 40px; position: relative; overflow: hidden; }
+  .hero-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent, var(--gold), transparent); }
+  .hero-card::after { content: ''; position: absolute; bottom: 0; right: 0; width: 120px; height: 120px; background: radial-gradient(circle, rgba(184,150,12,0.08) 0%, transparent 70%); }
+  .card-label { font-size: 10px; letter-spacing: 3px; font-weight: 600; text-transform: uppercase; color: var(--gold); margin-bottom: 24px; display: flex; align-items: center; gap: 10px; }
+  .card-label::before { content: ''; width: 20px; height: 1px; background: var(--gold); }
+  .cred-row { display: flex; justify-content: space-between; align-items: flex-start; padding: 13px 0; border-bottom: 1px solid rgba(255,255,255,0.04); gap: 16px; }
+  .cred-row:last-child { border-bottom: none; }
+  .cred-key { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); flex-shrink: 0; padding-top: 2px; }
+  .cred-val { font-size: 13px; color: var(--light-text); text-align: right; line-height: 1.5; }
+  .cred-val strong { color: var(--white); font-weight: 500; }
+  .cred-val .gold { color: var(--gold); }
+  .valid-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(46,204,113,0.1); border: 1px solid rgba(46,204,113,0.25); color: #2ECC71; font-size: 10px; letter-spacing: 1.5px; font-weight: 600; padding: 3px 10px; text-transform: uppercase; }
 
-  /* ── ABOUT SECTION ── */
-  #about { padding: 120px 0; background: var(--dark-2); }
-  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
-  .about-right { padding-top: 10px; }
-  .about-right p { color: var(--light-text); font-size: 15px; line-height: 1.9; margin-bottom: 22px; }
-  .about-right p:last-child { margin-bottom: 0; }
-  .about-right strong { color: var(--white); font-weight: 500; }
-  .about-right em { color: var(--gold); font-style: normal; }
-  .credential-cards { display: flex; flex-direction: column; gap: 16px; margin-top: 40px; }
-  .credential-card {
-    display: flex; align-items: flex-start; gap: 16px; padding: 20px 24px;
-    background: var(--dark-3); border: 1px solid rgba(184,150,12,0.15);
-    border-left: 3px solid var(--gold); transition: border-color 0.3s;
-  }
-  .credential-card:hover { border-color: var(--gold-light); }
-  .credential-card i { color: var(--gold); font-size: 18px; margin-top: 2px; flex-shrink: 0; }
-  .credential-card h4 { font-size: 12px; font-weight: 600; letter-spacing: 1px; color: var(--gold); text-transform: uppercase; margin-bottom: 5px; }
-  .credential-card p { font-size: 13px; color: var(--muted); line-height: 1.6; margin: 0; }
+  .scroll-hint { position: absolute; bottom: 36px; left: 50%; transform: translateX(-50%); z-index: 10; display: flex; flex-direction: column; align-items: center; gap: 10px; color: var(--muted); font-size: 10px; letter-spacing: 2px; text-transform: uppercase; }
+  .scroll-line { width: 1px; height: 50px; background: linear-gradient(to bottom, var(--gold), transparent); animation: scroll-anim 2s ease-in-out infinite; }
+  @keyframes scroll-anim { 0%,100%{opacity:1} 50%{opacity:0.3} }
 
-  /* ── MISSION SECTION ── */
-  #mission { padding: 120px 0; background: var(--dark); }
-  .mission-intro { max-width: 700px; margin-bottom: 70px; }
-  .mission-intro p { color: var(--light-text); font-size: 16px; line-height: 1.9; margin-top: 20px; }
-  .mission-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: rgba(184,150,12,0.1); }
-  .mission-card {
-    background: var(--dark-2); padding: 48px 36px;
-    position: relative; overflow: hidden; transition: all 0.4s;
-  }
-  .mission-card::before {
-    content: ''; position: absolute; bottom: 0; left: 0;
-    width: 100%; height: 3px; background: var(--gold);
-    transform: scaleX(0); transform-origin: left; transition: transform 0.4s;
-  }
-  .mission-card:hover { background: var(--dark-3); transform: translateY(-4px); }
-  .mission-card:hover::before { transform: scaleX(1); }
-  .mission-num {
-    font-family: 'Cormorant Garamond', serif; font-size: 56px;
-    font-weight: 300; color: rgba(184,150,12,0.08); line-height: 1;
-    position: absolute; top: 16px; right: 20px;
-  }
-  .mission-icon {
-    width: 52px; height: 52px; background: rgba(184,150,12,0.1);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 20px; color: var(--gold); margin-bottom: 22px; transition: all 0.3s;
-  }
-  .mission-card:hover .mission-icon { background: var(--gold); color: var(--dark); }
-  .mission-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 500; color: var(--white); margin-bottom: 14px; }
-  .mission-card p { color: var(--muted); font-size: 14px; line-height: 1.8; }
+  /* SECTIONS */
+  .section { padding: 100px 0; position: relative; z-index: 1; }
+  .section-inner { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+  .section-label { display: inline-flex; align-items: center; gap: 12px; font-size: 10.5px; font-weight: 600; letter-spacing: 3.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+  .section-label::before { content: ''; width: 30px; height: 1px; background: var(--gold); }
+  .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(34px, 4vw, 52px); font-weight: 300; line-height: 1.1; color: var(--white); }
+  .section-title em { font-style: italic; color: var(--gold-light); }
+  .section-divider { width: 50px; height: 1px; background: var(--gold); margin: 20px 0 40px; }
 
-  /* ── GOVERNANCE SECTION ── */
-  #governance { padding: 120px 0; background: var(--dark-3); }
-  .governance-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
-  .governance-intro p { color: var(--light-text); font-size: 15px; line-height: 1.9; margin-top: 20px; }
-  .governance-pillars { display: flex; flex-direction: column; gap: 1px; background: rgba(184,150,12,0.1); margin-top: 40px; }
-  .governance-pillar { background: var(--dark); padding: 28px 32px; display: flex; align-items: flex-start; gap: 20px; transition: background 0.3s; }
-  .governance-pillar:hover { background: var(--dark-2); }
-  .pillar-num {
-    font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 700;
-    color: rgba(184,150,12,0.25); line-height: 1; flex-shrink: 0; width: 40px; transition: color 0.3s;
-  }
-  .governance-pillar:hover .pillar-num { color: var(--gold); }
-  .pillar-content h4 { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 500; color: var(--white); margin-bottom: 8px; }
-  .pillar-content p { font-size: 13px; color: var(--muted); line-height: 1.7; }
-  .governance-visual {
-    background: var(--dark-2); border: 1px solid rgba(184,150,12,0.2);
-    box-shadow: 0 20px 60px rgba(0,0,0,0.4); position: relative; overflow: hidden;
-  }
-  .governance-visual::before {
-    content: ''; position: absolute; top: 0; left: 0; right: 0;
-    height: 3px; background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold));
-  }
-  .governance-visual-inner { padding: 48px 40px; }
-  .governance-visual h3 { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 300; color: var(--white); margin-bottom: 8px; }
-  .governance-visual h3 em { font-style: italic; color: var(--gold-light); }
-  .governance-visual .sub { font-size: 12px; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 36px; }
-  .org-structure { display: flex; flex-direction: column; gap: 3px; }
-  .org-level {
-    background: var(--dark-3); padding: 16px 20px; display: flex; align-items: center; gap: 14px;
-    border-left: 3px solid transparent; transition: all 0.3s;
-  }
-  .org-level:hover { border-left-color: var(--gold); background: var(--dark-4); }
-  .org-level.top { border-left-color: var(--gold); }
-  .org-level i { color: var(--gold); font-size: 14px; flex-shrink: 0; }
-  .org-level .title { font-size: 13px; font-weight: 600; color: var(--white); }
-  .org-level .desc { font-size: 11px; color: var(--muted); margin-top: 2px; }
-  .org-connector { width: 2px; height: 20px; background: rgba(184,150,12,0.2); margin-left: 30px; }
+  .fade-up { opacity: 0; transform: translateY(28px); transition: opacity 0.75s ease, transform 0.75s ease; }
+  .fade-up.visible { opacity: 1; transform: translateY(0); }
+  .delay-1 { transition-delay: 0.1s; } .delay-2 { transition-delay: 0.2s; } .delay-3 { transition-delay: 0.3s; }
 
-  /* ── GET INVOLVED ── */
-  #involved { padding: 120px 0; background: var(--dark-2); position: relative; overflow: hidden; }
-  .involved-bg-glow {
-    position: absolute; bottom: -300px; left: 50%; transform: translateX(-50%);
-    width: 800px; height: 800px; border-radius: 50%;
-    background: radial-gradient(circle, rgba(184,150,12,0.06) 0%, transparent 70%);
-    pointer-events: none;
-  }
-  .involved-inner { position: relative; z-index: 1; text-align: center; max-width: 800px; margin: 0 auto; }
-  .involved-inner > p { color: var(--light-text); font-size: 16px; line-height: 1.9; margin: 24px 0 50px; }
-  .involved-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: rgba(184,150,12,0.1); margin-bottom: 60px; text-align: left; }
-  .involved-card { background: var(--dark-3); padding: 36px 30px; transition: background 0.3s; }
-  .involved-card:hover { background: var(--dark-4); }
-  .involved-card i { font-size: 24px; color: var(--gold); margin-bottom: 16px; display: block; }
-  .involved-card h4 { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 500; color: var(--white); margin-bottom: 10px; }
-  .involved-card p { font-size: 13px; color: var(--muted); line-height: 1.7; }
-  .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
-  .btn-primary-gold {
-    background: var(--gold); color: var(--dark); padding: 16px 40px; font-size: 12px; font-weight: 600;
-    letter-spacing: 2px; text-transform: uppercase; text-decoration: none;
-    display: inline-flex; align-items: center; gap: 10px; transition: all 0.3s; font-family: 'Outfit', sans-serif;
-  }
-  .btn-primary-gold:hover { background: var(--gold-light); transform: translateY(-2px); }
-  .btn-outline-gold {
-    background: transparent; color: var(--white); padding: 16px 40px; font-size: 12px; font-weight: 500;
-    letter-spacing: 2px; text-transform: uppercase; text-decoration: none;
-    display: inline-flex; align-items: center; gap: 10px;
-    border: 1px solid rgba(255,255,255,0.25); transition: all 0.3s; font-family: 'Outfit', sans-serif;
-  }
-  .btn-outline-gold:hover { border-color: var(--gold); color: var(--gold); }
+  /* REGISTRATION */
+  #registration { background: var(--dark-2); border-top: 1px solid rgba(184,150,12,0.1); border-bottom: 1px solid rgba(184,150,12,0.1); }
+  .reg-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: rgba(184,150,12,0.1); }
+  .reg-card { background: var(--dark-2); padding: 36px 32px; position: relative; overflow: hidden; transition: background 0.3s; }
+  .reg-card:hover { background: var(--dark-3); }
+  .reg-card::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 0; background: var(--gold); transition: height 0.4s; }
+  .reg-card:hover::before { height: 100%; }
+  .reg-icon { font-size: 22px; color: var(--gold); margin-bottom: 20px; opacity: 0.8; }
+  .reg-key { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+  .reg-val { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 400; color: var(--white); line-height: 1.3; }
+  .reg-val em { font-style: normal; color: var(--gold); }
+  .reg-sub { font-size: 11px; color: var(--muted); margin-top: 6px; line-height: 1.5; }
 
-  /* ── FOOTER ── */
-  .page-footer { background: var(--dark); border-top: 1px solid rgba(184,150,12,0.15); padding: 30px 0; }
-  .page-footer .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
-  .page-footer p { font-size: 12px; color: var(--muted); }
-  .page-footer a { color: var(--gold); text-decoration: none; font-size: 12px; display: inline-flex; align-items: center; gap: 8px; transition: gap 0.3s; }
-  .page-footer a:hover { gap: 12px; }
+  /* CONTACT */
+  #contact { background: var(--dark); }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+  .contact-intro { font-size: 15px; color: var(--light-text); line-height: 1.8; margin-bottom: 40px; }
+  .contact-block { margin-bottom: 28px; }
+  .contact-block-label { font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+  .contact-block-val { font-size: 15px; color: var(--light-text); line-height: 1.6; }
+  .contact-block-val strong { color: var(--white); font-weight: 400; }
+  .contact-map-box { background: var(--dark-3); border: 1px solid rgba(184,150,12,0.15); padding: 48px 36px; display: flex; flex-direction: column; gap: 28px; position: relative; overflow: hidden; }
+  .contact-map-box::before { content: ''; position: absolute; inset: 0; background: linear-gradient(rgba(184,150,12,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(184,150,12,0.03) 1px, transparent 1px); background-size: 40px 40px; }
+  .addr-item { position: relative; z-index: 1; padding: 24px; background: rgba(0,0,0,0.3); border: 1px solid rgba(184,150,12,0.1); transition: border-color 0.3s; }
+  .addr-item:hover { border-color: rgba(184,150,12,0.4); }
+  .addr-type { font-size: 9.5px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+  .addr-text { font-family: 'Cormorant Garamond', serif; font-size: 19px; color: var(--white); line-height: 1.4; }
+  .addr-detail { font-size: 11px; color: var(--muted); margin-top: 6px; }
+
+  /* CERTIFICATES */
+  #certificates { background: var(--dark-3); border-top: 1px solid rgba(184,150,12,0.1); }
+  .cert-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .cert-card { background: var(--dark-2); border: 1px solid rgba(184,150,12,0.15); padding: 36px; position: relative; overflow: hidden; transition: all 0.35s; }
+  .cert-card:hover { border-color: rgba(184,150,12,0.5); transform: translateY(-4px); }
+  .cert-card::after { content: ''; position: absolute; bottom: 0; right: 0; width: 80px; height: 80px; background: radial-gradient(circle, rgba(184,150,12,0.08), transparent 70%); transition: all 0.35s; }
+  .cert-card:hover::after { width: 150px; height: 150px; }
+  .cert-icon { width: 50px; height: 50px; border: 1px solid rgba(184,150,12,0.3); display: flex; align-items: center; justify-content: center; font-size: 18px; color: var(--gold); margin-bottom: 24px; }
+  .cert-title { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 400; color: var(--white); margin-bottom: 10px; line-height: 1.3; }
+  .cert-issuer { font-size: 11px; color: var(--muted); line-height: 1.8; }
+  .cert-issuer strong { color: var(--gold); font-weight: 500; }
+  .cert-ribbon { position: absolute; top: 20px; right: 20px; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); border: 1px solid rgba(184,150,12,0.3); padding: 3px 10px; }
+
+  /* FOOTER */
+  footer { background: var(--dark-2); border-top: 1px solid rgba(184,150,12,0.2); padding: 40px 0; position: relative; z-index: 1; }
+  .footer-inner { max-width: 1200px; margin: 0 auto; padding: 0 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+  .footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 300; color: var(--white); }
+  .footer-logo em { font-style: italic; color: var(--gold); }
+  .footer-copy { font-size: 11px; color: var(--muted); }
+  .footer-reg { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(184,150,12,0.5); padding: 4px 12px; border: 1px solid rgba(184,150,12,0.15); }
+
+  /* FLOATING BAR */
+  #floatbar { position: fixed; bottom: 32px; left: 50%; transform: translateX(-50%) translateY(20px); z-index: 100; background: rgba(20,20,20,0.95); backdrop-filter: blur(20px); border: 1px solid rgba(184,150,12,0.25); padding: 14px 30px; display: flex; align-items: center; gap: 28px; opacity: 0; transition: all 0.5s; pointer-events: none; }
+  #floatbar.visible { opacity: 1; transform: translateX(-50%) translateY(0); pointer-events: all; }
+  .fb-name { font-family: 'Cormorant Garamond', serif; font-size: 16px; font-weight: 400; color: var(--white); }
+  .fb-sep { width: 1px; height: 20px; background: rgba(184,150,12,0.3); }
+  .fb-info { font-size: 10px; letter-spacing: 1.5px; color: var(--muted); text-transform: uppercase; }
+  .fb-info strong { color: var(--gold); }
 
   /* ── BACK TO TOP ── */
   #back-top {
@@ -282,341 +170,331 @@
     width: 48px; height: 48px; background: var(--gold);
     display: flex; align-items: center; justify-content: center;
     color: var(--dark); font-size: 16px; cursor: pointer;
-    opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(12px);
-    transition: opacity 0.35s, visibility 0.35s, transform 0.35s, background 0.3s;
+    opacity: 0; visibility: hidden; pointer-events: none;
+    transform: translateY(12px);
+    transition: opacity 0.35s ease, visibility 0.35s ease, transform 0.35s ease, background 0.3s;
     text-decoration: none;
   }
   #back-top.visible { opacity: 1; visibility: visible; pointer-events: all; transform: translateY(0); }
-  #back-top:hover { background: var(--gold-light); transform: translateY(-3px); }
+  #back-top:hover { background: var(--gold-light); transform: translateY(-3px) !important; }
 
-  /* ── SCROLL ANIMATIONS ── */
-  .fade-up { opacity: 0; transform: translateY(36px); transition: opacity 0.8s ease, transform 0.8s ease; }
-  .fade-up.visible { opacity: 1; transform: translateY(0); }
-  .fade-up:nth-child(2) { transition-delay: 0.12s; }
-  .fade-up:nth-child(3) { transition-delay: 0.24s; }
-  .fade-up:nth-child(4) { transition-delay: 0.36s; }
+  /* ── BACK TO HOMEPAGE BANNER ── */
+  #back-home {
+    background: var(--dark-2);
+    border-top: 1px solid rgba(184,150,12,0.2);
+    padding: 48px 0;
+    position: relative; z-index: 1;
+    text-align: center;
+  }
+  #back-home::before {
+    content: '';
+    position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+    width: 60px; height: 2px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+  .back-home-inner { max-width: 1200px; margin: 0 auto; padding: 0 40px; display: flex; flex-direction: column; align-items: center; gap: 20px; }
+  .back-home-label { font-size: 10.5px; font-weight: 600; letter-spacing: 3.5px; text-transform: uppercase; color: var(--gold); display: flex; align-items: center; gap: 12px; }
+  .back-home-label::before, .back-home-label::after { content: ''; width: 30px; height: 1px; background: var(--gold); }
+  .back-home-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(24px, 3vw, 36px); font-weight: 300; color: var(--white); }
+  .back-home-title em { font-style: italic; color: var(--gold-light); }
+  .back-home-btn {
+    display: inline-flex; align-items: center; gap: 12px;
+    background: var(--gold); color: var(--dark);
+    padding: 14px 36px; font-size: 12px; font-weight: 600;
+    letter-spacing: 2px; text-transform: uppercase;
+    text-decoration: none; transition: all 0.3s; margin-top: 8px;
+    border: none; cursor: pointer; font-family: 'Outfit', sans-serif;
+  }
+  .back-home-btn:hover { background: var(--gold-light); transform: translateY(-2px); }
+  .back-home-btn i { font-size: 13px; transition: transform 0.3s; }
+  .back-home-btn:hover i { transform: translateX(-4px); }
 
-  /* ── RESPONSIVE ── */
-  @media (max-width: 900px) {
-    .about-grid, .governance-grid { grid-template-columns: 1fr; gap: 50px; }
-    .mission-grid { grid-template-columns: repeat(2, 1fr); }
-    .involved-cards { grid-template-columns: 1fr; }
-    .reg-strip-inner { grid-template-columns: 1fr; }
-    .reg-item { border-right: none; border-bottom: 1px solid rgba(0,0,0,0.15); }
-    .reg-item:last-child { border-bottom: none; }
-    .hero-stats { gap: 32px; }
-    .container { padding: 0 24px; }
+  /* ENTRANCE ANIMS */
+  .hero-left > * { opacity: 0; transform: translateY(24px); animation: fadeUp 0.8s forwards; }
+  .hero-eyebrow { animation-delay: 0.2s; } .hero-name { animation-delay: 0.4s; }
+  .hero-divider { animation-delay: 0.6s; } .hero-designation { animation-delay: 0.65s; }
+  .hero-firm { animation-delay: 0.7s; } .hero-tags { animation-delay: 0.8s; } .hero-stats { animation-delay: 0.95s; }
+  .hero-card { opacity: 0; animation: fadeUp 0.9s 0.5s forwards; }
+  @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+
+  /* RESPONSIVE */
+  @media (max-width: 960px) {
+    .hero-content { grid-template-columns: 1fr; gap: 50px; padding: 100px 24px 60px; }
+    .hero-card { order: -1; }
+    .reg-grid { grid-template-columns: 1fr 1fr; }
+    .contact-grid, .cert-grid { grid-template-columns: 1fr; }
+    .tb-left { display: none; }
+    #floatbar { display: none; }
   }
   @media (max-width: 600px) {
-    .mission-grid, .involved-cards { grid-template-columns: 1fr; }
-    .cta-buttons { flex-direction: column; align-items: center; }
-    .hero-content { padding: 80px 0 70px; }
-    .page-footer .container { flex-direction: column; align-items: flex-start; }
+    .reg-grid { grid-template-columns: 1fr; }
+    .section-inner { padding: 0 20px; }
+    .hero-stats { gap: 24px; }
+    .h-stat-num { font-size: 36px; }
+    #top-bar .inner { flex-direction: column; gap: 8px; }
   }
 </style>
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav id="navbar">
-  <div class="container">
-    <a href="index.html" class="nav-logo">
-      <img src="img/logo.png" alt="ELS Nepal Logo">
-      <div class="nav-logo-text">
-        <span class="en-name">Environment Law Society Nepal</span>
-        <span class="ne-name">वातावरण कानून समाज नेपाल</span>
-      </div>
-    </a>
-    <div class="nav-right">
-      <button class="lang-btn" id="langToggleBtn" onclick="toggleLang()">
-        <span id="langLabel">NEP</span>
-      </button>
-      <a href="index.html" class="nav-back" id="navBackLink">
-        <i class="fas fa-arrow-left"></i>
-        <span data-key="nav_back">Back to Home</span>
-      </a>
+<!-- TOP BAR -->
+<div id="top-bar">
+  <div class="inner">
+    <div class="tb-left">
+      <div class="tb-item"><i class="fas fa-landmark"></i><span data-key="tb_bar">Nepal Bar Council Reg. No.&nbsp;<strong style="color:var(--gold)">179</strong></span></div>
+      <div class="tb-item"><i class="fas fa-file-invoice"></i><span data-key="tb_lic">License No.&nbsp;<strong style="color:var(--gold)">10043</strong></span></div>
+      <div class="tb-item"><i class="fas fa-calendar-check"></i><span><span class="validity-dot"></span><span data-key="tb_valid">Valid until 2028/04/11</span></span></div>
+    </div>
+    <div class="tb-right">
+      <span class="pan-badge">PAN: <span data-key="pan_num">304012875</span></span>
+      <span class="pan-badge" style="color:var(--light-text);border-color:rgba(255,255,255,0.1)" data-key="tb_reg">Reg. 2013/04/12</span>
+      <button class="lang-btn" onclick="toggleLang()"><span id="langLabel">NEP</span></button>
     </div>
   </div>
-</nav>
+</div>
 
 <!-- HERO -->
 <section id="hero">
   <div class="hero-bg"></div>
-  <div class="hero-pattern"></div>
-  <div class="hero-glow"></div>
-  <div class="container">
-    <div class="hero-content">
-      <div class="hero-badge">
-        <i class="fas fa-leaf"></i>
-        <span data-key="hero_badge">Est. 2077 BS · Kathmandu, Nepal</span>
-      </div>
-      <h1 class="hero-title" data-key="hero_title">
-        Environment Law Society Nepal:<br>
-        <em>Championing Justice for Our Planet</em>
-      </h1>
-      <p class="hero-subtitle" data-key="hero_subtitle">
-        Since <strong>2077 BS</strong>, we have been at the forefront of environmental advocacy,
-        bridging the gap between legal expertise and sustainable development to protect
-        <strong>Nepal's natural heritage</strong>.
-      </p>
+  <div class="hero-lines"></div>
+  <div class="hero-orb orb-1"></div>
+  <div class="hero-orb orb-2"></div>
+  <div class="hero-content">
+    <div class="hero-left">
+      <div class="hero-eyebrow" data-key="hero_eyebrow">Principal Advocate &nbsp;·&nbsp; ELS Nepal</div>
+      <h1 class="hero-name"><span data-key="hero_firstname">Bishnu Kumar</span><em data-key="hero_surname">Thokar</em></h1>
       <div class="hero-divider"></div>
+      <p class="hero-designation" data-key="hero_desig">Advocate &nbsp;·&nbsp; Chief Consultant Lawyer<br>Vice Chairperson, Environment Law Society Nepal</p>
+      <p class="hero-firm" data-key="hero_firm"><strong>Kanooni Samaj Tatha Anusandhan Kendra</strong><br>Legal Society and Research Centre &nbsp;·&nbsp; Sole Law Practitioner's Office</p>
+      <div class="hero-tags">
+        <span class="hero-tag">LLB</span>
+        <span class="hero-tag">LLM</span>
+        <span class="hero-tag" data-key="tag_env">Environmental Law</span>
+        <span class="hero-tag" data-key="tag_civil">Civil Litigation</span>
+        <span class="hero-tag" data-key="tag_research">Legal Research</span>
+      </div>
       <div class="hero-stats">
-        <div class="hero-stat">
-          <div class="val">2077</div>
-          <div class="lbl" data-key="stat1_lbl">Founded (BS)</div>
+        <div class="h-stat">
+          <div class="h-stat-num" id="counter-years">0</div>
+          <div class="h-stat-label" data-key="stat_exp">Years Expertise</div>
         </div>
-        <div class="hero-stat">
-          <div class="val">7</div>
-          <div class="lbl" data-key="stat2_lbl">Expert Advocates</div>
+        <div class="h-stat">
+          <div class="h-stat-num" id="counter-lic">0</div>
+          <div class="h-stat-label" data-key="stat_lic">Advocate License</div>
         </div>
-        <div class="hero-stat">
-          <div class="val">1040</div>
-          <div class="lbl" data-key="stat3_lbl">Reg. Number</div>
+        <div class="h-stat">
+          <div class="h-stat-num" id="counter-bar">0</div>
+          <div class="h-stat-label" data-key="stat_bar">Bar Council No.</div>
         </div>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- REGISTRATION STRIP -->
-<section id="reg-strip">
-  <div class="reg-strip-inner container" style="padding-left:40px;padding-right:40px;">
-    <div class="reg-item">
-      <i class="fas fa-stamp"></i>
-      <div>
-        <div class="reg-label" data-key="reg1_label">Registration</div>
-        <div class="reg-value">DAO Kathmandu · Reg. No. 1040</div>
+    <div class="hero-card">
+      <div class="card-label" data-key="card_label">Professional Credentials</div>
+      <div class="cred-row">
+        <span class="cred-key" data-key="ck_desig">Designation</span>
+        <span class="cred-val"><strong data-key="cv_desig">Advocate</strong></span>
       </div>
-    </div>
-    <div class="reg-item">
-      <i class="fas fa-calendar-check"></i>
-      <div>
-        <div class="reg-label" data-key="reg2_label">Date of Registration</div>
-        <div class="reg-value">2077/08/17 BS</div>
+      <div class="cred-row">
+        <span class="cred-key" data-key="ck_qual">Qualification</span>
+        <span class="cred-val"><strong>LLB, LLM</strong></span>
       </div>
-    </div>
-    <div class="reg-item">
-      <i class="fas fa-file-invoice"></i>
-      <div>
-        <div class="reg-label" data-key="reg3_label">Tax Status</div>
-        <div class="reg-value" data-key="reg3_value">PAN Registered · KMC Recognized</div>
+      <div class="cred-row">
+        <span class="cred-key" data-key="ck_lic">License No.</span>
+        <span class="cred-val"><strong class="gold" data-key="cv_lic_num">10043</strong></span>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT US -->
-<section id="about">
-  <div class="container">
-    <div class="about-grid">
-      <div class="about-left fade-up">
-        <div class="section-label" data-key="about_label">Our Story</div>
-        <h2 class="section-title"><span data-key="about_title_1">A Legacy of</span> <em data-key="about_title_em">Integrity</em></h2>
-        <div class="divider"></div>
-        <div class="credential-cards">
-          <div class="credential-card">
-            <i class="fas fa-landmark"></i>
-            <div>
-              <h4 data-key="cred1_title">Government Registered</h4>
-              <p data-key="cred1_desc">Officially registered with the District Administration Office, Kathmandu (Reg No. 1040) on 2077/08/17 BS.</p>
-            </div>
-          </div>
-          <div class="credential-card">
-            <i class="fas fa-city"></i>
-            <div>
-              <h4 data-key="cred2_title">Kathmandu Metropolitan City</h4>
-              <p data-key="cred2_desc">Officially recognized by the Kathmandu Metropolitan City as a legitimate non-profit organization.</p>
-            </div>
-          </div>
-          <div class="credential-card">
-            <i class="fas fa-file-invoice-dollar"></i>
-            <div>
-              <h4 data-key="cred3_title">PAN Registered</h4>
-              <p data-key="cred3_desc">Registered with the tax authorities with a Permanent Account Number, ensuring full fiscal accountability.</p>
-            </div>
-          </div>
-          <div class="credential-card">
-            <i class="fas fa-scroll"></i>
-            <div>
-              <h4 data-key="cred4_title">Ministry Verified Constitution</h4>
-              <p data-key="cred4_desc">Our Constitution (Bidhan) is officially stamped and verified by the Ministry of Home Affairs.</p>
-            </div>
-          </div>
-        </div>
+      <div class="cred-row">
+        <span class="cred-key" data-key="ck_bar">Bar Council Reg.</span>
+        <span class="cred-val"><strong class="gold" data-key="cv_bar_num">No. 179</strong></span>
       </div>
-      <div class="about-right fade-up">
-        <p data-key="about_p1">Founded in the heart of <em>Kathmandu</em>, the Environment Law Society (ELS) Nepal is a premier <strong>non-profit organization</strong> dedicated to environmental protection. Officially registered with the Government of Nepal on <strong>2077/08/17 BS</strong>, we have spent over a decade building a foundation of legal advocacy for the earth.</p>
-        <p data-key="about_p2">We operate with full transparency and are officially recognized by the <strong>Kathmandu Metropolitan City</strong> and the tax authorities with a <em>Permanent Account Number (PAN)</em> registration, ensuring our commitment to professional and fiscal accountability.</p>
-        <p data-key="about_p3">Our society brings together a dedicated group of <strong>seven legal professionals</strong> — practicing advocates and consultant lawyers who collectively unite under the ELS Nepal platform with the shared objective of promoting, advocating for, and strengthening the implementation of environmental law in Nepal.</p>
-        <p data-key="about_p4">Beyond our local impact, we actively welcome collaboration with <strong>legal professionals, conservationists, researchers, and international partners</strong> who share our commitment to environmental protection and sustainable development.</p>
+      <div class="cred-row">
+        <span class="cred-key" data-key="ck_pan">PAN</span>
+        <span class="cred-val"><strong data-key="cv_pan_num">304012875</strong></span>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- MISSION -->
-<section id="mission">
-  <div class="container">
-    <div class="mission-intro fade-up">
-      <div class="section-label" data-key="mission_label">Our Purpose</div>
-      <h2 class="section-title"><span data-key="mission_title_1">Legal Advocacy for a</span> <em data-key="mission_title_em">Greener Future</em></h2>
-      <p data-key="mission_intro_p">Our organization is built on the belief that a sustainable future requires a robust legal framework. As outlined in our Constitution (Bidhan), our core objectives drive every initiative we undertake.</p>
-    </div>
-    <div class="mission-grid">
-      <div class="mission-card fade-up">
-        <div class="mission-num">01</div>
-        <div class="mission-icon"><i class="fas fa-seedling"></i></div>
-        <h3 data-key="mission1_title">Driving Sustainable Development</h3>
-        <p data-key="mission1_desc">Implementing legal strategies that balance progress with environmental preservation, ensuring future generations inherit a thriving Nepal.</p>
+      <div class="cred-row">
+        <span class="cred-key" data-key="ck_reg">Registered</span>
+        <span class="cred-val"><span data-key="cv_reg_ad">2013/04/12</span><br><span style="font-size:11px;color:var(--muted)" data-key="cv_reg_bs">(2069/12/30 B.S.)</span></span>
       </div>
-      <div class="mission-card fade-up">
-        <div class="mission-num">02</div>
-        <div class="mission-icon"><i class="fas fa-globe-asia"></i></div>
-        <h3 data-key="mission2_title">Global &amp; National Collaboration</h3>
-        <p data-key="mission2_desc">Actively coordinating with national government bodies, international organizations, and diplomatic missions to address climate and environmental challenges.</p>
-      </div>
-      <div class="mission-card fade-up">
-        <div class="mission-num">03</div>
-        <div class="mission-icon"><i class="fas fa-balance-scale"></i></div>
-        <h3 data-key="mission3_title">Legal Empowerment</h3>
-        <p data-key="mission3_desc">Utilizing the law as a primary tool to safeguard natural resources and ensure environmental justice for all citizens of Nepal.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- GOVERNANCE -->
-<section id="governance">
-  <div class="container">
-    <div class="governance-grid">
-      <div class="governance-intro fade-up">
-        <div class="section-label" data-key="gov_label">Structure &amp; Trust</div>
-        <h2 class="section-title"><span data-key="gov_title_1">Why</span> <em data-key="gov_title_em">Partner With Us?</em></h2>
-        <div class="divider"></div>
-        <p data-key="gov_intro_p">When you engage with ELS Nepal, you are partnering with a structurally sound and legally vetted institution. Every layer of our governance is designed to ensure transparency, accountability, and principled decision-making.</p>
-        <div class="governance-pillars">
-          <div class="governance-pillar">
-            <div class="pillar-num">01</div>
-            <div class="pillar-content">
-              <h4 data-key="pillar1_title">Strict Constitutional Adherence</h4>
-              <p data-key="pillar1_desc">Every action we take is guided by our approved Constitution (Bidhan), officially stamped and verified by the Ministry of Home Affairs.</p>
-            </div>
-          </div>
-          <div class="governance-pillar">
-            <div class="pillar-num">02</div>
-            <div class="pillar-content">
-              <h4 data-key="pillar2_title">Expert Leadership</h4>
-              <p data-key="pillar2_desc">Our society is governed by a dedicated Executive Committee and a General Assembly, ensuring diverse perspectives and democratic decision-making.</p>
-            </div>
-          </div>
-          <div class="governance-pillar">
-            <div class="pillar-num">03</div>
-            <div class="pillar-content">
-              <h4 data-key="pillar3_title">Proven Foundation</h4>
-              <p data-key="pillar3_desc">Our founding members established this society with a clear, legally-binding vision for a sustainable Nepal that guides all operations.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="governance-right fade-up">
-        <div class="governance-visual">
-          <div class="governance-visual-inner">
-            <h3><span data-key="org_title_1">Organizational</span> <em data-key="org_title_em">Structure</em></h3>
-            <p class="sub" data-key="org_sub">ELS Nepal Governance Framework</p>
-            <div class="org-structure">
-              <div class="org-level top">
-                <i class="fas fa-users"></i>
-                <div>
-                  <div class="title" data-key="org1_title">General Assembly</div>
-                  <div class="desc" data-key="org1_desc">Supreme decision-making body of all members</div>
-                </div>
-              </div>
-              <div class="org-connector"></div>
-              <div class="org-level">
-                <i class="fas fa-user-tie"></i>
-                <div>
-                  <div class="title" data-key="org2_title">Executive Committee</div>
-                  <div class="desc" data-key="org2_desc">Elected leadership governing daily operations</div>
-                </div>
-              </div>
-              <div class="org-connector"></div>
-              <div class="org-level">
-                <i class="fas fa-crown"></i>
-                <div>
-                  <div class="title" data-key="org3_title">Chairperson</div>
-                  <div class="desc" data-key="org3_desc">Adv. Padam Bahadur Shrestha — President</div>
-                </div>
-              </div>
-              <div class="org-connector"></div>
-              <div class="org-level">
-                <i class="fas fa-gavel"></i>
-                <div>
-                  <div class="title" data-key="org4_title">Legal Advocates</div>
-                  <div class="desc" data-key="org4_desc">7 expert members across all legal domains</div>
-                </div>
-              </div>
-              <div class="org-connector"></div>
-              <div class="org-level">
-                <i class="fas fa-scroll"></i>
-                <div>
-                  <div class="title" data-key="org5_title">Constitution (Bidhan)</div>
-                  <div class="desc" data-key="org5_desc">Ministry of Home Affairs verified &amp; stamped</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- GET INVOLVED -->
-<section id="involved">
-  <div class="involved-bg-glow"></div>
-  <div class="container">
-    <div class="involved-inner">
-      <div class="section-label" style="justify-content:center;">
-        <span style="display:inline-flex;align-items:center;gap:12px;">
-          <span style="width:30px;height:1px;background:var(--gold);display:inline-block;"></span>
-          <span data-key="involved_label">Join the Movement</span>
-          <span style="width:30px;height:1px;background:var(--gold);display:inline-block;"></span>
+      <div class="cred-row">
+        <span class="cred-key" data-key="ck_valid">Validity</span>
+        <span class="cred-val">
+          <span class="valid-badge"><span class="validity-dot" style="width:5px;height:5px"></span><span data-key="cv_active">Active</span></span><br>
+          <span style="font-size:11px;color:var(--muted);margin-top:4px;display:block" data-key="cv_until">Until 2028/04/11 (2084/12/29 B.S.)</span>
         </span>
       </div>
-      <h2 class="section-title fade-up"><span data-key="involved_title_1">Join the Movement for</span> <em data-key="involved_title_em">Environmental Justice</em></h2>
-      <p class="fade-up" data-key="involved_intro_p">Whether you are a legal professional, a conservationist, or an international partner, the Environment Law Society Nepal invites you to collaborate. Together, we can ensure that the laws of today protect the world of tomorrow.</p>
-      <div class="involved-cards">
-        <div class="involved-card fade-up">
-          <i class="fas fa-user-tie"></i>
-          <h4 data-key="card1_title">Legal Professionals</h4>
-          <p data-key="card1_desc">Join our growing network of advocates committed to advancing environmental jurisprudence in Nepal.</p>
-        </div>
-        <div class="involved-card fade-up">
-          <i class="fas fa-leaf"></i>
-          <h4 data-key="card2_title">Conservationists</h4>
-          <p data-key="card2_desc">Partner with us to translate conservation goals into enforceable legal frameworks that protect Nepal's ecosystems.</p>
-        </div>
-        <div class="involved-card fade-up">
-          <i class="fas fa-globe"></i>
-          <h4 data-key="card3_title">International Partners</h4>
-          <p data-key="card3_desc">Collaborate on cross-border environmental initiatives and bring global best practices to Nepal's legal landscape.</p>
-        </div>
-      </div>
-      <div class="cta-buttons fade-up">
-        <a href="index.html#contact" class="btn-primary-gold"><span data-key="cta1">Get In Touch</span> <i class="fas fa-arrow-right"></i></a>
-        <a href="index.html" class="btn-outline-gold"><i class="fas fa-arrow-left"></i> <span data-key="cta2">Return to Main Site</span></a>
+      <div class="cred-row">
+        <span class="cred-key" data-key="ck_regu">Regulation</span>
+        <span class="cred-val" style="font-size:11px;color:var(--muted)" data-key="cv_regu">Law Practitioners Office Registration and Operation Regulation, 2013</span>
       </div>
     </div>
+  </div>
+  <div class="scroll-hint"><div class="scroll-line"></div><span data-key="scroll">Scroll</span></div>
+</section>
+
+<!-- REGISTRATION -->
+<section class="section" id="registration">
+  <div class="section-inner">
+    <div class="fade-up">
+      <div class="section-label" data-key="reg_label">Registration &amp; Compliance</div>
+      <h2 class="section-title"><span data-key="reg_title">Legal </span><em data-key="reg_title_em">Credentials</em></h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="reg-grid">
+      <div class="reg-card fade-up delay-1">
+        <div class="reg-icon"><i class="fas fa-landmark"></i></div>
+        <div class="reg-key" data-key="rc1_key">Nepal Bar Council</div>
+        <div class="reg-val" data-key="rc1_val">Registration No. <em>179</em></div>
+        <div class="reg-sub" data-key="rc1_sub">Issued by Nepal Bar Council, Kupondole, Lalitpur</div>
+      </div>
+      <div class="reg-card fade-up delay-2">
+        <div class="reg-icon"><i class="fas fa-id-badge"></i></div>
+        <div class="reg-key" data-key="rc2_key">Advocate License</div>
+        <div class="reg-val" data-key="rc2_val">No. <em>10043</em></div>
+        <div class="reg-sub" data-key="rc2_sub">Law Practitioners Office Registration</div>
+      </div>
+      <div class="reg-card fade-up delay-3">
+        <div class="reg-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+        <div class="reg-key" data-key="rc3_key">PAN Number</div>
+        <div class="reg-val" data-key="rc3_val"><em>304012875</em></div>
+        <div class="reg-sub" data-key="rc3_sub">Inland Revenue Office, Kathmandu 1 (Tax Jurisdiction)</div>
+      </div>
+      <div class="reg-card fade-up delay-1">
+        <div class="reg-icon"><i class="fas fa-calendar-plus"></i></div>
+        <div class="reg-key" data-key="rc4_key">Registration Date</div>
+        <div class="reg-val" data-key="rc4_val"><em>2013</em>/04/12</div>
+        <div class="reg-sub" data-key="rc4_sub">2069/12/30 Bikram Sambat</div>
+      </div>
+      <div class="reg-card fade-up delay-2">
+        <div class="reg-icon"><i class="fas fa-shield-halved"></i></div>
+        <div class="reg-key" data-key="rc5_key">Valid Until</div>
+        <div class="reg-val" data-key="rc5_val"><em>2028</em>/04/11</div>
+        <div class="reg-sub" data-key="rc5_sub">2084/12/29 B.S. — Currently Active</div>
+      </div>
+      <div class="reg-card fade-up delay-3">
+        <div class="reg-icon"><i class="fas fa-scale-balanced"></i></div>
+        <div class="reg-key" data-key="rc6_key">Regulatory Authority</div>
+        <div class="reg-val" style="font-size:16px" data-key="rc6_val">Nepal Bar <em>Council</em></div>
+        <div class="reg-sub" data-key="rc6_sub">Under Law Practitioners Office Registration and Operation Regulation, 2013</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="section-inner">
+    <div class="fade-up">
+      <div class="section-label" data-key="con_label">Contact &amp; Location</div>
+      <h2 class="section-title"><span data-key="con_title">Office</span> <em data-key="con_title_em">Addresses</em></h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="fade-up delay-1">
+        <div class="contact-block">
+          <div class="contact-block-label"><i class="fas fa-user-tie" style="margin-right:7px;color:var(--gold)"></i><span data-key="con_adv_lbl">Principal Advocate</span></div>
+          <div class="contact-block-val"><strong data-key="con_adv_val">Bishnu Kumar Thokar</strong></div>
+        </div>
+        <div class="contact-block">
+          <div class="contact-block-label"><i class="fas fa-building" style="margin-right:7px;color:var(--gold)"></i><span data-key="con_firm_lbl">Firm Name</span></div>
+          <div class="contact-block-val">
+            <strong data-key="con_firm_val">Kanooni Samaj Tatha Anusandhan Kendra</strong><br>
+            <span style="font-size:12px;color:var(--muted)" data-key="con_firm_sub">Legal Society and Research Centre</span>
+          </div>
+        </div>
+        <div class="contact-block">
+          <div class="contact-block-label"><i class="fas fa-leaf" style="margin-right:7px;color:var(--gold)"></i><span data-key="con_role_lbl">Professional Role</span></div>
+          <div class="contact-block-val">
+            <strong data-key="con_role_val">Vice Chairperson</strong><br>
+            <span style="font-size:12px;color:var(--muted)" data-key="con_role_sub">Environment Law Society Nepal (ELS Nepal)</span>
+          </div>
+        </div>
+        <div class="contact-block">
+          <div class="contact-block-label"><i class="fas fa-receipt" style="margin-right:7px;color:var(--gold)"></i><span data-key="con_tax_lbl">Tax Jurisdiction</span></div>
+          <div class="contact-block-val" data-key="con_tax_val">Inland Revenue Office (IRO), Kathmandu 1</div>
+        </div>
+      </div>
+      <div class="fade-up delay-2">
+        <div class="contact-map-box">
+          <div class="addr-item">
+            <div class="addr-type"><i class="fas fa-building" style="font-size:10px;color:var(--gold);margin-right:6px"></i><span data-key="addr1_type">Registered Office</span></div>
+            <div class="addr-text" data-key="addr1_text">Gokarneshwor Municipality-6<br>Kathmandu, Nepal</div>
+            <div class="addr-detail" data-key="addr1_detail">Official registered address per Nepal Bar Council records</div>
+          </div>
+          <div class="addr-item">
+            <div class="addr-type"><i class="fas fa-briefcase" style="font-size:10px;color:var(--gold);margin-right:6px"></i><span data-key="addr2_type">Operating Office</span></div>
+            <div class="addr-text" data-key="addr2_text">Anamnagar<br>Kathmandu-29, Nepal</div>
+            <div class="addr-detail" data-key="addr2_detail">Primary practice &amp; consultation office</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section class="section" id="certificates">
+  <div class="section-inner">
+    <div class="fade-up">
+      <div class="section-label" data-key="cert_label">Legal Certifications</div>
+      <h2 class="section-title"><span data-key="cert_title">Issued</span> <em data-key="cert_title_em">Certificates</em></h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="cert-grid">
+      <div class="cert-card fade-up delay-1">
+        <div class="cert-ribbon" data-key="cert_ribbon">Official</div>
+        <div class="cert-icon"><i class="fas fa-scroll"></i></div>
+        <div class="cert-title" data-key="cert1_title">Certificate of Registration of Law Practitioner's Office</div>
+        <div class="cert-issuer">
+          <span data-key="cert1_by">Issued by</span> <strong data-key="cert1_issuer">Nepal Bar Council</strong><br>
+          <span data-key="cert1_loc">Kupondole, Lalitpur, Nepal</span><br>
+          <span style="color:var(--muted)" data-key="cert1_ref">License No. 10043 &nbsp;·&nbsp; Reg. No. 179</span>
+        </div>
+      </div>
+      <div class="cert-card fade-up delay-2">
+        <div class="cert-ribbon" data-key="cert_ribbon">Official</div>
+        <div class="cert-icon"><i class="fas fa-file-certificate"></i></div>
+        <div class="cert-title" data-key="cert2_title">PAN Registration Certificate</div>
+        <div class="cert-issuer">
+          <span data-key="cert2_by">Issued by</span> <strong data-key="cert2_issuer">Government of Nepal</strong><br>
+          <span data-key="cert2_loc">Ministry of Finance, Department of Inland Revenue</span><br>
+          <span style="color:var(--muted)" data-key="cert2_ref">PAN: 304012875 &nbsp;·&nbsp; IRO Kathmandu 1</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BACK TO HOMEPAGE -->
+<section id="back-home">
+  <div class="back-home-inner">
+    <div class="back-home-label" data-key="bh_label">Environment Law Society Nepal</div>
+    <h2 class="back-home-title" data-key="bh_title">Return to the <em data-key="bh_title_em">Main Website</em></h2>
+    <a href="index.html" class="back-home-btn">
+      <i class="fas fa-arrow-left"></i>
+      <span data-key="bh_btn">Back to ELS Nepal Homepage</span>
+    </a>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="page-footer">
-  <div class="container">
-    <p data-key="footer_copy">© Environment Law Society Nepal · All Rights Reserved</p>
-    <a href="index.html"><i class="fas fa-arrow-left"></i> <span data-key="footer_back">Back to Main Site</span></a>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo"><span data-key="footer_firstname">Bishnu Kumar</span> <em data-key="footer_surname">Thokar</em></div>
+    <div class="footer-copy" data-key="footer_copy">© 2025 Kanooni Samaj Tatha Anusandhan Kendra &nbsp;·&nbsp; All Rights Reserved</div>
+    <div class="footer-reg" data-key="footer_reg">ELS Nepal Vice Chairperson</div>
   </div>
 </footer>
+
+<!-- FLOATING BAR -->
+<div id="floatbar">
+  <div class="fb-name" data-key="fb_name">Bishnu Kumar Thokar</div>
+  <div class="fb-sep"></div>
+  <div class="fb-info"><span data-key="fb_lic">License</span> <strong data-key="fb_lic_num">#10043</strong></div>
+  <div class="fb-sep"></div>
+  <div class="fb-info"><span data-key="fb_bar">Bar Council</span> <strong data-key="fb_bar_num">#179</strong></div>
+  <div class="fb-sep"></div>
+  <div class="fb-info"><span class="validity-dot" style="width:6px;height:6px;margin-right:4px;vertical-align:middle"></span><strong style="color:#2ECC71" data-key="fb_status">Active</strong></div>
+</div>
 
 <!-- BACK TO TOP -->
 <a href="#" id="back-top"><i class="fas fa-chevron-up"></i></a>
@@ -627,175 +505,202 @@
 // =============================================
 const translations = {
   en: {
-    nav_back: "Back to Home",
-    hero_badge: "Est. 2077 BS · Kathmandu, Nepal",
-    hero_title: "Environment Law Society Nepal:\nChampioning Justice for Our Planet",
-    hero_subtitle: "Since 2077 BS, we have been at the forefront of environmental advocacy, bridging the gap between legal expertise and sustainable development to protect Nepal's natural heritage.",
-    stat1_lbl: "Founded (BS)",
-    stat2_lbl: "Expert Advocates",
-    stat3_lbl: "Reg. Number",
-    reg1_label: "Registration",
-    reg2_label: "Date of Registration",
-    reg3_label: "Tax Status",
-    reg3_value: "PAN Registered · KMC Recognized",
-    about_label: "Our Story",
-    about_title_1: "A Legacy of",
-    about_title_em: "Integrity",
-    cred1_title: "Government Registered",
-    cred1_desc: "Officially registered with the District Administration Office, Kathmandu (Reg No. 1040) on 2077/08/17 BS.",
-    cred2_title: "Kathmandu Metropolitan City",
-    cred2_desc: "Officially recognized by the Kathmandu Metropolitan City as a legitimate non-profit organization.",
-    cred3_title: "PAN Registered",
-    cred3_desc: "Registered with the tax authorities with a Permanent Account Number, ensuring full fiscal accountability.",
-    cred4_title: "Ministry Verified Constitution",
-    cred4_desc: "Our Constitution (Bidhan) is officially stamped and verified by the Ministry of Home Affairs.",
-    about_p1: "Founded in the heart of Kathmandu, the Environment Law Society (ELS) Nepal is a premier non-profit organization dedicated to environmental protection. Officially registered with the Government of Nepal on 2077/08/17 BS, we have spent over a decade building a foundation of legal advocacy for the earth.",
-    about_p2: "We operate with full transparency and are officially recognized by the Kathmandu Metropolitan City and the tax authorities with a Permanent Account Number (PAN) registration, ensuring our commitment to professional and fiscal accountability.",
-    about_p3: "Our society brings together a dedicated group of seven legal professionals — practicing advocates and consultant lawyers who collectively unite under the ELS Nepal platform with the shared objective of promoting, advocating for, and strengthening the implementation of environmental law in Nepal.",
-    about_p4: "Beyond our local impact, we actively welcome collaboration with legal professionals, conservationists, researchers, and international partners who share our commitment to environmental protection and sustainable development.",
-    mission_label: "Our Purpose",
-    mission_title_1: "Legal Advocacy for a",
-    mission_title_em: "Greener Future",
-    mission_intro_p: "Our organization is built on the belief that a sustainable future requires a robust legal framework. As outlined in our Constitution (Bidhan), our core objectives drive every initiative we undertake.",
-    mission1_title: "Driving Sustainable Development",
-    mission1_desc: "Implementing legal strategies that balance progress with environmental preservation, ensuring future generations inherit a thriving Nepal.",
-    mission2_title: "Global & National Collaboration",
-    mission2_desc: "Actively coordinating with national government bodies, international organizations, and diplomatic missions to address climate and environmental challenges.",
-    mission3_title: "Legal Empowerment",
-    mission3_desc: "Utilizing the law as a primary tool to safeguard natural resources and ensure environmental justice for all citizens of Nepal.",
-    gov_label: "Structure & Trust",
-    gov_title_1: "Why",
-    gov_title_em: "Partner With Us?",
-    gov_intro_p: "When you engage with ELS Nepal, you are partnering with a structurally sound and legally vetted institution. Every layer of our governance is designed to ensure transparency, accountability, and principled decision-making.",
-    pillar1_title: "Strict Constitutional Adherence",
-    pillar1_desc: "Every action we take is guided by our approved Constitution (Bidhan), officially stamped and verified by the Ministry of Home Affairs.",
-    pillar2_title: "Expert Leadership",
-    pillar2_desc: "Our society is governed by a dedicated Executive Committee and a General Assembly, ensuring diverse perspectives and democratic decision-making.",
-    pillar3_title: "Proven Foundation",
-    pillar3_desc: "Our founding members established this society with a clear, legally-binding vision for a sustainable Nepal that guides all operations.",
-    org_title_1: "Organizational",
-    org_title_em: "Structure",
-    org_sub: "ELS Nepal Governance Framework",
-    org1_title: "General Assembly",
-    org1_desc: "Supreme decision-making body of all members",
-    org2_title: "Executive Committee",
-    org2_desc: "Elected leadership governing daily operations",
-    org3_title: "Chairperson",
-    org3_desc: "Adv. Padam Bahadur Shrestha — President",
-    org4_title: "Legal Advocates",
-    org4_desc: "7 expert members across all legal domains",
-    org5_title: "Constitution (Bidhan)",
-    org5_desc: "Ministry of Home Affairs verified & stamped",
-    involved_label: "Join the Movement",
-    involved_title_1: "Join the Movement for",
-    involved_title_em: "Environmental Justice",
-    involved_intro_p: "Whether you are a legal professional, a conservationist, or an international partner, the Environment Law Society Nepal invites you to collaborate. Together, we can ensure that the laws of today protect the world of tomorrow.",
-    card1_title: "Legal Professionals",
-    card1_desc: "Join our growing network of advocates committed to advancing environmental jurisprudence in Nepal.",
-    card2_title: "Conservationists",
-    card2_desc: "Partner with us to translate conservation goals into enforceable legal frameworks that protect Nepal's ecosystems.",
-    card3_title: "International Partners",
-    card3_desc: "Collaborate on cross-border environmental initiatives and bring global best practices to Nepal's legal landscape.",
-    cta1: "Get In Touch",
-    cta2: "Return to Main Site",
-    footer_copy: "© Environment Law Society Nepal · All Rights Reserved",
-    footer_back: "Back to Main Site"
+    tb_bar:    "Nepal Bar Council Reg. No.\u00a0<strong style='color:var(--gold)'>179</strong>",
+    tb_lic:    "License No.\u00a0<strong style='color:var(--gold)'>10043</strong>",
+    tb_valid:  "Valid until 2028/04/11",
+    tb_reg:    "Reg. 2013/04/12",
+    hero_eyebrow: "Principal Advocate \u00a0\u00b7\u00a0 Legal Society & Research Centre",
+    hero_firstname: "Bishnu Kumar",
+    hero_surname: "Thokar",
+    hero_desig: "Advocate \u00a0\u00b7\u00a0 Chief Consultant Lawyer<br>Vice Chairperson, Environment Law Society Nepal (ELS Nepal)",
+    hero_firm: "<strong>Kanooni Samaj Tatha Anusandhan Kendra</strong><br>Legal Society and Research Centre \u00a0\u00b7\u00a0 Sole Law Practitioner's Office",
+    tag_env: "Environmental Law", tag_civil: "Civil Litigation", tag_research: "Legal Research",
+    stat_exp: "Years Expertise", stat_lic: "Advocate License", stat_bar: "Bar Council No.",
+    card_label: "Professional Credentials",
+    ck_desig: "Designation", cv_desig: "Advocate",
+    ck_qual: "Qualification", ck_lic: "License No.", ck_bar: "Bar Council Reg.", ck_pan: "PAN",
+    ck_reg: "Registered", cv_reg_bs: "(2069/12/30 B.S.)",
+    ck_valid: "Validity", cv_active: "Active", cv_until: "Until 2028/04/11 (2084/12/29 B.S.)",
+    ck_regu: "Regulation", cv_regu: "Law Practitioners Office Registration and Operation Regulation, 2013",
+    scroll: "Scroll",
+    reg_label: "Registration &amp; Compliance", reg_title: "Legal ", reg_title_em: "Credentials",
+    rc1_key: "Nepal Bar Council",    rc1_val: "Registration No. <em>179</em>",     rc1_sub: "Issued by Nepal Bar Council, Kupondole, Lalitpur",
+    rc2_key: "Advocate License",     rc2_val: "No. <em>10043</em>",                rc2_sub: "Law Practitioners Office Registration",
+    rc3_key: "PAN Number",           rc3_val: "<em>304012875</em>",                rc3_sub: "Inland Revenue Office, Kathmandu 1 (Tax Jurisdiction)",
+    rc4_key: "Registration Date",    rc4_val: "<em>2013</em>/04/12",              rc4_sub: "2069/12/30 Bikram Sambat",
+    rc5_key: "Valid Until",          rc5_val: "<em>2028</em>/04/11",              rc5_sub: "2084/12/29 B.S. \u2014 Currently Active",
+    rc6_key: "Regulatory Authority", rc6_val: "Nepal Bar <em>Council</em>",       rc6_sub: "Under Law Practitioners Office Registration and Operation Regulation, 2013",
+    con_label: "Contact &amp; Location", con_title: "Office", con_title_em: "Addresses",
+    con_adv_lbl: "Principal Advocate", con_adv_val: "Bishnu Kumar Thokar",
+    con_firm_lbl: "Firm Name",         con_firm_val: "Kanooni Samaj Tatha Anusandhan Kendra", con_firm_sub: "Legal Society and Research Centre",
+    con_role_lbl: "Professional Role", con_role_val: "Vice Chairperson",     con_role_sub: "Environment Law Society Nepal (ELS Nepal)",
+    con_tax_lbl: "Tax Jurisdiction",   con_tax_val: "Inland Revenue Office (IRO), Kathmandu 1",
+    addr1_type: "Registered Office",   addr1_text: "Gokarneshwor Municipality-6<br>Kathmandu, Nepal", addr1_detail: "Official registered address per Nepal Bar Council records",
+    addr2_type: "Operating Office",    addr2_text: "Anamnagar<br>Kathmandu-29, Nepal",                addr2_detail: "Primary practice &amp; consultation office",
+    cert_label: "Legal Certifications", cert_title: "Issued", cert_title_em: "Certificates",
+    cert_ribbon: "Official",
+    cert1_title: "Certificate of Registration of Law Practitioner's Office",
+    cert1_by: "Issued by", cert1_issuer: "Nepal Bar Council", cert1_loc: "Kupondole, Lalitpur, Nepal", cert1_ref: "License No. 10043 \u00a0\u00b7\u00a0 Reg. No. 179",
+    cert2_title: "PAN Registration Certificate",
+    cert2_by: "Issued by", cert2_issuer: "Government of Nepal", cert2_loc: "Ministry of Finance, Department of Inland Revenue", cert2_ref: "PAN: 304012875 \u00a0\u00b7\u00a0 IRO Kathmandu 1",
+    footer_copy: "\u00a9 2025 Kanooni Samaj Tatha Anusandhan Kendra \u00a0\u00b7\u00a0 All Rights Reserved",
+    footer_reg: "ELS Nepal Vice Chairperson",
+    footer_firstname: "Bishnu Kumar",
+    footer_surname: "Thokar",
+    // Back to homepage
+    bh_label:    "Legal Society & Research Centre",
+    bh_title:    "Return to the ",
+    bh_title_em: "Main Website",
+    bh_btn:      "Back to Homepage",
+    fb_name: "Bishnu Kumar Thokar", fb_lic: "License", fb_bar: "Bar Council", fb_status: "Active",
+    // Static numbers (credential card, badge, floatbar)
+    pan_num:     "304012875",
+    cv_lic_num:  "10043",
+    cv_bar_num:  "No. 179",
+    cv_pan_num:  "304012875",
+    cv_reg_ad:   "2013/04/12",
+    fb_lic_num:  "#10043",
+    fb_bar_num:  "#179"
   },
+
   ne: {
-    nav_back: "मुख्यपृष्ठमा फर्कनुहोस्",
-    hero_badge: "स्थापना २०७७ बि.सं. · काठमाडौं, नेपाल",
-    hero_title: "वातावरण कानून समाज नेपाल:\nहाम्रो पृथ्वीको न्यायको पक्षमा अडिग",
-    hero_subtitle: "२०७७ बि.सं. देखि हामी वातावरणीय वकालतको अग्रपंक्तिमा रहँदै आएका छौँ — कानूनी विशेषज्ञता र दिगो विकासबीचको सेतु बनेर नेपालको प्राकृतिक सम्पदाको संरक्षण गर्दै।",
-    stat1_lbl: "स्थापना (बि.सं.)",
-    stat2_lbl: "विशेषज्ञ अधिवक्ता",
-    stat3_lbl: "दर्ता नम्बर",
-    reg1_label: "दर्ता विवरण",
-    reg2_label: "दर्ता मिति",
-    reg3_label: "कर स्थिति",
-    reg3_value: "स्थायी लेखा नम्बर (PAN) दर्ता · काठमाडौं महानगरपालिका मान्यताप्राप्त",
-    about_label: "हाम्रो यात्रा",
-    about_title_1: "सत्यनिष्ठाको",
-    about_title_em: "विरासत",
-    cred1_title: "सरकारद्वारा दर्ता",
-    cred1_desc: "जिल्ला प्रशासन कार्यालय, काठमाडौंमा (दर्ता नं. १०४०) २०७७/०८/१७ बि.सं.मा विधिवत दर्ता भएको।",
-    cred2_title: "काठमाडौं महानगरपालिका",
-    cred2_desc: "काठमाडौं महानगरपालिकाद्वारा एक वैधानिक गैरनाफामूलक संस्थाको रूपमा आधिकारिक मान्यताप्राप्त।",
-    cred3_title: "स्थायी लेखा नम्बर दर्ता",
-    cred3_desc: "कर अधिकारीहरूसँग स्थायी लेखा नम्बर (PAN) दर्ता गरिएको, जसले पूर्ण वित्तीय पारदर्शिता सुनिश्चित गर्दछ।",
-    cred4_title: "मन्त्रालयद्वारा प्रमाणित विधान",
-    cred4_desc: "हाम्रो संस्थाको विधान (विधान) गृह मन्त्रालयद्वारा आधिकारिक छाप र प्रमाणीकरण सहित अनुमोदित छ।",
-    about_p1: "काठमाडौंको केन्द्रमा स्थापित वातावरण कानून समाज (ELS) नेपाल, वातावरण संरक्षणप्रति समर्पित एक अग्रणी गैरनाफामूलक संस्था हो। नेपाल सरकारसँग २०७७/०८/१७ बि.सं.मा विधिवत दर्ता भएदेखि हामी पृथ्वीको पक्षमा कानूनी वकालतको सुदृढ आधार निर्माण गर्दै आएका छौँ।",
-    about_p2: "हामी पूर्ण पारदर्शिताका साथ सञ्चालित छौँ र काठमाडौं महानगरपालिका तथा कर अधिकारीहरूसँग स्थायी लेखा नम्बर (PAN) दर्ताका माध्यमबाट आधिकारिक मान्यताप्राप्त छौँ — जसले व्यावसायिक र वित्तीय जवाफदेहिताप्रतिको हाम्रो प्रतिबद्धताको प्रमाण दिन्छ।",
-    about_p3: "हाम्रो समाजमा सात जना समर्पित कानूनी विशेषज्ञहरू — अभ्यासरत अधिवक्ता तथा परामर्शदाता वकिलहरू — एकत्रित छन्, जो नेपालमा वातावरणीय कानूनको प्रवर्द्धन, वकालत र प्रभावकारी कार्यान्वयन सुदृढ बनाउने साझा उद्देश्यले ELS Nepal मञ्चमा आबद्ध छन्।",
-    about_p4: "स्थानीय प्रभावभन्दा पर, हामी वातावरण संरक्षण र दिगो विकासप्रति हाम्रो समान प्रतिबद्धता राख्ने कानूनी व्यवसायी, संरक्षणकर्मी, अनुसन्धानकर्ता र अन्तर्राष्ट्रिय साझेदारहरूसँगको सहकार्यलाई सदैव स्वागत गर्दछौँ।",
-    mission_label: "हाम्रो उद्देश्य",
-    mission_title_1: "हरित भविष्यका लागि",
-    mission_title_em: "कानूनी वकालत",
-    mission_intro_p: "हाम्रो संस्था यस विश्वासमा आधारित छ कि एक दिगो भविष्यका लागि सुदृढ कानूनी संरचना अपरिहार्य छ। हाम्रो विधान (विधान)मा उल्लिखित मूल उद्देश्यहरूले हाम्रो प्रत्येक पहलकदमीको मार्गदर्शन गर्दछन्।",
-    mission1_title: "दिगो विकासको प्रवर्द्धन",
-    mission1_desc: "प्रगति र वातावरणीय संरक्षणबीच सन्तुलन कायम गर्ने कानूनी रणनीतिहरू लागू गरी भावी पुस्ताले समृद्ध नेपाल पाउने सुनिश्चित गर्दै।",
-    mission2_title: "वैश्विक एवं राष्ट्रिय सहकार्य",
-    mission2_desc: "जलवायु र वातावरणीय चुनौतीहरूको सामना गर्न राष्ट्रिय सरकारी निकाय, अन्तर्राष्ट्रिय संस्था र कूटनीतिक नियोगहरूसँग सक्रिय समन्वय गर्दै।",
-    mission3_title: "कानूनी सशक्तीकरण",
-    mission3_desc: "प्राकृतिक स्रोतसाधनको सुरक्षा र नेपालका सम्पूर्ण नागरिकका लागि वातावरणीय न्याय सुनिश्चित गर्न कानूनलाई प्रमुख हतियारका रूपमा उपयोग गर्दै।",
-    gov_label: "संरचना एवं विश्वसनीयता",
-    gov_title_1: "हामीसँग साझेदारी",
-    gov_title_em: "किन गर्ने?",
-    gov_intro_p: "ELS Nepal सँग सम्पर्क गर्दा, तपाईं एक संरचनागत रूपमा सुदृढ र कानूनी रूपमा प्रमाणित संस्थासँग साझेदारी गर्दै हुनुहुन्छ। हाम्रो शासन संरचनाको प्रत्येक तह पारदर्शिता, जवाफदेहिता र सुशासन सुनिश्चित गर्न अभिकल्पित छ।",
-    pillar1_title: "विधानको कठोर पालना",
-    pillar1_desc: "हाम्रो प्रत्येक कार्य गृह मन्त्रालयद्वारा आधिकारिक रूपमा छाप लगाइएको र प्रमाणित हाम्रो स्वीकृत विधान (विधान)द्वारा निर्देशित छ।",
-    pillar2_title: "विशेषज्ञ नेतृत्व",
-    pillar2_desc: "हाम्रो समाज एक समर्पित कार्यकारी समिति र साधारणसभाद्वारा सञ्चालित छ, जसले विविध दृष्टिकोण र लोकतान्त्रिक निर्णय-प्रक्रिया सुनिश्चित गर्दछ।",
-    pillar3_title: "सुदृढ स्थापना",
-    pillar3_desc: "हाम्रा संस्थापक सदस्यहरूले दिगो नेपालको स्पष्ट र कानूनी रूपमा बाध्यकारी दृष्टिकोणसहित यस समाजको स्थापना गरेका थिए, जसले सम्पूर्ण कार्यको मार्गदर्शन गर्दछ।",
-    org_title_1: "संगठनात्मक",
-    org_title_em: "संरचना",
-    org_sub: "ELS नेपाल शासन ढाँचा",
-    org1_title: "साधारणसभा",
-    org1_desc: "सम्पूर्ण सदस्यहरूको सर्वोच्च निर्णय निकाय",
-    org2_title: "कार्यकारी समिति",
-    org2_desc: "दैनिक कार्यसञ्चालन व्यवस्थापन गर्ने निर्वाचित नेतृत्व",
-    org3_title: "अध्यक्ष",
-    org3_desc: "अधिवक्ता पदम बहादुर श्रेष्ठ — अध्यक्ष",
-    org4_title: "कानूनी अधिवक्ताहरू",
-    org4_desc: "सम्पूर्ण कानूनी क्षेत्रमा दक्ष ७ सदस्यहरू",
-    org5_title: "विधान (बिधान)",
-    org5_desc: "गृह मन्त्रालयद्वारा प्रमाणित एवं छाप लगाइएको",
-    involved_label: "अभियानमा सहभागी हौँ",
-    involved_title_1: "वातावरणीय न्यायको अभियानमा",
-    involved_title_em: "सहभागी हौँ",
-    involved_intro_p: "तपाईं कानूनी व्यवसायी हुनुहोस्, संरक्षणकर्मी वा अन्तर्राष्ट्रिय साझेदार — वातावरण कानून समाज नेपाल तपाईंलाई सहकार्यको निम्तो दिन्छ। आउनुहोस्, सँगै हामी यो सुनिश्चित गरौँ कि आजका कानूनहरूले भोलिको संसारको संरक्षण गरून्।",
-    card1_title: "कानूनी व्यवसायीहरू",
-    card1_desc: "नेपालमा वातावरणीय न्यायशास्त्रको विकासमा प्रतिबद्ध अधिवक्ताहरूको हाम्रो बढ्दो सञ्जालमा सहभागी हुनुहोस्।",
-    card2_title: "संरक्षणकर्मीहरू",
-    card2_desc: "संरक्षणका लक्ष्यहरूलाई नेपालका पारिस्थितिक प्रणालीको सुरक्षा गर्ने लागू-योग्य कानूनी ढाँचामा रूपान्तरण गर्न हामीसँग साझेदारी गर्नुहोस्।",
-    card3_title: "अन्तर्राष्ट्रिय साझेदारहरू",
-    card3_desc: "सीमापार वातावरणीय पहलहरूमा सहकार्य गर्नुहोस् र विश्वका उत्कृष्ट अभ्यासहरू नेपालको कानूनी परिदृश्यमा ल्याउनुहोस्।",
-    cta1: "सम्पर्क गर्नुहोस्",
-    cta2: "मुख्यपृष्ठमा फर्कनुहोस्",
-    footer_copy: "© वातावरण कानून समाज नेपाल · सर्वाधिकार सुरक्षित",
-    footer_back: "मुख्यपृष्ठमा फर्कनुहोस्"
+    // शीर्ष पट्टी
+    tb_bar:    "नेपाल बार काउन्सिल दर्ता नं. <strong style='color:var(--gold)'>१७९</strong>",
+    tb_lic:    "इजाजत नं. <strong style='color:var(--gold)'>१००४३</strong>",
+    tb_valid:  "म्याद: २०२८/०४/११ सम्म",
+    tb_reg:    "दर्ता: २०१३/०४/१२",
+    // हिरो
+    hero_eyebrow: "प्रमुख अधिवक्ता &nbsp;·&nbsp; कानूनी समाज तथा अनुसन्धान केन्द्र",
+    hero_firstname: "विष्णु कुमार",
+    hero_surname: "थोकर",
+    hero_desig: "अधिवक्ता &nbsp;·&nbsp; प्रमुख परामर्शदाता कानून व्यवसायी<br>उपाध्यक्ष, वातावरण कानून समाज नेपाल (ELS Nepal)",
+    hero_firm: "<strong>कानूनी समाज तथा अनुसन्धान केन्द्र</strong><br>एकल कानून व्यवसायी कार्यालय",
+    tag_env: "वातावरण कानून",
+    tag_civil: "देवानी मुद्दा",
+    tag_research: "कानूनी अनुसन्धान",
+    stat_exp: "वर्षको अनुभव",
+    stat_lic: "अधिवक्ता इजाजत",
+    stat_bar: "बार काउन्सिल नं.",
+    // प्रमाण पत्र कार्ड
+    card_label: "व्यावसायिक प्रमाणपत्रहरू",
+    ck_desig: "पद",
+    cv_desig: "अधिवक्ता",
+    ck_qual: "शैक्षिक योग्यता",
+    ck_lic: "इजाजत नं.",
+    ck_bar: "बार काउन्सिल दर्ता",
+    ck_pan: "स्थायी लेखा नं.",
+    ck_reg: "दर्ता मिति",
+    cv_reg_bs: "(२०६९/१२/३० वि.सं.)",
+    ck_valid: "म्याद",
+    cv_active: "सक्रिय",
+    cv_until: "२०२८/०४/११ सम्म मान्य (२०८४/१२/२९ वि.सं.)",
+    ck_regu: "नियमावली",
+    cv_regu: "कानून व्यवसायी कार्यालय दर्ता तथा सञ्चालन नियमावली, २०१३",
+    scroll: "तल स्क्रोल गर्नुहोस्",
+    // दर्ता तथा अनुपालन खण्ड
+    reg_label: "दर्ता तथा अनुपालन",
+    reg_title: "कानूनी ",
+    reg_title_em: "प्रमाणपत्रहरू",
+    rc1_key: "नेपाल बार काउन्सिल",
+    rc1_val: "दर्ता नं. <em>१७९</em>",
+    rc1_sub: "नेपाल बार काउन्सिल, कुपोन्डोल, ललितपुरद्वारा जारी",
+    rc2_key: "अधिवक्ता इजाजत",
+    rc2_val: "नं. <em>१००४३</em>",
+    rc2_sub: "कानून व्यवसायी कार्यालय दर्ता",
+    rc3_key: "स्थायी लेखा नं.",
+    rc3_val: "<em>३०४०१२८७५</em>",
+    rc3_sub: "आन्तरिक राजस्व कार्यालय, काठमाडौं १ (कर अधिकारक्षेत्र)",
+    rc4_key: "दर्ता मिति",
+    rc4_val: "<em>२०१३</em>/०४/१२",
+    rc4_sub: "२०६९/१२/३० विक्रम संवत्",
+    rc5_key: "म्याद मिति",
+    rc5_val: "<em>२०२८</em>/०४/११",
+    rc5_sub: "२०८४/१२/२९ वि.सं. — हाल सक्रिय",
+    rc6_key: "नियामक निकाय",
+    rc6_val: "नेपाल बार <em>काउन्सिल</em>",
+    rc6_sub: "कानून व्यवसायी कार्यालय दर्ता तथा सञ्चालन नियमावली, २०१३ अन्तर्गत",
+    // सम्पर्क तथा स्थान खण्ड
+    con_label: "सम्पर्क तथा स्थान",
+    con_title: "कार्यालय",
+    con_title_em: "ठेगानाहरू",
+    con_adv_lbl: "प्रमुख अधिवक्ता",
+    con_adv_val: "विष्णु कुमार थोकर",
+    con_firm_lbl: "फर्मको नाम",
+    con_firm_val: "कानूनी समाज तथा अनुसन्धान केन्द्र",
+    con_firm_sub: "(Kanooni Samaj Tatha Anusandhan Kendra)",
+    con_role_lbl: "व्यावसायिक भूमिका",
+    con_role_val: "उपाध्यक्ष",
+    con_role_sub: "वातावरण कानून समाज नेपाल (ELS Nepal)",
+    con_tax_lbl: "कर अधिकारक्षेत्र",
+    con_tax_val: "आन्तरिक राजस्व कार्यालय (IRO), काठमाडौं १",
+    addr1_type: "दर्ता कार्यालय",
+    addr1_text: "गोकर्णेश्वर नगरपालिका-६<br>काठमाडौं, नेपाल",
+    addr1_detail: "नेपाल बार काउन्सिलका अभिलेखमा आधिकारिक दर्ता ठेगाना",
+    addr2_type: "सञ्चालन कार्यालय",
+    addr2_text: "अनामनगर<br>काठमाडौं-२९, नेपाल",
+    addr2_detail: "प्राथमिक अभ्यास तथा परामर्श कार्यालय",
+    // प्रमाणपत्र खण्ड
+    cert_label: "कानूनी प्रमाणपत्रहरू",
+    cert_title: "जारी",
+    cert_title_em: "प्रमाणपत्रहरू",
+    cert_ribbon: "आधिकारिक",
+    cert1_title: "कानून व्यवसायी कार्यालय दर्ताको प्रमाणपत्र",
+    cert1_by: "जारीकर्ता",
+    cert1_issuer: "नेपाल बार काउन्सिल",
+    cert1_loc: "कुपोन्डोल, ललितपुर, नेपाल",
+    cert1_ref: "इजाजत नं. १००४३ &nbsp;·&nbsp; दर्ता नं. १७९",
+    cert2_title: "स्थायी लेखा नम्बर दर्ता प्रमाणपत्र",
+    cert2_by: "जारीकर्ता",
+    cert2_issuer: "नेपाल सरकार",
+    cert2_loc: "अर्थ मन्त्रालय, आन्तरिक राजस्व विभाग",
+    cert2_ref: "स्थायी लेखा नं: ३०४०१२८७५ &nbsp;·&nbsp; भ.रा.का. काठमाडौं १",
+    // फुटर तथा फ्लोटिङ बार
+    footer_copy: "© २०२५ कानूनी समाज तथा अनुसन्धान केन्द्र &nbsp;·&nbsp; सर्वाधिकार सुरक्षित",
+    footer_reg: "ELS नेपाल उपाध्यक्ष",
+    footer_firstname: "विष्णु कुमार",
+    footer_surname: "थोकर",
+    // मुख्य पृष्ठमा फर्कनुस्
+    bh_label:    "कानूनी समाज तथा अनुसन्धान केन्द्र",
+    bh_title:    "मुख्य ",
+    bh_title_em: "वेबसाइटमा फर्कनुस्",
+    bh_btn:      "कानूनी समाज तथा अनुसन्धान केन्द्र गृहपृष्ठमा फर्कनुस्",
+    fb_name: "विष्णु कुमार थोकर",
+    fb_lic: "इजाजत",
+    fb_bar: "बार काउन्सिल",
+    fb_status: "सक्रिय",
+    // स्थिर संख्याहरू (प्रमाण पत्र कार्ड, ब्याज, फ्लोटिङ बार)
+    pan_num:     "३०४०१२८७५",
+    cv_lic_num:  "१००४३",
+    cv_bar_num:  "नं. १७९",
+    cv_pan_num:  "३०४०१२८७५",
+    cv_reg_ad:   "२०१३/०४/१२",
+    fb_lic_num:  "#१००४३",
+    fb_bar_num:  "#१७९"
   }
 };
 
 // =============================================
-// LANGUAGE TOGGLE
+// LANGUAGE TOGGLE — same logic as index.html
+// Viewing EN → button shows "NEP" → click → Nepali → button shows "ENG"
+// Viewing NE → button shows "ENG" → click → English → button shows "NEP"
 // =============================================
 let currentLang = 'en';
 
 function setLanguage(lang) {
   document.querySelectorAll('[data-key]').forEach(el => {
     const key = el.getAttribute('data-key');
-    if (translations[lang] && translations[lang][key]) {
-      el.innerText = translations[lang][key];
+    if (translations[lang] && translations[lang][key] !== undefined) {
+      el.innerHTML = translations[lang][key];
     }
   });
-  // Update html lang attribute
   document.documentElement.lang = lang === 'ne' ? 'ne' : 'en';
-  // Switch Devanagari font for body when Nepali
   document.body.style.fontFamily = lang === 'ne'
     ? "'Noto Sans Devanagari', 'Outfit', sans-serif"
     : "'Outfit', sans-serif";
+  // Update page title
+  document.title = lang === 'ne'
+    ? 'विष्णु कुमार थोकर — अधिवक्ता | प्रमुख परामर्शदाता कानून व्यवसायी'
+    : 'Bishnu Kumar Thokar — Advocate | Chief Consultant Lawyer';
 }
 
 setLanguage('en');
@@ -810,6 +715,7 @@ function toggleLang() {
     setLanguage('en');
     document.getElementById('langLabel').textContent = 'NEP';
   }
+  updateCounterDisplay();
 }
 
 // =============================================
@@ -817,20 +723,62 @@ function toggleLang() {
 // =============================================
 const backTop = document.getElementById('back-top');
 window.addEventListener('scroll', () => {
-  backTop.classList.toggle('visible', window.scrollY > 400);
+  const threshold = window.innerHeight * 0.8;
+  backTop.classList.toggle('visible', window.scrollY > threshold);
 });
 backTop.addEventListener('click', e => {
   e.preventDefault();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// =============================================
-// SCROLL ANIMATIONS
-// =============================================
-const observer = new IntersectionObserver(entries => {
+// Fade-up
+const obs = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
 }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
-document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+
+// Floating bar
+const floatbar = document.getElementById('floatbar');
+window.addEventListener('scroll', () => {
+  floatbar.classList.toggle('visible', window.scrollY > window.innerHeight * 0.6);
+});
+
+// Counters
+// Nepali numeral conversion
+const NP_DIGITS = ['०','१','२','३','४','५','६','७','८','९'];
+function toNepaliNum(n) {
+  return String(n).replace(/[0-9]/g, d => NP_DIGITS[d]);
+}
+
+function animateCount(el, target, duration) {
+  const start = performance.now();
+  const update = now => {
+    const p = Math.min((now - start) / duration, 1);
+    const ease = 1 - Math.pow(1 - p, 3);
+    const val = Math.round(ease * target);
+    el.textContent = currentLang === 'ne' ? toNepaliNum(val) : val;
+    if (p < 1) requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+}
+
+// Re-render counters when language changes
+function updateCounterDisplay() {
+  const finals = { 'counter-years': 22, 'counter-lic': 10043, 'counter-bar': 179 };
+  for (const [id, val] of Object.entries(finals)) {
+    const el = document.getElementById(id);
+    if (el && el.textContent !== '0') {
+      el.textContent = currentLang === 'ne' ? toNepaliNum(val) : val;
+    }
+  }
+}
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    animateCount(document.getElementById('counter-years'), 22, 1600);
+    animateCount(document.getElementById('counter-lic'), 10043, 2000);
+    animateCount(document.getElementById('counter-bar'), 179, 1400);
+  }, 900);
+});
 </script>
 </body>
 </html>

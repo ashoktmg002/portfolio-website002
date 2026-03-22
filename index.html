@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Environment Law Society Nepal | ELS Nepal</title>
+<title>Legal Society & Research Centre</title>
 <meta name="description" content="Environment Law Society Nepal — Expert advocates championing environmental justice and comprehensive legal services.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -174,7 +174,7 @@
     height: 3px; background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold)); z-index: 2;
   }
   .about-img-main { width: 100%; height: auto; display: block; object-fit: contain; object-position: center; padding: 20px; }
-  .about-content { padding-left: 20px; }
+  .about-content { padding-left: 20px; text-align: justify; hyphens:auto; }
   .about-content p { color: var(--light-text); line-height: 1.9; margin-bottom: 20px; font-size: 15px; }
   .about-features { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 36px 0; }
   .about-feat { display: flex; align-items: flex-start; gap: 12px; padding: 16px; border: 1px solid rgba(184,150,12,0.15); transition: border-color 0.3s; }
@@ -183,12 +183,28 @@
   .about-feat h4 { font-size: 13px; font-weight: 600; color: var(--white); margin-bottom: 4px; }
   .about-feat p { font-size: 12px; color: var(--muted); margin: 0; line-height: 1.6; }
 
+  /* ── ABOUT CARD EMBED (team card styles reused in about visual) ── */
+  .team-img-wrap { position: relative; overflow: hidden; aspect-ratio: 3/4; background: var(--dark); }
+  .team-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s; }
+  .about-img-frame:hover .team-img-wrap img { transform: scale(1.08); }
+  .team-img-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(13,13,13,0.9) 0%, transparent 60%); opacity: 0; transition: opacity 0.4s; }
+  .about-img-frame:hover .team-img-overlay { opacity: 1; }
+  .team-social-overlay { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px; opacity: 0; transition: opacity 0.4s 0.1s; }
+  .about-img-frame:hover .team-social-overlay { opacity: 1; }
+  .team-social-overlay a { width: 36px; height: 36px; background: var(--gold); display: flex; align-items: center; justify-content: center; color: var(--dark); font-size: 13px; text-decoration: none; transition: background 0.2s; }
+  .team-social-overlay a:hover { background: var(--gold-light); }
+  .team-info { padding: 22px 24px; background: var(--dark-3); border-top: 1px solid rgba(184,150,12,0.15); }
+  .team-info h3 { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 500; color: var(--white); margin-bottom: 6px; }
+  .team-info .role { font-size: 12px; color: var(--gold); letter-spacing: 1px; font-weight: 500; }
+  .team-info .role-ne { font-family: 'Noto Sans Devanagari', sans-serif; font-size: 11px; color: var(--muted); display: block; margin-top: 2px; }
+
   /* ── PRACTICE ── */
   #practice { padding: 120px 0; background: var(--dark); }
   .practice-header { text-align: center; max-width: 600px; margin: 0 auto 70px; }
   .practice-header .section-label { justify-content: center; }
   .practice-header .section-label::before { display: none; }
   .practice-header .section-label::after { content: ''; width: 30px; height: 1px; background: var(--gold); }
+  #practice .container{text-align: justify; hyphens:auto;}
   .practice-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: rgba(184,150,12,0.1); }
   .practice-card { background: var(--dark-2); padding: 50px 40px; transition: all 0.4s; position: relative; overflow: hidden; }
   .practice-card::before { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 3px; background: var(--gold); transform: scaleX(0); transform-origin: left; transition: transform 0.4s; }
@@ -206,6 +222,7 @@
   #why { padding: 120px 0; background: var(--dark-3); }
   .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
   .why-visual { position: relative; }
+  #why .why-content { text-align: justify; hyphens:auto; }
   .why-img-frame {
     position: relative; overflow: hidden;
     border: 1px solid rgba(184,150,12,0.25);
@@ -225,27 +242,6 @@
   .why-item:hover .why-num { color: var(--gold); }
   .why-item h3 { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 500; color: var(--white); margin-bottom: 10px; }
   .why-item p { color: var(--muted); font-size: 14px; line-height: 1.8; }
-
-  /* ── TEAM ── */
-  #team { padding: 120px 0; background: var(--dark); }
-  .team-header { margin-bottom: 60px; }
-  .team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: rgba(184,150,12,0.12); }
-  .team-grid::after { content: ''; background: var(--dark); display: block; }
-  .team-card { background: var(--dark); overflow: hidden; position: relative; transition: all 0.4s; }
-  .team-card:hover { transform: translateY(-6px); z-index: 2; }
-  .team-img-wrap { position: relative; overflow: hidden; aspect-ratio: 3/4; background: var(--dark); }
-  .team-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s; }
-  .team-card:hover .team-img-wrap img { transform: scale(1.08); }
-  .team-img-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(13,13,13,0.9) 0%, transparent 60%); opacity: 0; transition: opacity 0.4s; }
-  .team-card:hover .team-img-overlay { opacity: 1; }
-  .team-social-overlay { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px; opacity: 0; transition: opacity 0.4s 0.1s; }
-  .team-card:hover .team-social-overlay { opacity: 1; }
-  .team-social-overlay a { width: 36px; height: 36px; background: var(--gold); display: flex; align-items: center; justify-content: center; color: var(--dark); font-size: 13px; text-decoration: none; transition: background 0.2s; }
-  .team-social-overlay a:hover { background: var(--gold-light); }
-  .team-info { padding: 22px 24px; background: var(--dark); border-top: 1px solid rgba(184,150,12,0.15); }
-  .team-info h3 { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 500; color: var(--white); margin-bottom: 6px; }
-  .team-info .role { font-size: 12px; color: var(--gold); letter-spacing: 1px; font-weight: 500; }
-  .team-info .role-ne { font-family: 'Noto Sans Devanagari', sans-serif; font-size: 11px; color: var(--muted); display: block; margin-top: 2px; }
 
   /* ── GALLERY ── */
   #gallery { padding: 100px 0; background: var(--dark-2); }
@@ -332,7 +328,6 @@
 
   /* ── RESPONSIVE ── */
   @media (max-width: 1100px) {
-    .team-grid { grid-template-columns: repeat(3, 1fr); }
     .footer-links-bar { grid-template-columns: repeat(2, 1fr); }
   }
   @media (max-width: 900px) {
@@ -342,7 +337,6 @@
     .stat-item { border-right: none; border-bottom: 1px solid rgba(0,0,0,0.15); }
     .stat-item:nth-child(odd) { border-right: 1px solid rgba(0,0,0,0.15); }
     .stat-item:nth-last-child(-n+2) { border-bottom: none; }
-    .team-grid { grid-template-columns: repeat(2, 1fr); }
     .gallery-grid { grid-template-columns: repeat(2, 1fr); }
     .gallery-item.tall { grid-row: span 1; }
     .why-overlay-card { position: static; margin-top: 20px; width: 100%; max-width: 100%; }
@@ -356,7 +350,7 @@
     .hero-controls { right: 24px; }
   }
   @media (max-width: 600px) {
-    .practice-grid, .team-grid, .gallery-grid { grid-template-columns: 1fr; }
+    .practice-grid, .gallery-grid { grid-template-columns: 1fr; }
     .stats-grid { grid-template-columns: 1fr; }
     .stat-item { border-right: none !important; border-bottom: 1px solid rgba(0,0,0,0.12); padding: 18px 20px; }
     .stat-item:last-child { border-bottom: none; }
@@ -393,7 +387,7 @@
       </div>
       <div class="top-info-item">
         <i class="fas fa-phone"></i>
-        <span data-key="number">+977 12346789</span>
+        <span data-key="number">+977 9851007684</span>
       </div>
     </div>
     <div class="top-right">
@@ -413,10 +407,10 @@
 <nav id="navbar">
   <div class="container">
     <a href="#" class="nav-logo">
-      <img src="img/logo.png" alt="ELS Nepal Logo">
+      <img src="img/logo.png" alt="">
       <div class="nav-logo-text">
-        <span class="en-name">Environment Law Society Nepal</span>
-        <span class="ne-name">वातावरण कानून समाज नेपाल</span>
+        <span class="en-name">Legal Society & Research Centre</span>
+        <span class="ne-name">कानूनी समाज तथा अनुसन्धान केन्द्र</span>
       </div>
     </a>
     <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">
@@ -426,7 +420,6 @@
       <a href="#hero" class="active" data-key="home">Home</a>
       <a href="#about" data-key="about">About</a>
       <a href="#practice" data-key="practice">Practice</a>
-      <a href="#team" data-key="attorneys">Attorneys</a>
       <a href="#gallery" data-key="gallery">Gallery</a>
       <a href="#contact" data-key="location">Location</a>
       <a href="#contact" class="nav-cta" data-key="contact">Contact</a>
@@ -442,11 +435,11 @@
     <div class="slide-overlay"></div>
     <div class="slide-content">
       <div class="slide-inner">
-        <div class="slide-tag" data-key="slide_tag1">Environmental Justice · Nepal</div>
-        <h1 class="slide-title" data-key="carousel1">Environmental protection and<br><em>legal advocacy</em></h1>
-        <p class="slide-desc" data-key="carousel1 desc">We offer specialized legal proficiency in environmental law, delivering comprehensive advisory services in regulatory adherence and environmental impact mitigation.</p>
+        <div class="slide-tag" data-key="slide_tag1">Law & Justice · Nepal</div>
+        <h1 class="slide-title" data-key="carousel1">I fight<br><em>for your justice</em></h1>
+        <p class="slide-desc" data-key="carousel1 desc">Justice stands as the foundation of a fair society, ensuring every individual receives equal protection, dignity, and accountability under the rule of law.</p>
         <div class="slide-actions">
-          <a href="#practice" class="btn-primary-gold"><span data-key="btn_practice">Our Practice Areas</span> <i class="fas fa-arrow-right"></i></a>
+          <a href="#practice" class="btn-primary-gold"><span data-key="btn_practice">Practice Areas</span> <i class="fas fa-arrow-right"></i></a>
           <a href="#about" class="btn-outline-gold"><span data-key="btn_learn">Learn More</span></a>
         </div>
       </div>
@@ -459,11 +452,11 @@
     <div class="slide-content">
       <div class="slide-inner">
         <div class="slide-tag" data-key="slide_tag2">Strategic Advocacy · Nepal</div>
-        <h1 class="slide-title" data-key="carousel2"> We also prepare to<br><em>oppose for you</em></h1>
-        <p class="slide-desc" data-key="carousel2 desc">Our team is committed to defending your rights with determination, strategic advocacy, and unwavering dedication to achieving the best possible outcome.</p>
+        <h1 class="slide-title" data-key="carousel2"> I prepare to<br><em>oppose for you</em></h1>
+        <p class="slide-desc" data-key="carousel2 desc">I am committed to defending your rights with determination, strategic advocacy, and unwavering dedication to achieving the best possible outcome.</p>
         <div class="slide-actions">
-          <a href="#team" class="btn-primary-gold"><span data-key="btn_attorneys">Meet Our Attorneys</span> <i class="fas fa-arrow-right"></i></a>
-          <a href="#contact" class="btn-outline-gold"><span data-key="btn_consult">Consult Now</span></a>
+          <a href="#contact" class="btn-primary-gold"><span data-key="btn_consult">Consult Now</span> <i class="fas fa-arrow-right"></i></a>
+          <a href="#about" class="btn-outline-gold"><span data-key="btn_learn">Learn More</span></a>
         </div>
       </div>
     </div>
@@ -474,12 +467,12 @@
     <div class="slide-overlay"></div>
     <div class="slide-content">
       <div class="slide-inner">
-        <div class="slide-tag" data-key="slide_tag3">ELS Nepal · Est. Kathmandu</div>
-        <h1 class="slide-title" data-key="carousel3">We also fight for<br><em>your privilege</em></h1>
-        <p class="slide-desc" data-key="carousel3 desc">We stand firmly to protect your legal interests, advocating for your rights with integrity, expertise, and a strong commitment to justice.</p>
+        <div class="slide-tag" data-key="slide_tag3">Expert Legal Consultation · Nepal</div>
+        <h1 class="slide-title" data-key="carousel3">I fight for<br><em>your privilege</em></h1>
+        <p class="slide-desc" data-key="carousel3 desc">I stand firmly to protect your legal interests, advocating for your rights with integrity, expertise, and a strong commitment to justice.</p>
         <div class="slide-actions">
           <a href="#contact" class="btn-primary-gold"><span data-key="btn_getconsult">Get Consultation</span> <i class="fas fa-arrow-right"></i></a>
-          <a href="#practice" class="btn-outline-gold"><span data-key="btn_services">Our Services</span></a>
+          <a href="#practice" class="btn-outline-gold"><span data-key="btn_services">Services</span></a>
         </div>
       </div>
     </div>
@@ -538,7 +531,20 @@
     <div class="about-grid">
       <div class="about-visual fade-up">
         <div class="about-img-frame">
-          <img src="img/about.jpg" alt="ELS Nepal Leadership" class="about-img-main">
+          <div class="team-img-wrap">
+            <img src="img/team2.JPG" alt="Bishnu Kumar Thokar">
+            <div class="team-img-overlay"></div>
+            <div class="team-social-overlay">
+              <a href="mailto:bishnukumar.thokar@gmail.com"><i class="fas fa-envelope"></i></a>
+              <a href="https://www.facebook.com/bishnukumar.thokar" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3 data-key="t2">Bishnu Kumar Thokar</h3>
+            <span class="role" data-key="t2 desc">Advocate | Consultant Lawyer</span><br>
+            <span class="role" data-key="t2 desc1">Vice Chairperson of Environment Law Society Nepal (ELS Nepal)</span>
+            <span class="role-ne" data-key="role_vchair">उपाध्यक्ष — Vice Chairperson</span>
+          </div>
         </div>
       </div>
       <div class="about-content fade-up">
@@ -621,7 +627,7 @@
         <div class="why-img-frame">
           <img src="img/feature.jpg" alt="Why Choose ELS Nepal" class="why-img">
           <div class="why-overlay-card">
-            <h3>ELS<br>Nepal</h3>
+            <h3>Legal Society & Research Centre</h3>
             <p data-key="trusted_partners">TRUSTED LEGAL PARTNERS</p>
           </div>
         </div>
@@ -656,123 +662,6 @@
   </div>
 </section>
 
-<!-- TEAM -->
-<section id="team">
-  <div class="container">
-    <div class="team-header">
-      <div class="section-label" data-key="t">Meet Our Expert Attorneys</div>
-      <h2 class="section-title"><span data-key="team_title">Our</span> <em data-key="team_title_em">Legal Team</em></h2>
-    </div>
-    <div class="team-grid">
-      <div class="team-card fade-up">
-        <div class="team-img-wrap">
-          <img src="img/team1.jpg" alt="Padam Bahadur Shrestha">
-          <div class="team-img-overlay"></div>
-          <div class="team-social-overlay">
-            <a href="/cdn-cgi/l/email-protection#b9dcd5ca97d7dcc9d8d5f9ded4d8d0d597dad6d4"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.facebook.com/bishnukumar.thokar" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
-          </div>
-        </div>
-        <div class="team-info">
-          <h3 data-key="t1">Padam Bahadur Shrestha</h3>
-          <span class="role" data-key="t1 desc">Advocate | Consultant Lawyer</span>
-          <span class="role-ne" data-key="role_chair">अध्यक्ष — Chairperson</span>
-        </div>
-      </div>
-      <div class="team-card fade-up">
-        <div class="team-img-wrap">
-          <img src="img/team2.JPG" alt="Bishnu Kumar Thokar">
-          <div class="team-img-overlay"></div>
-          <div class="team-social-overlay">
-            <a href="/cdn-cgi/l/email-protection#acd8c4c3c7cdde82dfc7d8eccbc1cdc5c082cfc3c1"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.facebook.com/bishnukumar.thokar" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
-          </div>
-        </div>
-        <div class="team-info">
-          <h3 data-key="t2">Bishnu Kumar Thokar</h3>
-          <span class="role" data-key="t2 desc">Advocate | Consultant Lawyer</span>
-          <span class="role-ne" data-key="role_vchair">उपाध्यक्ष — Vice Chairperson</span>
-        </div>
-      </div>
-      <div class="team-card fade-up">
-        <div class="team-img-wrap">
-          <img src="img/team3.JPG" alt="Satkon Shrestha">
-          <div class="team-img-overlay"></div>
-          <div class="team-social-overlay">
-            <a href="#"><i class="fas fa-envelope"></i></a>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-          </div>
-        </div>
-        <div class="team-info">
-          <h3 data-key="t3">Satkon Shrestha</h3>
-          <span class="role" data-key="t3 desc">Advocate | Consultant Lawyer</span>
-          <span class="role-ne" data-key="role_secy">महासचिव — Secretary General</span>
-        </div>
-      </div>
-      <div class="team-card fade-up">
-        <div class="team-img-wrap">
-          <img src="img/team4.JPG" alt="Raju Phuyal">
-          <div class="team-img-overlay"></div>
-          <div class="team-social-overlay">
-            <a href="#"><i class="fas fa-envelope"></i></a>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-          </div>
-        </div>
-        <div class="team-info">
-          <h3 data-key="t4">Raju Phuyal</h3>
-          <span class="role" data-key="t4 desc">Advocate | Consultant Lawyer</span>
-          <span class="role-ne" data-key="role_treas">कोषाध्यक्ष — Treasurer</span>
-        </div>
-      </div>
-      <div class="team-card fade-up">
-        <div class="team-img-wrap">
-          <img src="img/team5.JPG" alt="Shanta Panta">
-          <div class="team-img-overlay"></div>
-          <div class="team-social-overlay">
-            <a href="#"><i class="fas fa-envelope"></i></a>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-          </div>
-        </div>
-        <div class="team-info">
-          <h3 data-key="t5">Shanta Panta</h3>
-          <span class="role" data-key="t5 desc">Advocate | Consultant Lawyer</span>
-          <span class="role-ne" data-key="role_member">सदस्य — Member</span>
-        </div>
-      </div>
-      <div class="team-card fade-up">
-        <div class="team-img-wrap">
-          <img src="img/team6.JPG" alt="Joni Mainali">
-          <div class="team-img-overlay"></div>
-          <div class="team-social-overlay">
-            <a href="#"><i class="fas fa-envelope"></i></a>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-          </div>
-        </div>
-        <div class="team-info">
-          <h3 data-key="t6">Joni Mainali</h3>
-          <span class="role" data-key="t6 desc">Advocate | Consultant Lawyer</span>
-          <span class="role-ne" data-key="role_member">सदस्य — Member</span>
-        </div>
-      </div>
-      <div class="team-card fade-up">
-        <div class="team-img-wrap">
-          <img src="img/team7.JPG" alt="Hardik Subedi">
-          <div class="team-img-overlay"></div>
-          <div class="team-social-overlay">
-            <a href="#"><i class="fas fa-envelope"></i></a>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-          </div>
-        </div>
-        <div class="team-info">
-          <h3 data-key="t7">Hardik Subedi</h3>
-          <span class="role" data-key="t7 desc">Advocate | Consultant Lawyer</span>
-          <span class="role-ne" data-key="role_member">सदस्य — Member</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- GALLERY -->
 <section id="gallery">
   <div class="container">
@@ -783,23 +672,23 @@
   </div>
   <div class="gallery-grid">
     <div class="gallery-item tall fade-up">
-      <img src="img/g1.jpg" alt="ELS Nepal Team">
+      <img src="img/g1.jpg" alt="">
       <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
     </div>
     <div class="gallery-item fade-up">
-      <img src="img/g2.jpg" alt="Legal Proceedings">
+      <img src="img/g2.jpg" alt="">
       <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
     </div>
     <div class="gallery-item fade-up">
-      <img src="img/g3.jpg" alt="Court Advocacy">
+      <img src="img/g3.jpg" alt="">
       <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
     </div>
     <div class="gallery-item fade-up">
-      <img src="img/g4.jpg" alt="Environmental Law">
+      <img src="img/g4.jpg" alt="">
       <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
     </div>
     <div class="gallery-item fade-up">
-      <img src="img/g5.jpg" alt="ELS Nepal About">
+      <img src="img/g5.jpg" alt="">
       <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
     </div>
   </div>
@@ -815,15 +704,15 @@
         <div class="contact-details">
           <div class="contact-detail-item">
             <div class="contact-detail-icon"><i class="fas fa-map-marker-alt"></i></div>
-            <div><h4 data-key="contact_address_lbl">ADDRESS</h4><span data-key="fo4 desc1">Kumari Dhara Galli, Kathmandu</span></div>
+            <div><h4 data-key="contact_address_lbl">ADDRESS</h4><span data-key="fo4 desc1">Anamnagar, Kathmandu-29, Nepal</span></div>
           </div>
           <div class="contact-detail-item">
             <div class="contact-detail-icon"><i class="fas fa-phone-alt"></i></div>
-            <div><h4 data-key="contact_phone_lbl">PHONE</h4><span data-key="fo4 desc2">+012 345 67890</span></div>
+            <div><h4 data-key="contact_phone_lbl">PHONE</h4><span data-key="fo4 desc2">+977 9851007684</span></div>
           </div>
           <div class="contact-detail-item">
             <div class="contact-detail-icon"><i class="fas fa-envelope"></i></div>
-           <div><h4>EMAIL</h4><span>thokar.skt@gmail.com</span></div>
+            <div><h4 data-key="contact_email_lbl">EMAIL</h4><span><a href="mailto:thokar.skt@gmail.com" style="color:var(--white);text-decoration:none;">thokar.skt@gmail.com</a></span></div>
           </div>
           <div class="contact-detail-item">
             <div class="contact-detail-icon"><i class="fas fa-clock"></i></div>
@@ -837,7 +726,7 @@
       </div>
       <div class="contact-map fade-up">
         <div class="map-wrap">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.6601719978057!2d85.3218513!3d27.696896199999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19af2e3e81ab%3A0xd88e7df89e40765!2sSupreme%20Court!5e0!3m2!1sen!2snp!4v1767767843965!5m2!1sen!2snp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d371.32483731870343!2d85.33046516149753!3d27.696990862469807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb197e70de14d1%3A0x20fb09f376500b60!2sIJD!5e0!3m2!1sen!2snp!4v1774101736586!5m2!1sen!2snp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
@@ -849,7 +738,7 @@
   <div class="footer-bottom">
     <div class="footer-links-bar">
       <div class="footer-col">
-        <h4>ELS Nepal</h4>
+        <h4>Legal Society & Research Centre</h4>
         <p data-key="footer_desc">Environment Law Society Nepal — A collective of expert advocates championing environmental and personal legal justice across Nepal.</p>
         <div class="footer-social">
           <a href="https://mail.google.com/mail/?view=cm&fs=1&to=thokar.skt@gmail.com" target="_blank" rel="noopener"><i class="fas fa-envelope"></i></a>
@@ -869,15 +758,15 @@
         <h4 data-key="fo3">Useful Pages</h4>
         <a href="#about" data-key="fo3 desc1">About Us</a>
         <a href="#practice" data-key="fo3 desc2">Practices</a>
-        <a href="#team" data-key="fo3 desc3">Attorneys</a>
+        <a href="#about" data-key="fo3 desc3">Attorneys</a>
         <a href="#why" data-key="fo3 desc4">Why Choose Us?</a>
         <a href="#gallery" data-key="gallery">Gallery</a>
       </div>
       <div class="footer-col" id="location">
         <h4 data-key="fo4">Contact Us</h4>
-        <p><i class="fas fa-map-marker-alt" style="color:var(--gold);margin-right:8px"></i><span data-key="fo4 desc1">Kumari Dhara Galli, Kathmandu</span></p>
+        <p><i class="fas fa-map-marker-alt" style="color:var(--gold);margin-right:8px"></i><span data-key="fo4 desc1">Anamnagar, Kathmandu-29, Nepal</span></p>
         <p style="margin-top:10px"><i class="fas fa-phone-alt" style="color:var(--gold);margin-right:8px"></i><span data-key="fo4 desc2">+012 345 67890</span></p>
-       <p style="margin-top:10px"><i class="fas fa-envelope" style="color:var(--gold);margin-right:8px"></i>thokar.skt@gmail.com</p>
+        <p style="margin-top:10px"><i class="fas fa-envelope" style="color:var(--gold);margin-right:8px"></i>thokar.skt@gmail.com</p>
       </div>
     </div>
     <div class="footer-copyright">
@@ -887,7 +776,7 @@
       <div class="footer-copyright-links">
         <a href="#practice" data-key="fo5l1">Environment Law</a>
         <a href="#practice" data-key="fo5l2">Personal Legal Matter</a>
-        <a href="#team" data-key="fo5l3">Lawyers</a>
+        <a href="#about" data-key="fo5l3">Lawyers</a>
       </div>
     </div>
   </div>
@@ -896,7 +785,7 @@
 <!-- BACK TO TOP -->
 <a href="#" id="back-top"><i class="fas fa-chevron-up"></i></a>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 // =============================================
 // TRANSLATIONS
 // =============================================
@@ -905,225 +794,238 @@ const translations = {
     // Top bar
     time: "10:00 am - 5:00 pm",
     "opening hours": "Opening Hour: Sunday - Friday",
-    number: "+977 12346789",
+    number: "+977 9851007684",
     // Navbar
-    home: "Home", about: "About", practice: "Practice", attorneys: "Attorneys",
+    home: "Home", about: "About", practice: "Practice",
     gallery: "Gallery", contact: "Contact", location: "Location",
     // Hero slide tags
-    slide_tag1: "Environmental Justice · Nepal",
+    slide_tag1: "Law & Justice · Nepal",
     slide_tag2: "Strategic Advocacy · Nepal",
-    slide_tag3: "ELS Nepal · Est. Kathmandu",
+    slide_tag3: "Expert Legal Consultation · Nepal",
     // Hero titles
-    carousel1: "Environmental protection and legal advocacy",
-    "carousel1 desc": "We offer specialized legal proficiency in environmental law, delivering comprehensive advisory services in regulatory adherence and environmental impact mitigation.",
-    carousel2: "We also prepare to oppose for you",
-    "carousel2 desc": "Our team is committed to defending your rights with determination, strategic advocacy, and unwavering dedication to achieving the best possible outcome.",
-    carousel3: "We also fight for your privilege",
-    "carousel3 desc": "We stand firmly to protect your legal interests, advocating for your rights with integrity, expertise, and a strong commitment to justice.",
+    carousel1: "I fight for your Justice",
+    "carousel1 desc": "Justice stands as the foundation of a fair society, ensuring every individual receives equal protection, dignity, and accountability under the rule of law.",
+    carousel2: "I prepare to oppose for You",
+    "carousel2 desc": "I am committed to defending your rights with determination, strategic advocacy, and unwavering dedication to achieving the best possible outcome.",
+    carousel3: "I fight for your Privilege",
+    "carousel3 desc": "I stand firmly to protect your legal interests, advocating for your rights with integrity, expertise, and a strong commitment to justice.",
     // Hero buttons
-    btn_practice: "Our Practice Areas",
+    btn_practice: "Practice Areas",
     btn_learn: "Learn More",
-    btn_attorneys: "Meet Our Attorneys",
     btn_consult: "Consult Now",
     btn_getconsult: "Get Consultation",
-    btn_services: "Our Services",
+    btn_services: "Services",
     // Stats
     feature1: "Legal",            "feature1 desc": "Government Approved",
-    feature2: "Attorneys",        "feature2 desc": "Expert Attorneys",
+    feature2: "Lawyer",        "feature2 desc": "Expert Legal Advocacy and Consultation",
     feature3: "Success",          "feature3 desc": "High Win Rate",
     feature4: "Support",          "feature4 desc": "Quick Support",
     // About section
-    a1: "Learn About Us",
-    about_title: "Championing",
-    about_title_em: "Environmental Justice",
-    about_title_in: "in Nepal",
-    "a1 desc1": "The Environment Law Society (ELS) Nepal is a premier non-profit organization dedicated to environmental protection. Our society brings together a dedicated group of seven legal professionals — practicing advocates and consultant lawyers who collectively unite under the ELS Nepal platform with the shared objective of promoting, advocating for, and strengthening the implementation of environmental law in Nepal. we actively welcome collaboration with legal professionals, conservationists, researchers, and international partners who share our commitment to environmental protection and sustainable development.",
-    "a1 desc2": "At the mean time, each member of ELS Nepal maintains an independent legal practice. Clients may engage individual members for professional legal representation and consultation on personal legal matters, where the advocates provide diligent and principled assistance grounded in legal expertise and ethical practice.",
-    "a1 desc3": "More about ELS Nepal",
+    a1: "Learn About Me and the Firm",
+    about_title: "Chief",
+    about_title_em: "Legal Consultant &",
+    about_title_in: "Advocate",
+    "a1 desc1": "Kanooni Samaj Tatha Anusandhan Kendra (Legal Society and Research Centre) stands as a distinguished sole practitioner’s law office led by me, Principal Advocate Bishnu Kumar Thokar. With over 22 years of extensive legal experience and a Master of Laws (LLM) qualification, I hold Advocate License No. 10043 and serve as an Advocate, Chief Consultant Lawyer, and Vice Chairperson of the Environment Law Society Nepal (ELS Nepal). My professional journey is defined by a steadfast commitment to legal excellence, ethical integrity, and the advancement of environmental jurisprudence. Through a client-centered and research-driven approach, I strive to deliver insightful legal counsel, strategic representation, and meaningful contributions to the broader legal community.",
+    "a1 desc2": "Formally registered with the Nepal Bar Council (Registration No. 179), my firm operates in full compliance with the Law Practitioners Office Registration and Operation Regulation, 2013. Established on April 12, 2013, and valid through April 11, 2028, the office reflects strong institutional credibility and regulatory adherence, including PAN registration under the Ministry of Finance and tax oversight by the Inland Revenue Office, Kathmandu. With a registered office in Gokarneshwor Municipality and an operational presence in Anamnagar, Kathmandu, I have cultivated a practice that combines accessibility, professional rigor, and a commitment to legal research, positioning the firm as a reliable and respected entity within Nepal’s legal landscape.",
+    "a1 desc3": "Learn More",
     // About feature boxes
     af1_title: "Environmental Law",   af1_desc: "Pioneering eco-legal advocacy",
     af2_title: "Civil & Criminal",    af2_desc: "Full-spectrum legal defense",
     af3_title: "Consultation",        af3_desc: "Expert legal counsel",
-    af4_title: "International",       af4_desc: "Global partnerships welcome",
+    af4_title: "Advocacy",       af4_desc: "Strategic legal representation",
+    // About image card
+    t2: "Bishnu Kumar Thokar",
+    "t2 desc": "Advocate | Chief Consultant Lawyer |",
+    "t2 desc1": "Vice Chairperson, Environment Law Society Nepal (ELS Nepal)",
+    role_vchair: "LLB, LLM, 22 Years of Legal Expertise",
     // Practice section
-    s: "Our Practice Areas",
+    s: "Practice Areas",
     practice_title: "Areas of",
     practice_title_em: "Legal Expertise",
     s1: "Environment Law",
-    "s1 desc": "We provide legal expertise in environmental law, assisting clients with regulatory compliance, environmental impact assessments, and advocacy for sustainable practices to protect our planet for future generations.",
+    "s1 desc": "The firm provides legal expertise in environmental law, assisting clients with regulatory compliance, environmental impact assessments, and advocacy for sustainable practices to protect our planet for future generations.",
     s2: "Civil Law",
-    "s2 desc": "We provide legal assistance in civil matters including property disputes, contractual disagreements, and claims for compensation, ensuring the protection of your legal rights through proper legal procedures.",
+    "s2 desc": "The firm provides legal assistance in civil matters including property disputes, contractual disagreements, and claims for compensation, ensuring the protection of your legal rights through proper legal procedures.",
     s3: "Family Law",
-    "s3 desc": "Our services cover sensitive family matters such as divorce, child custody, inheritance, and marital disputes, handled with professionalism, confidentiality, and a focus on fair resolution.",
+    "s3 desc": "The firm provides comprehensive legal services for sensitive family matters such as divorce, child custody, inheritance, and marital disputes, handled with professionalism, confidentiality, and a focus on fair resolution.",
     s4: "Business Law",
-    "s4 desc": "We assist businesses with legal compliance, contract drafting, dispute resolution, and corporate advisory services to ensure lawful and sustainable business operations.",
+    "s4 desc": "The firm assists businesses with legal compliance, contract drafting, dispute resolution, and corporate advisory services to ensure lawful and sustainable business operations.",
     s5: "Education Law",
-    "s5 desc": "Our expertise includes handling legal issues related to educational institutions, student rights, regulatory compliance, and disputes within the education sector.",
+    "s5 desc": "The firm provides expertise in handling legal issues related to educational institutions, student rights, regulatory compliance, and disputes within the education sector.",
     s6: "Criminal Law",
-    "s6 desc": "We provide strong legal representation in criminal matters, safeguarding the rights of individuals through strategic defense and professional advocacy before the courts.",
+    "s6 desc": "The firm provides strong legal representation in criminal matters, safeguarding the rights of individuals through strategic defense and professional advocacy before the courts.",
     consult_now: "Consult Now",
     // Why section
-    f: "Why Choose Us",
+    f: "Law & Justice",
     why_title: "Why",
-    why_title_em: "Choose ELS Nepal",
-    trusted_partners: "TRUSTED LEGAL PARTNERS",
+    why_title_em: "Choose Legal Society & Research Centre",
+    trusted_partners: "TRUSTED LEGAL PARTNER",
     f1: "Best Law Practices",
-    "f1 desc": "Our firm follows the highest standards of legal practice, combining deep legal knowledge with strategic thinking to provide reliable representation. Every case is approached with professionalism, ethical integrity, and a commitment to protecting our clients' rights.",
+    "f1 desc": "This firm follows the highest standards of legal practice, combining deep legal knowledge with strategic thinking to provide reliable representation. Every case is approached with professionalism, ethical integrity, and a commitment to protecting our clients' rights.",
     f2: "Efficiency & Trust",
-    "f2 desc": "We prioritize transparent communication, timely legal services, and a trustworthy relationship with our clients. Our approach ensures that every legal matter is handled efficiently while maintaining the highest level of confidentiality and trust.",
+    "f2 desc": "It prioritizes transparent communication, timely legal services, and a trustworthy relationship with our clients. Our approach ensures that every legal matter is handled efficiently while maintaining the highest level of confidentiality and trust.",
     f3: "Results You Deserve",
-    "f3 desc": "Our goal is to secure the best possible outcome for every client. Through dedicated advocacy, careful legal analysis, and persistent representation, we strive to deliver results that protect your interests and uphold justice.",
-    // Team section
-    t: "Meet Our Expert Attorneys",
-    team_title: "Our",
-    team_title_em: "Legal Team",
-    t1: "Padam Bahadur Shrestha", "t1 desc": "Advocate | Consultant Lawyer",
-    t2: "Bishnu Kumar Thokar",    "t2 desc": "Advocate | Consultant Lawyer",
-    t3: "Satkon Shrestha",        "t3 desc": "Advocate | Consultant Lawyer",
-    t4: "Raju Phuyal",            "t4 desc": "Advocate | Consultant Lawyer",
-    t5: "Shanta Panta",           "t5 desc": "Advocate | Consultant Lawyer",
-    t6: "Joni Mainali",           "t6 desc": "Advocate | Consultant Lawyer",
-    t7: "Hardik Subedi",          "t7 desc": "Advocate | Consultant Lawyer",
-    role_chair:  "अध्यक्ष — Chairperson",
-    role_vchair: "उपाध्यक्ष — Vice Chairperson",
-    role_secy:   "महासचिव — Secretary General",
-    role_treas:  "कोषाध्यक्ष — Treasurer",
-    role_member: "सदस्य — Member",
+    "f3 desc": "Its goal is to secure the best possible outcome for every client. Through dedicated advocacy, careful legal analysis, and persistent representation, we strive to deliver results that protect your interests and uphold justice.",
     // Gallery section
-    gallery_label: "Our Activities",
-    gallery_title: "ELS Nepal",
+    gallery_label: "Activities",
+    gallery_title: "Legal Society & Research Centre",
     gallery_title_em: "in Action",
     // Contact section
     contact_heading: "Get in",
     contact_heading_em: "Touch",
-    contact_heading2: "With Us",
-    contact_intro: "We welcome all legal inquiries and partnership opportunities. Reach out to our team of expert advocates for a consultation or to learn more about our practice areas.",
+    contact_heading2: "With the Firm",
+    contact_intro: "This Firm welcomes all legal inquiries. Reach out to the firm offline or online for expert legal consultation and advocacy",
     contact_address_lbl: "ADDRESS",
     contact_phone_lbl: "PHONE",
     contact_email_lbl: "EMAIL",
     contact_hours_lbl: "HOURS",
     // Footer
-    footer_desc: "Environment Law Society Nepal — A collective of expert advocates championing environmental and personal legal justice across Nepal.",
+    footer_desc: "Legal Society & Research Centre  — Your legal partner for expert legal advocacy and consultation",
     fo1: "Location",
     fo2: "Service Areas",
     "fo2 desc1": "Civil Law", "fo2 desc2": "Family Law", "fo2 desc3": "Business Law", "fo2 desc4": "Education Law", "fo2 desc5": "Criminal Law",
     fo3: "Useful Pages",
-    "fo3 desc1": "About Us", "fo3 desc2": "Practices", "fo3 desc3": "Attorneys", "fo3 desc4": "Why Choose Us?",
-    fo4: "Contact Us", "fo4 desc1": "Kumari Dhara Galli, Kathmandu", "fo4 desc2": "+012 345 67890",
-    fo5l1: "Environment Law", fo5l2: "Personal Legal Matter", fo5l3: "Lawyers",
-    fo61: "© Environment Law Society Nepal", fo62: "All Rights Reserved"
+    "fo3 desc1": "About", "fo3 desc2": "Practices", "fo3 desc3": "Lawyer", "fo3 desc4": "Why Choose this Firm?",
+    fo4: "Contact Us", "fo4 desc1": "Anamnagar, Kathmandu-29, Nepal", "fo4 desc2": "9851007684",
+    fo5l1: "Law & Justice", fo5l2: "Personal Legal Matter", fo5l3: "Lawyer",
+    fo61: "© Legal Society & Research Centre", fo62: "All Rights Reserved"
   },
-  ne: {
+ ne: {
     // Top bar
-    time: "पूर्वाह्न १०:०० – अपराह्न ५:०० बजेसम्म",
-    "opening hours": "सञ्चालन समय: आइतबार – शुक्रबार",
-    number: "+९७७ १२३४५६७८९",
+    time: "बिहान १०:०० – साँझ ५:०० बजे",
+    "opening hours": "कार्यालय समय: आइतबार – शुक्रबार",
+    number: "+९७७ ९८५१००७६८४",
+
     // Navbar
-    home: "मुख्यपृष्ठ", about: "संस्थागत परिचय", practice: "कार्यक्षेत्र",
-    attorneys: "कानून व्यवसायी", gallery: "चित्रशाला", contact: "सम्पर्क", location: "अवस्थिति",
+    home: "गृहपृष्ठ",
+    about: "संस्थागत परिचय",
+    practice: "अभ्यास क्षेत्रहरू",
+    gallery: "ग्यालरी",
+    contact: "सम्पर्क",
+    location: "स्थान",
+
     // Hero slide tags
-    slide_tag1: "वातावरणीय न्याय · नेपाल",
-    slide_tag2: "रणनीतिक वकालत · नेपाल",
-    slide_tag3: "ELS Nepal · स्थापना, काठमाडौं",
+    slide_tag1: "कानून र न्याय · नेपाल",
+    slide_tag2: "रणनीतिक पैरवी · नेपाल",
+    slide_tag3: "विशेषज्ञ कानूनी परामर्श · नेपाल",
+
     // Hero titles
-    carousel1: "वातावरण संरक्षण र कानुनी वकालत",
-    "carousel1 desc": "हामी वातावरणीय विधिशास्त्रको क्षेत्रमा विशिष्ट कानूनी प्रखरता एवं व्यावसायिक दक्षता प्रस्तुत गर्दै, नियमनकारी अनुपालन तथा वातावरणीय प्रभाव न्यूनीकरणका सम्बन्धमा बृहत्तर एवं सूक्ष्म परामर्शमूलक सेवाहरू प्रदान गर्दछौं।",
-    carousel2: "तपाईंको पक्षमा प्रवल पैरवीका लागि पनि हामी सदैव तत्पर छौँ",
-    "carousel2 desc": "हाम्रो समूह दृढ सङ्कल्प, रणनीतिक वकालत र सर्वोत्तम परिणाम प्राप्तिका निम्ति अटुट निष्ठाका साथ तपाईंको कानुनी अधिकारको रक्षा गर्न प्रतिबद्ध छ।",
-    carousel3: "तपाईंको हकहित सुरक्षाका लागि पनि हामी अविचलित छौँ",
-    "carousel3 desc": "हामी व्यावसायिक सत्यनिष्ठा, विज्ञता र न्यायप्रतिको अटुट प्रतिबद्धताका साथ तपाईंको कानूनी हित र अधिकारको पैरवीमा दृढतापूर्वक उभिन्छौँ।",
+    carousel1: "म तपाईंको न्यायका लागि लड्दछु",
+    "carousel1 desc": "न्याय एक निष्पक्ष समाजको आधारशिला हो — जहाँ कानूनको शासनअन्तर्गत प्रत्येक व्यक्तिले समान संरक्षण, सम्मान र जवाफदेहिता पाउँछ।",
+    carousel2: "म तपाईंको पक्षमा डटेर उभिदछु",
+    "carousel2 desc": "दृढ निश्चय, रणनीतिक पैरवी र सर्वोत्तम परिणामप्रतिको अटल समर्पणका साथ म तपाईंको अधिकारको रक्षामा प्रतिबद्ध छु।",
+    carousel3: "म तपाईंको हकहितका लागि लड्दछु",
+    "carousel3 desc": "व्यावसायिक ईमानदारी, कानूनी दक्षता र न्यायप्रतिको दृढ प्रतिबद्धताका साथ म तपाईंको कानूनी स्वार्थ र अधिकारको पैरवीमा सदैव तत्पर छु।",
+
     // Hero buttons
-    btn_practice: "हाम्रा कार्यक्षेत्रहरू",
-    btn_learn: "थप जान्नुहोस्",
-    btn_attorneys: "हाम्रा अधिवक्ताहरू भेट्नुहोस्",
+    btn_practice: "अभ्यास क्षेत्रहरू",
+    btn_learn: "थप जानकारी",
     btn_consult: "परामर्श लिनुहोस्",
-    btn_getconsult: "परामर्श बुक गर्नुहोस्",
-    btn_services: "हाम्रा सेवाहरू",
+    btn_getconsult: "परामर्श लिनुहोस्",
+    btn_services: "सेवाहरू",
+
     // Stats
-    feature1: "कानूनी मान्यता",  "feature1 desc": "सरकारद्वारा विधिवत स्वीकृत",
-    feature2: "अधिवक्ताहरू",     "feature2 desc": "विषयविज्ञ कानून व्यवसायी",
-    feature3: "सफलता",           "feature3 desc": "सफलताको उच्च अनुपात",
-    feature4: "सहयोग",           "feature4 desc": "शीघ्र कानूनी सहायता",
+    feature1: "कानूनी",
+    "feature1 desc": "नेपाल सरकारद्वारा मान्यताप्राप्त",
+    feature2: "अधिवक्ता",
+    "feature2 desc": "विशेषज्ञ कानूनी पैरवी तथा परामर्श",
+    feature3: "सफलता",
+    "feature3 desc": "उच्च सफलता दर",
+    feature4: "सहयोग",
+    "feature4 desc": "तत्काल कानूनी सहायता",
+
     // About section
-    a1: "हाम्रो बारेमा विस्तृत जानकारी",
-    about_title: "नेपालमा वातावरणीय न्यायको",
-    about_title_em: "सशक्त पक्षपोषण",
-    about_title_in: "",
-    "a1 desc1": "वातावरण कानून समाज नेपाल (ELS Nepal) वातावरण संरक्षणप्रति समर्पित एक गैर-नाफामुखी संस्था हो। यस समाजले सात जना अभ्यासरत अधिवक्ताहरू र परामर्शदाता वकिलहरूलाई एउटै वैचारिक मञ्चमा एकाकार गरेको छ, जसले ELS नेपालमार्फत नेपालमा वातावरणसम्बन्धी कानुनको प्रवर्द्धन, पैरवी तथा प्रभावकारी कार्यान्वयन सुदृढ गर्ने साझा उद्देश्य बोकेका छन्। वातावरण संरक्षण र दिगो विकासप्रति हाम्रो प्रतिबद्धता साझा गर्ने कानुनी विज्ञ, संरक्षणकर्मी, अनुसन्धानकर्ता तथा अन्तर्राष्ट्रिय साझेदारहरूसँग सहकार्य गर्न हामी सदैव तत्पर र स्वागतयोग्य छौं।",
-    "a1 desc2": "यस सँगै, ELS नेपालमा आबद्ध प्रत्येक सदस्यले आफ्नो स्वतन्त्र कानुनी अभ्यासलाई पनि निरन्तरता दिँदै आउनुभएको छ। तसर्थ, व्यक्तिगत कानुनी मामिलाहरूमा व्यावसायिक प्रतिनिधित्व वा विशेषज्ञ परामर्शका लागि सेवाग्राहीहरूले सम्बन्धित सदस्यसँग प्रत्यक्ष संवाद स्थापित गर्न सक्नुहुनेछ। हाम्रा सदस्यहरूले कानुनी विशेषज्ञताको उच्चतम प्रयोग गर्दै व्यावसायिक मर्यादा, नैतिक निष्ठा र न्यायोचित सिद्धान्तका आधारमा इमानदार एवं जिम्मेवार सेवा प्रदान गर्ने प्रतिबद्धता व्यक्त गर्दछन्।",
-    "a1 desc3": "ELS नेपालबारे थप जान्नुहोस्",
+    a1: "मेरो र फर्मको बारेमा जान्नुहोस्",
+    about_title: "प्रमुख",
+    about_title_em: "कानूनी परामर्शदाता तथा",
+    about_title_in: "अधिवक्ता",
+    "a1 desc1": "कानूनी समाज तथा अनुसन्धान केन्द्र मेरो नेतृत्वमा सञ्चालित एक प्रतिष्ठित एकल कानून व्यवसायी कार्यालय हो। २२ वर्षभन्दा बढीको गहन कानूनी अनुभव र कानूनमा स्नातकोत्तर (LLM) उपाधिसहित, म (अधिवक्ता लाइसेन्स नं. १००४३) कानूनी क्षेत्रमा उच्च व्यावसायिक दक्षता र विश्वसनीयताका साथ कार्यरत छु। म अधिवक्ता, प्रमुख कानूनी परामर्शदाता तथा वातावरण कानून समाज नेपाल (ELS Nepal) का उपाध्यक्षको रूपमा सक्रिय रहँदै कानूनी उत्कृष्टता, नैतिक निष्ठा तथा वातावरणीय विधिशास्त्रको प्रवर्द्धनप्रति अडिग प्रतिबद्धता राख्दछु। सेवाग्राहीकेन्द्रित तथा अनुसन्धानमूलक दृष्टिकोणमार्फत म सटीक कानूनी परामर्श, रणनीतिक प्रतिनिधित्व तथा व्यापक कानूनी समुदायमा अर्थपूर्ण योगदान पुर्‍याउन निरन्तर क्रियाशील छु।",
+    "a1 desc2": "नेपाल कानून व्यवसायी परिषद्मा विधिवत् दर्ता (दर्ता नं. १७९) भएको यस फर्मले कानून व्यवसायीको कार्यालय दर्ता तथा सञ्चालन नियमावली, २०७० को पूर्णरूपेण पालना गर्दछ। वि.सं. २०६९ साल चैत ३० मा स्थापित र २०८४ साल चैत २९ सम्म वैध रहेको यस कार्यालयले संस्थागत विश्वसनीयता र नियमनकारी अनुपालनको बलियो आधार राख्दछ — जसमा अर्थ मन्त्रालयअन्तर्गत स्थायी लेखा नम्बर (PAN) दर्ता र आन्तरिक राजस्व कार्यालय, काठमाडौंको कर सुपरीवेक्षण समावेश छ। गोकर्णेश्वर नगरपालिकामा दर्ता भई काठमाडौंको अनामनगरबाट सञ्चालित यस फर्मले पहुँचयोग्यता, व्यावसायिक कठोरता र कानूनी अनुसन्धानप्रतिको प्रतिबद्धतालाई एकसाथ समेटी नेपालको कानूनी क्षेत्रमा एक भरपर्दो र सम्मानित संस्थाको रूपमा आफूलाई सुदृढ गरेको छ।",
+    "a1 desc3": "थप जानकारी",
+
     // About feature boxes
-    af1_title: "वातावरण कानून",      af1_desc: "पर्यावरणीय वकालतमा अग्रणी",
-    af2_title: "देवानी र फौजदारी",  af2_desc: "सम्पूर्ण कानूनी प्रतिरक्षा",
-    af3_title: "परामर्श सेवा",       af3_desc: "विशेषज्ञ कानूनी सल्लाह",
-    af4_title: "अन्तर्राष्ट्रिय",    af4_desc: "वैश्विक साझेदारी स्वागतयोग्य",
+    af1_title: "वातावरण कानून",
+    af1_desc: "पर्यावरणीय कानूनी पैरवीमा अग्रणी",
+    af2_title: "देवानी र फौजदारी",
+    af2_desc: "सर्वाङ्गीण कानूनी प्रतिरक्षा",
+    af3_title: "परामर्श",
+    af3_desc: "विशेषज्ञ कानूनी सल्लाह",
+    af4_title: "वकालत",
+    af4_desc: "रणनीतिक कानूनी प्रतिनिधित्व",
+
+    // About image card
+    t2: "विष्णु कुमार थोकर",
+    "t2 desc": "अधिवक्ता | प्रमुख परामर्शदाता कानून व्यवसायी |",
+    "t2 desc1": "उपाध्यक्ष, वातावरण कानून समाज नेपाल (ELS Nepal)",
+    role_vchair: "LLB, LLM, २२ वर्षको कानूनी विशेषज्ञता",
+
     // Practice section
-    s: "हाम्रा विशिष्ट कार्यक्षेत्रहरू",
+    s: "अभ्यास क्षेत्रहरू",
     practice_title: "कानूनी विशेषज्ञताका",
     practice_title_em: "क्षेत्रहरू",
     s1: "वातावरण कानून",
-    "s1 desc": "हामी वातावरणीय कानूनका क्षेत्रमा नियामक अनुपालन, वातावरणीय प्रभाव मूल्याङ्कन र भावी पुस्ताका लागि पृथ्वीको संरक्षण हेतु दिगो अभ्यासहरूको कानूनी पैरवीमा विज्ञता प्रदान गर्दछौँ।",
+    "s1 desc": "फर्मले वातावरण कानूनमा विशेषज्ञ सेवा प्रदान गर्दछ — नियमनकारी अनुपालन, वातावरणीय प्रभाव मूल्याङ्कन र भावी पुस्ताका निम्ति दिगो अभ्यासको कानूनी पैरवीमा सेवाग्राहीलाई सहयोग गर्दै।",
     s2: "देवानी कानून",
-    "s2 desc": "हामी सम्पत्ति विवाद, करारजन्य असमझदारी र क्षतिपूर्ति दाबी लगायतका देवानी प्रकृतिका विषयहरूमा उचित कानुनी प्रक्रिया बमोजिम तपाईंको अधिकारको रक्षा सुनिश्चित गर्दछौँ।",
+    "s2 desc": "फर्मले सम्पत्ति विवाद, करारजन्य मतभेद र क्षतिपूर्ति दाबीसहित देवानी मामिलाहरूमा कानूनी सहायता प्रदान गर्दछ — उचित कानूनी प्रक्रियामार्फत तपाईंको अधिकारको संरक्षण सुनिश्चित गर्दै।",
     s3: "पारिवारिक कानून",
-    "s3 desc": "सम्बन्ध विच्छेद, बालबालिकाको संरक्षकत्व, अंशबण्डा र वैवाहिक विवाद जस्ता संवेदनशील पारिवारिक विषयहरूलाई हामी पूर्ण गोपनीयता, व्यावसायिकता र न्यायोचित समाधानको केन्द्रमा राखेर सम्बोधन गर्दछौँ।",
+    "s3 desc": "फर्मले सम्बन्धविच्छेद, बाल संरक्षकत्व, उत्तराधिकार र वैवाहिक विवाद जस्ता संवेदनशील पारिवारिक मामिलाहरूमा व्यावसायिकता, गोपनीयता र न्यायोचित समाधानको प्राथमिकतासाथ व्यापक कानूनी सेवा प्रदान गर्दछ।",
     s4: "व्यावसायिक कानून",
-    "s4 desc": "हामी व्यावसायिक प्रतिष्ठानहरूलाई कानूनी परिपालना, करार मस्यौदा, विवाद निरुपण र संस्थागत परामर्श सेवा मार्फत कानूनसम्मत तथा दिगो व्यवसाय सञ्चालनमा सहयोग गर्दछौँ।",
+    "s4 desc": "फर्मले व्यावसायिक प्रतिष्ठानहरूलाई कानूनी अनुपालन, करार मस्यौदा, विवाद समाधान र कर्पोरेट परामर्श सेवामार्फत कानूनसम्मत र दिगो व्यवसाय सञ्चालनमा सहयोग पुर्‍याउँछ।",
     s5: "शिक्षा कानून",
-    "s5 desc": "शैक्षिक संस्थासँग सम्बन्धित कानूनी मामिला, विद्यार्थीका हक-अधिकार, नियामक अनुपालन र शिक्षा क्षेत्रका विवादहरूको निरुपणमा हाम्रो विशिष्ट विज्ञता रहेको छ।",
+    "s5 desc": "फर्मले शैक्षिक संस्थासम्बन्धी कानूनी मामिला, विद्यार्थीका हकअधिकार, नियमनकारी अनुपालन र शिक्षा क्षेत्रभित्रका विवाद समाधानमा विशेषज्ञ सेवा प्रदान गर्दछ।",
     s6: "फौजदारी कानून",
-    "s6 desc": "हामी फौजदारी मुद्दाहरूमा रणनीतिक प्रतिरक्षा र न्यायालयमा प्रभावकारी बहस-पैरवी मार्फत व्यक्तिको संवैधानिक एवं कानूनी अधिकारको रक्षा गर्दछौँ।",
+    "s6 desc": "फर्मले फौजदारी मुद्दाहरूमा रणनीतिक प्रतिरक्षा र अदालतमा सशक्त पैरवीमार्फत व्यक्तिका अधिकारको दृढतापूर्वक संरक्षण गर्दछ।",
     consult_now: "परामर्श लिनुहोस्",
+
     // Why section
-    f: "हामीलाई किन रोज्ने?",
+    f: "कानून र न्याय",
     why_title: "किन",
-    why_title_em: "ELS Nepal रोज्ने?",
+    why_title_em: "कानूनी समाज तथा अनुसन्धान केन्द्र रोज्ने?",
     trusted_partners: "विश्वसनीय कानूनी साझेदार",
     f1: "उत्कृष्ट कानूनी अभ्यास",
-    "f1 desc": "हाम्रो फर्मले कानूनी अभ्यासका उच्चतम मापदण्डहरू अनुशरण गर्दै गहन कानूनी ज्ञान र रणनीतिक चिन्तनको समिश्रणबाट विश्वसनीय प्रतिनिधित्व प्रदान गर्दछ। हामी प्रत्येक मुद्दालाई व्यावसायिकता, नैतिक निष्ठा र सेवाग्राहीको अधिकार संरक्षणको दृढ सङ्कल्पका साथ अगाडि बढाउँछौँ।",
+    "f1 desc": "यस फर्मले कानूनी अभ्यासका उच्चतम मापदण्ड अनुसरण गर्दछ — गहन कानूनी ज्ञान र रणनीतिक सोचको समन्वयमार्फत भरपर्दो प्रतिनिधित्व प्रदान गर्दै। प्रत्येक मुद्दालाई व्यावसायिकता, नैतिक निष्ठा र सेवाग्राहीको अधिकार संरक्षणप्रतिको दृढ प्रतिबद्धताका साथ अगाडि बढाइन्छ।",
     f2: "दक्षता र विश्वसनीयता",
-    "f2 desc": "हामी पारदर्शी सञ्चार, समयसापेक्ष सेवा र सेवाग्राहीसँगको भरपर्दो सम्बन्धलाई प्राथमिकता दिन्छौँ। हाम्रो कार्यशैलीले प्रत्येक कानूनी मामिलालाई उच्चतम गोपनीयता र विश्वासका साथ कुशलतापूर्वक व्यवस्थापन गर्ने प्रत्याभूति दिन्छ।",
-    f3: "न्यायोचित परिणाम",
-    "f3 desc": "हाम्रो ध्येय प्रत्येक सेवाग्राहीका लागि सर्वोत्तम परिणाम सुनिश्चित गर्नु हो। समर्पित वकालत, सूक्ष्म कानूनी विश्लेषण र निरन्तर प्रतिनिधित्वका माध्यमबाट हामी तपाईंको हितको रक्षा र न्यायको प्रतिष्ठा कायम गर्न प्रयत्नशील छौँ।",
-    // Team section
-    t: "हाम्रा विशेषज्ञ अधिवक्ताहरूसँग भेट",
-    team_title: "हाम्रो",
-    team_title_em: "कानूनी टोली",
-    t1: "पदम बहादुर श्रेष्ठ",  "t1 desc": "अधिवक्ता | परामर्शदाता कानून व्यवसायी",
-    t2: "विष्णु कुमार थोकर",   "t2 desc": "अधिवक्ता | परामर्शदाता कानून व्यवसायी",
-    t3: "षटकोण श्रेष्ठ",       "t3 desc": "अधिवक्ता | परामर्शदाता कानून व्यवसायी",
-    t4: "राजु फुयाल",          "t4 desc": "अधिवक्ता | परामर्शदाता कानून व्यवसायी",
-    t5: "शान्ता पन्त",          "t5 desc": "अधिवक्ता | परामर्शदाता कानून व्यवसायी",
-    t6: "जोनी मैनाली",          "t6 desc": "अधिवक्ता | परामर्शदाता कानून व्यवसायी",
-    t7: "हार्दिक सुवेदी",       "t7 desc": "अधिवक्ता | परामर्शदाता कानून व्यवसायी",
-    role_chair:  "अध्यक्ष",
-    role_vchair: "उपाध्यक्ष",
-    role_secy:   "महासचिव",
-    role_treas:  "कोषाध्यक्ष",
-    role_member: "सदस्य",
+    "f2 desc": "फर्म पारदर्शी संवाद, समयसापेक्ष कानूनी सेवा र सेवाग्राहीसँगको विश्वासयोग्य सम्बन्धलाई प्राथमिकता दिन्छ। हाम्रो कार्यशैलीले प्रत्येक कानूनी मामिलालाई उच्चतम गोपनीयता र विश्वासका साथ कुशलतापूर्वक सम्पादन गर्ने प्रत्याभूति दिन्छ।",
+    f3: "तपाईंले पाउनुपर्ने परिणाम",
+    "f3 desc": "फर्मको लक्ष्य प्रत्येक सेवाग्राहीका लागि सर्वोत्तम परिणाम हासिल गर्नु हो। समर्पित पैरवी, सूक्ष्म कानूनी विश्लेषण र निरन्तर प्रतिनिधित्वमार्फत हामी तपाईंको हितको रक्षा र न्यायको प्रतिष्ठापनमा सदैव प्रयत्नशील छौँ।",
+
     // Gallery section
-    gallery_label: "हाम्रा गतिविधिहरू",
-    gallery_title: "ELS Nepal",
+    gallery_label: "गतिविधिहरू",
+    gallery_title: "कानूनी समाज तथा अनुसन्धान केन्द्र",
     gallery_title_em: "कार्यरत",
+
     // Contact section
-    contact_heading: "सम्पर्कमा",
-    contact_heading_em: "आउनुहोस्",
-    contact_heading2: "",
-    contact_intro: "हामी सम्पूर्ण कानूनी जिज्ञासा र साझेदारीका अवसरहरूलाई स्वागत गर्दछौँ। परामर्शका लागि वा हाम्रा कार्यक्षेत्रहरूबारे थप जान्नका लागि हाम्रा विशेषज्ञ अधिवक्ताहरूको टोलीसँग सम्पर्क गर्नुहोस्।",
+    contact_heading: "सम्पूर्ण",
+    contact_heading_em: "सम्पर्क",
+    contact_heading2: "विवरण",
+    contact_intro: "फर्म सबै प्रकारका कानूनी जिज्ञासाहरूको स्वागत गर्दछ। विशेषज्ञ कानूनी परामर्श र पैरवीका लागि हामीलाई अनलाइन वा प्रत्यक्ष सम्पर्क गर्नुहोस्।",
     contact_address_lbl: "ठेगाना",
-    contact_phone_lbl: "दूरभाष",
+    contact_phone_lbl: "फोन",
     contact_email_lbl: "इमेल",
     contact_hours_lbl: "कार्यालय समय",
+
     // Footer
-    footer_desc: "वातावरण कानून समाज नेपाल — नेपालभर वातावरणीय तथा व्यक्तिगत कानूनी न्यायको पक्षमा अग्रसर विशेषज्ञ अधिवक्ताहरूको सामूहिक प्रयास।",
-    fo1: "अवस्थिति",
+    footer_desc: "कानूनी समाज तथा अनुसन्धान केन्द्र — विशेषज्ञ कानूनी पैरवी र परामर्शका लागि तपाईंको विश्वसनीय साझेदार",
+    fo1: "स्थान",
     fo2: "सेवा क्षेत्रहरू",
-    "fo2 desc1": "देवानी कानून", "fo2 desc2": "पारिवारिक कानून", "fo2 desc3": "व्यावसायिक कानून", "fo2 desc4": "शिक्षा कानून", "fo2 desc5": "फौजदारी कानून",
+    "fo2 desc1": "देवानी कानून",
+    "fo2 desc2": "पारिवारिक कानून",
+    "fo2 desc3": "व्यावसायिक कानून",
+    "fo2 desc4": "शिक्षा कानून",
+    "fo2 desc5": "फौजदारी कानून",
     fo3: "उपयोगी पृष्ठहरू",
-    "fo3 desc1": "हाम्रो बारेमा", "fo3 desc2": "कार्यक्षेत्र", "fo3 desc3": "अधिवक्ताहरू", "fo3 desc4": "हामीलाई किन रोज्ने?",
-    fo4: "सम्पर्क विवरण", "fo4 desc1": "कुमारी धारा गल्ली, काठमाडौं", "fo4 desc2": "+९७७ ०१२-३४५६७८९",
-    fo5l1: "वातावरण कानून", fo5l2: "व्यक्तिगत कानूनी मामला", fo5l3: "कानून व्यवसायीहरू",
-    fo61: "© वातावरण कानून समाज नेपाल", fo62: "सर्वाधिकार सुरक्षित"
+    "fo3 desc1": "परिचय",
+    "fo3 desc2": "अभ्यास क्षेत्र",
+    "fo3 desc3": "अधिवक्ता",
+    "fo3 desc4": "हामीलाई किन रोज्ने?",
+    fo4: "सम्पर्क विवरण",
+    "fo4 desc1": "अनामनगर, काठमाडौं-२९, नेपाल",
+    "fo4 desc2": "९८५१००७६८४",
+    fo5l1: "कानून र न्याय",
+    fo5l2: "व्यक्तिगत कानूनी मामिला",
+    fo5l3: "अधिवक्ता",
+    fo61: "© कानूनी समाज तथा अनुसन्धान केन्द्र",
+    fo62: "सर्वाधिकार सुरक्षित"
   }
 };
 
@@ -1146,6 +1048,11 @@ function setLanguage(lang) {
   document.body.style.fontFamily = lang === 'ne'
     ? "'Noto Sans Devanagari', 'Outfit', sans-serif"
     : "'Outfit', sans-serif";
+  
+    // Update page title
+  document.title = lang === 'ne'
+    ? 'कानूनी समाज तथा अनुसन्धान केन्द्र'
+    : 'Legal Society & Research Centre';
 }
 
 setLanguage('en');
@@ -1233,32 +1140,17 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     document.querySelector('.nav-links').classList.remove('open');
   });
 });
-// Show team social overlay on tap for mobile
-document.querySelectorAll('.team-card').forEach(card => {
-  card.addEventListener('click', () => {
-    const overlay = card.querySelector('.team-social-overlay');
-    const imgOverlay = card.querySelector('.team-img-overlay');
-    const isVisible = overlay.style.opacity === '1';
-    // Close all other cards first
-    document.querySelectorAll('.team-card').forEach(c => {
-      c.querySelector('.team-social-overlay').style.opacity = '0';
-      c.querySelector('.team-img-overlay').style.opacity = '0';
-    });
-    // Toggle current card
-    if (!isVisible) {
-      overlay.style.opacity = '1';
-      imgOverlay.style.opacity = '1';
-    }
-  });
-});
 
 const navSections = document.querySelectorAll('section[id]');
 window.addEventListener('scroll', () => {
   let current = '';
-  navSections.forEach(sec => { if (window.scrollY >= sec.offsetTop - 100) current = sec.id; });
-  document.querySelectorAll('.nav-links a').forEach(a => {
-    a.classList.remove('active');
-    if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+  navSections.forEach(section => {
+    const sectionTop = section.offsetTop - 100;
+    if (window.scrollY >= sectionTop) current = section.getAttribute('id');
+  });
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === '#' + current) link.classList.add('active');
   });
 });
 </script>
