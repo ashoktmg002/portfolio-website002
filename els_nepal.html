@@ -1,0 +1,1697 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>वातावरण कानून समाज नेपाल</title>
+<meta name="description" content="Environment Law Society Nepal — वातावरणीय न्यायको पक्षमा अग्रसर विशेषज्ञ अधिवक्ताहरूको सामूहिक प्रयास।">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Outfit:wght@300;400;500;600&family=Noto+Sans+Devanagari:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+  :root {
+    --gold: #B8960C;
+    --gold-light: #D4AF37;
+    --dark: #0D0D0D;
+    --dark-2: #141414;
+    --dark-3: #1C1C1C;
+    --light-text: #C8C8C8;
+    --muted: #888;
+    --white: #F9F7F2;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--dark); color: var(--white); font-family: 'Noto Sans Devanagari', 'Outfit', sans-serif; font-weight: 300; overflow-x: hidden; }
+  ::-webkit-scrollbar { width: 5px; }
+  ::-webkit-scrollbar-track { background: var(--dark-2); }
+  ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+  .container { max-width: 1280px; margin: 0 auto; padding: 0 40px; }
+
+  .section-label { display: inline-flex; align-items: center; gap: 12px; font-size: 11px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; }
+  .section-label::before { content: ''; width: 30px; height: 1px; background: var(--gold); }
+  .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(32px, 4vw, 52px); font-weight: 300; line-height: 1.1; color: var(--white); }
+  .section-title em { font-style: italic; color: var(--gold-light); }
+  .divider { width: 60px; height: 2px; background: var(--gold); margin: 24px 0; }
+
+  /* ── TOP BAR ── */
+  #top-bar {
+    background: var(--dark-2);
+    border-bottom: 1px solid rgba(184,150,12,0.2);
+    padding: 10px 0; font-size: 12px;
+  }
+  #top-bar .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+  .top-info { display: flex; gap: 28px; align-items: center; }
+  .top-info-item { display: flex; align-items: center; gap: 8px; color: var(--muted); }
+  .top-info-item i { color: var(--gold); font-size: 11px; }
+  .top-info-item span { color: var(--light-text); }
+  .top-right { display: flex; align-items: center; gap: 20px; }
+  .social-links { display: flex; gap: 12px; }
+  .social-links a {
+    width: 30px; height: 30px; border: 1px solid rgba(184,150,12,0.3);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--muted); font-size: 11px; transition: all 0.3s; text-decoration: none;
+  }
+  .social-links a:hover { background: var(--gold); color: var(--dark); border-color: var(--gold); }
+
+  /* ── LANGUAGE TOGGLE ── */
+  .lang-btn {
+    background: transparent; border: 1px solid rgba(184,150,12,0.4);
+    color: var(--gold); padding: 5px 14px; font-size: 11px; font-weight: 600;
+    letter-spacing: 2px; cursor: pointer; font-family: 'Outfit', sans-serif; transition: all 0.3s;
+  }
+  .lang-btn:hover { background: var(--gold); color: var(--dark); }
+
+  /* NAVBAR */
+  #navbar { position: sticky; top: 0; z-index: 1000; background: rgba(13,13,13,0.95); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(184,150,12,0.15); transition: all 0.4s; }
+  #navbar .container { display: flex; align-items: center; justify-content: space-between; height: 70px; }
+  .nav-logo { display: flex; align-items: center; gap: 14px; text-decoration: none; }
+  .nav-logo-icon { width: 44px; height: 44px; background: var(--gold); display: flex; align-items: center; justify-content: center; font-size: 18px; color: var(--dark); flex-shrink: 0; }
+  .nav-logo-text { display: flex; flex-direction: column; }
+  .nav-logo-text .en-name { font-family: 'Cormorant Garamond', serif; font-size: 15px; font-weight: 600; color: var(--white); line-height: 1.2; }
+  .nav-logo-text .ne-name { font-family: 'Noto Sans Devanagari', sans-serif; font-size: 11px; color: var(--gold); }
+  .nav-links { display: flex; align-items: center; }
+  .nav-links a { color: var(--muted); text-decoration: none; font-size: 12px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; padding: 8px 16px; transition: all 0.3s; position: relative; font-family: 'Outfit', sans-serif; }
+  .nav-links a::after { content: ''; position: absolute; bottom: 4px; left: 50%; transform: translateX(-50%); width: 0; height: 1px; background: var(--gold); transition: width 0.3s; }
+  .nav-links a:hover { color: var(--white); }
+  .nav-links a:hover::after, .nav-links a.active::after { width: 60%; }
+  .nav-links a.active { color: var(--gold); }
+  .nav-toggle { display: none; background: transparent; border: none; cursor: pointer; padding: 8px; }
+  .nav-toggle span { display: block; width: 24px; height: 1.5px; background: var(--white); margin: 5px 0; transition: all 0.3s; }
+
+  /* HERO */
+  #hero { position: relative; min-height: 400px; overflow: hidden; }
+  .slide { position: absolute; inset: 0; opacity: 0; transition: opacity 1.2s ease; }
+  .slide.active { opacity: 1; z-index: 1; }
+  .slide-bg { position: absolute; inset: 0; background-size: cover; background-position: center; transform: scale(1.05); transition: transform 8s ease; }
+  .slide.active .slide-bg { transform: scale(1); }
+  .slide-overlay { position: absolute; inset: 0; background: linear-gradient(105deg, rgba(13,13,13,0.90) 0%, rgba(13,13,13,0.65) 50%, rgba(13,13,13,0.40) 100%); }
+  .slide-content {
+    position: absolute; inset: 0; z-index: 2;
+    display: flex; align-items: center;
+    padding: 40px 40px 100px;
+    max-width: 1280px; margin: 0 auto; width: 100%;
+    left: 50%; transform: translateX(-50%);
+  }
+  .slide-inner { max-width: 680px; }
+  .slide-tag { display: inline-flex; align-items: center; gap: 10px; font-size: 11px; font-weight: 600; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; margin-bottom: 20px; opacity: 0; transform: translateY(20px); transition: all 0.8s 0.3s; }
+  .slide-tag::before { content: ''; width: 40px; height: 1px; background: var(--gold); }
+  .slide.active .slide-tag { opacity: 1; transform: translateY(0); }
+  .slide-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(36px, 5.5vw, 88px); font-weight: 300; line-height: 1.05; color: var(--white); margin-bottom: 16px; opacity: 0; transform: translateY(30px); transition: all 0.9s 0.5s; }
+  .slide-title em { font-style: italic; color: var(--gold-light); display: block; }
+  .slide.active .slide-title { opacity: 1; transform: translateY(0); }
+  .slide-desc { font-size: 15px; line-height: 1.7; color: var(--light-text); max-width: 520px; margin-bottom: 28px; opacity: 0; transform: translateY(20px); transition: all 0.8s 0.7s; }
+  .slide.active .slide-desc { opacity: 1; transform: translateY(0); }
+  .slide-actions { display: flex; gap: 16px; flex-wrap: wrap; opacity: 0; transform: translateY(20px); transition: all 0.8s 0.9s; }
+  .slide.active .slide-actions { opacity: 1; transform: translateY(0); }
+
+  .btn-primary-gold { background: var(--gold); color: var(--dark); padding: 14px 36px; font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; transition: all 0.3s; border: none; cursor: pointer; font-family: 'Outfit', sans-serif; }
+  .btn-primary-gold:hover { background: var(--gold-light); transform: translateY(-2px); }
+  .btn-outline-gold { background: transparent; color: var(--white); padding: 14px 36px; font-size: 12px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; border: 1px solid rgba(255,255,255,0.3); transition: all 0.3s; }
+  .btn-outline-gold:hover { border-color: var(--gold); color: var(--gold); }
+
+  .hero-controls { position: absolute; bottom: 24px; right: 40px; z-index: 10; display: flex; align-items: center; gap: 12px; }
+  .hero-prev, .hero-next { width: 44px; height: 44px; background: rgba(255,255,255,0.05); border: 1px solid rgba(184,150,12,0.4); color: var(--gold); cursor: pointer; transition: all 0.3s; display: flex; align-items: center; justify-content: center; font-size: 14px; }
+  .hero-prev:hover, .hero-next:hover { background: var(--gold); color: var(--dark); }
+  .hero-dots { position: absolute; bottom: 36px; left: 50%; transform: translateX(-50%); z-index: 10; display: flex; gap: 10px; }
+  .hero-dot { width: 6px; height: 6px; border-radius: 50%; background: rgba(255,255,255,0.3); cursor: pointer; transition: all 0.3s; border: none; }
+  .hero-dot.active { background: var(--gold); width: 24px; border-radius: 3px; }
+  .slide-counter { position: absolute; bottom: 38px; left: 40px; z-index: 10; font-size: 11px; letter-spacing: 2px; color: var(--muted); }
+  .slide-counter span { color: var(--gold); font-size: 22px; font-family: 'Cormorant Garamond', serif; }
+
+    /* ── STATS ── */
+  #stats { background: var(--gold); overflow: hidden; }
+  .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+  .stat-item { padding: 24px 20px; display: flex; align-items: center; gap: 14px; border-right: 1px solid rgba(0,0,0,0.15); transition: background 0.3s; min-width: 0; }
+  .stat-item:last-child { border-right: none; }
+  .stat-item:hover { background: rgba(0,0,0,0.08); }
+  .stat-icon { width: 40px; height: 40px; min-width: 40px; background: rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; font-size: 17px; color: var(--dark); flex-shrink: 0; }
+  .stat-text { min-width: 0; }
+  .stat-text .stat-value { font-family: 'Cormorant Garamond', serif; font-size: clamp(18px, 2vw, 26px); font-weight: 700; color: var(--dark); line-height: 1.1; word-break: break-word; }
+  .stat-text .stat-label { font-size: 10px; font-weight: 600; color: rgba(0,0,0,0.6); letter-spacing: 0.5px; line-height: 1.4; word-break: break-word; }
+
+  /* ABOUT */
+  #about { padding: 120px 0; background: var(--dark-2); overflow: hidden; }
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+  .about-visual { position: relative; }
+  .about-img-frame { position: relative; background: var(--dark-3); border: 1px solid rgba(184,150,12,0.25); overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(184,150,12,0.08); }
+  .about-img-frame::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(184,150,12,0.07) 0%, transparent 55%); z-index: 1; pointer-events: none; }
+  .about-img-frame::after { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold)); z-index: 2; }
+  .about-emblem { width: 100%; padding: 60px 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; min-height: 340px; }
+  .about-emblem .emblem-icon { font-size: 72px; color: var(--gold); margin-bottom: 24px; opacity: 0.6; }
+  .about-emblem h3 { font-family: 'Cormorant Garamond', serif; font-size: 28px; color: var(--white); font-weight: 300; margin-bottom: 8px; }
+  .about-emblem p { font-size: 12px; color: var(--muted); letter-spacing: 2px; font-family: 'Outfit', sans-serif; text-transform: uppercase; }
+  .about-reg-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 20px; }
+  .about-reg-item { padding: 16px; border: 1px solid rgba(184,150,12,0.15); }
+  .about-reg-item .reg-label { font-size: 10px; color: var(--gold); font-weight: 600; letter-spacing: 2px; text-transform: uppercase; font-family: 'Outfit', sans-serif; margin-bottom: 4px; }
+  .about-reg-item .reg-val { font-size: 13px; color: var(--light-text); }
+  .about-content { padding-left: 20px; }
+  .about-content p { color: var(--light-text); line-height: 1.9; margin-bottom: 20px; font-size: 15px; text-align: justify; hyphens: auto; }
+  /* ABOUT IDENTITY CARD */
+  .about-identity-card { position: relative; border: 1px solid rgba(184,150,12,0.3); background: var(--dark-3); box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(184,150,12,0.06); }
+  .aic-top-bar { height: 3px; background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold)); }
+  .aic-inner { padding: 48px 44px; text-align: center; }
+  .aic-leaf { font-size: 32px; color: var(--gold); opacity: 0.7; margin-bottom: 20px; }
+  .aic-org-ne { font-family: 'Noto Sans Devanagari', sans-serif; font-size: 17px; font-weight: 600; color: var(--white); line-height: 1.5; margin-bottom: 10px; }
+  .aic-org-en { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 400; color: var(--white); line-height: 1.3; }
+  .aic-divider { width: 50px; height: 1px; background: var(--gold); margin: 28px auto; opacity: 0.5; }
+  .aic-quotes { display: flex; flex-direction: column; gap: 20px; text-align: center; }
+  .aic-quote-item { padding: 0 8px; }
+  .aic-q-ne { font-family: 'Noto Sans Devanagari', sans-serif; font-size: 12px; color: var(--light-text); line-height: 1.7; margin-bottom: 4px; font-style: italic; }
+  .aic-q-en { font-family: 'Cormorant Garamond', serif; font-size: 14px; color: var(--muted); line-height: 1.6; font-style: italic; }
+  .aic-footer { text-align: center; }
+  .aic-est { font-family: 'Outfit', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 2px; color: var(--gold); text-transform: uppercase; margin-bottom: 10px; }
+  .aic-address { font-family: 'Cormorant Garamond', serif; font-size: 15px; color: var(--muted); line-height: 1.7; }
+
+  /* REGISTRATION */
+  #registration { background: var(--dark-2); border-top: 1px solid rgba(184,150,12,0.1); border-bottom: 1px solid rgba(184,150,12,0.1); padding: 120px 0; overflow: visible; }
+  .reg-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: rgba(184,150,12,0.1); overflow: visible; margin-top: 60px; }
+  .reg-card { background: var(--dark-2); padding: 36px 32px; position: relative; overflow: visible; transition: background 0.3s; }
+  .reg-card:hover { background: var(--dark-3); }
+  .reg-card::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 0; background: var(--gold); transition: height 0.4s; }
+  .reg-card:hover::before { height: 100%; }
+  .reg-icon { font-size: 22px; color: var(--gold); margin-bottom: 20px; opacity: 0.8; }
+  .reg-key { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+  .reg-val { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 400; color: var(--white); line-height: 1.5; padding-bottom: 8px; }
+  .reg-val em { font-style: normal; color: var(--gold); }
+  .reg-sub { font-size: 11px; color: var(--muted); margin-top: 6px; line-height: 1.5; }
+
+  /* TEAM */
+  #team { padding: 120px 0; background: var(--dark); }
+  .team-header { margin-bottom: 60px; }
+  .team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: rgba(184,150,12,0.12); }
+  .team-card { background: var(--dark); overflow: hidden; position: relative; transition: all 0.4s; cursor: pointer; }
+  .team-card:hover { transform: translateY(-6px); z-index: 2; }
+  .team-img-wrap { position: relative; overflow: hidden; aspect-ratio: 3/4; background: var(--dark-3); }
+  .team-img-wrap img { width: 100%; height: 100%; object-fit: cover; object-position: top center; transition: transform 0.6s; }
+  .team-card:hover .team-img-wrap img { transform: scale(1.08); }
+  .team-img-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(13,13,13,0.9) 0%, transparent 60%); opacity: 0; transition: opacity 0.4s; }
+  .team-card:hover .team-img-overlay { opacity: 1; }
+  .team-social-overlay { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px; opacity: 0; transition: opacity 0.4s 0.1s; }
+  .team-card:hover .team-social-overlay { opacity: 1; }
+  .team-social-overlay a { width: 36px; height: 36px; background: var(--gold); display: flex; align-items: center; justify-content: center; color: var(--dark); font-size: 13px; text-decoration: none; transition: background 0.2s; }
+  .team-social-overlay a:hover { background: var(--gold-light); }
+  .team-info { padding: 22px 24px; background: var(--dark); border-top: 1px solid rgba(184,150,12,0.15); }
+  .team-info h3 { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 500; color: var(--white); margin-bottom: 4px; }
+  .team-info .role { font-size: 12px; color: var(--gold); letter-spacing: 1px; font-weight: 500; font-family: 'Outfit', sans-serif; }
+  .team-info .role-ne { font-family: 'Noto Sans Devanagari', sans-serif; font-size: 11px; color: var(--muted); display: block; margin-top: 2px; }
+
+  /* OBJECTIVES */
+  #objectives { padding: 120px 0; background: var(--dark-3); }
+  .objectives-header { text-align: center; max-width: 700px; margin: 0 auto 70px; }
+  .objectives-header .section-label { justify-content: center; }
+  .objectives-header .section-label::before { display: none; }
+  .objectives-header .section-label::after { content: ''; width: 30px; height: 1px; background: var(--gold); }
+  .objectives-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: rgba(184,150,12,0.1); }
+  .obj-card { background: var(--dark-2); padding: 44px 36px; transition: all 0.4s; position: relative; overflow: hidden; }
+  .obj-card::before { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 3px; background: var(--gold); transform: scaleX(0); transform-origin: left; transition: transform 0.4s; }
+  .obj-card:hover { background: var(--dark-3); transform: translateY(-4px); }
+  .obj-card:hover::before { transform: scaleX(1); }
+  .obj-num { font-family: 'Cormorant Garamond', serif; font-size: 60px; font-weight: 300; color: rgba(184,150,12,0.1); line-height: 1; position: absolute; top: 16px; right: 20px; }
+  .obj-icon { width: 52px; height: 52px; background: rgba(184,150,12,0.1); display: flex; align-items: center; justify-content: center; font-size: 20px; color: var(--gold); margin-bottom: 20px; transition: all 0.3s; }
+  .obj-card:hover .obj-icon { background: var(--gold); color: var(--dark); }
+  .obj-card p { color: var(--muted); font-size: 14px; line-height: 1.8; text-align: justify; hyphens: auto; }
+  .hidden-obj { display: none; }
+
+  /* ACTIVITIES */
+  #activities { padding: 120px 0; background: var(--dark-2); }
+  .activities-header { margin-bottom: 60px; }
+  .activities-list { display: flex; flex-direction: column; gap: 1px; background: rgba(184,150,12,0.1); }
+  .activity-item { background: var(--dark); padding: 36px 40px; display: flex; align-items: flex-start; gap: 28px; text-decoration: none; color: inherit; transition: all 0.3s; position: relative; overflow: hidden; }
+  .activity-item::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--gold); transform: scaleY(0); transform-origin: top; transition: transform 0.4s; }
+  .activity-item:hover { background: var(--dark-3); padding-left: 52px; }
+  .activity-item:hover::before { transform: scaleY(1); }
+  .activity-num { font-family: 'Cormorant Garamond', serif; font-size: 52px; font-weight: 300; color: rgba(184,150,12,0.15); line-height: 1; flex-shrink: 0; width: 60px; }
+  .activity-content { flex: 1; }
+  .activity-content h3 { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 500; color: var(--white); margin-bottom: 8px; transition: color 0.3s; }
+  .activity-item:hover .activity-content h3 { color: var(--gold-light); }
+  .activity-content p { color: var(--muted); font-size: 14px; line-height: 1.7; }
+  .activity-arrow { color: var(--gold); font-size: 18px; flex-shrink: 0; opacity: 0; transition: opacity 0.3s, transform 0.3s; margin-top: 4px; }
+  .activity-item:hover .activity-arrow { opacity: 1; transform: translateX(6px); }
+  .hidden-activity { display: none; }
+  .see-more-wrap { text-align: center; margin-top: 40px; }
+
+  /* PROJECTS */
+  #projects { padding: 120px 0; background: var(--dark); }
+  .projects-header { margin-bottom: 60px; }
+  .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: rgba(184,150,12,0.1); }
+  .project-card { background: var(--dark-2); overflow: hidden; transition: all 0.4s; cursor: pointer; text-decoration: none; color: inherit; display: block; }
+  .project-card:hover { transform: translateY(-6px); z-index: 2; box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+  .project-img-wrap { position: relative; overflow: hidden; aspect-ratio: 16/10; background: var(--dark-3); }
+  .project-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s; }
+  .project-card:hover .project-img-wrap img { transform: scale(1.06); }
+  .project-img-overlay { position: absolute; inset: 0; background: rgba(184,150,12,0.15); opacity: 0; transition: opacity 0.4s; display: flex; align-items: center; justify-content: center; }
+  .project-card:hover .project-img-overlay { opacity: 1; }
+  .project-img-overlay i { font-size: 28px; color: var(--white); }
+  .project-info { padding: 28px 28px 32px; border-top: 1px solid rgba(184,150,12,0.15); }
+  .project-tag { font-size: 10px; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; font-weight: 600; margin-bottom: 10px; font-family: 'Outfit', sans-serif; }
+  .project-info h3 { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 500; color: var(--white); margin-bottom: 10px; }
+  .project-info p { color: var(--muted); font-size: 13px; line-height: 1.7; }
+  .project-link { display: inline-flex; align-items: center; gap: 8px; color: var(--gold); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; font-weight: 600; margin-top: 16px; font-family: 'Outfit', sans-serif; transition: gap 0.3s; }
+  .project-card:hover .project-link { gap: 12px; }
+  .hidden-proj {display: none; }
+
+  /* ELS IN ACTION / GALLERY */
+  #gallery { padding: 100px 0; background: var(--dark-2); }
+  .gallery-header { margin-bottom: 50px; }
+  .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; }
+  .gallery-item { overflow: hidden; position: relative; background: var(--dark-3); }
+  .gallery-img-wrap { position: relative; overflow: hidden; aspect-ratio: 4/3; }
+  .gallery-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s; }
+  .gallery-item:hover .gallery-img-wrap img { transform: scale(1.06); }
+  .gallery-overlay { position: absolute; inset: 0; background: rgba(184,150,12,0.15); opacity: 0; transition: opacity 0.4s; display: flex; align-items: center; justify-content: center; }
+  .gallery-item:hover .gallery-overlay { opacity: 1; }
+  .gallery-overlay i { font-size: 28px; color: var(--white); }
+  .gallery-caption { padding: 16px 16px 20px; border-top: 1px solid rgba(184,150,12,0.12); }
+  .gallery-caption h4 { font-family: 'Cormorant Garamond', serif; font-size: 16px; color: var(--white); margin-bottom: 4px; }
+  .gallery-caption p { font-size: 12px; color: var(--muted); line-height: 1.5; }
+  .hidden-gal {display: none;}
+
+  /* CONTACT */
+  #contact { padding: 100px 0 0; background: var(--dark-3); }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; margin-bottom: 80px; }
+  .contact-info h2 { font-family: 'Cormorant Garamond', serif; font-size: 48px; font-weight: 300; line-height: 1.1; margin-bottom: 24px; }
+  .contact-info h2 em { font-style: italic; color: var(--gold); }
+  .contact-info > p { color: var(--light-text); font-size: 15px; line-height: 1.8; margin-bottom: 40px; text-align: justify; hyphens: auto; }
+  .contact-details { display: flex; flex-direction: column; gap: 20px; }
+  .contact-detail-item { display: flex; align-items: flex-start; gap: 16px; }
+  .contact-detail-icon { width: 44px; height: 44px; background: rgba(184,150,12,0.1); display: flex; align-items: center; justify-content: center; color: var(--gold); font-size: 16px; flex-shrink: 0; }
+  .contact-detail-item h4 { font-size: 11px; letter-spacing: 2px; color: var(--muted); font-weight: 600; margin-bottom: 4px; font-family: 'Outfit', sans-serif; }
+  .contact-detail-item span { color: var(--white); font-size: 14px; }
+  .map-wrap { height: 100%; min-height: 420px; overflow: hidden; position: relative; border: 1px solid rgba(184,150,12,0.25); box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+  .map-wrap::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold)); z-index: 2; }
+  .map-wrap iframe { width: 100%; height: 100%; min-height: 420px; border: none; display: block; }
+
+  /* FOOTER */
+  .footer-bottom { background: var(--dark-2); border-top: 1px solid rgba(184,150,12,0.15); }
+  .footer-links-bar { display: grid; grid-template-columns: repeat(4, 1fr); border-bottom: 1px solid rgba(184,150,12,0.1); }
+  .footer-col { padding: 50px 40px; border-right: 1px solid rgba(184,150,12,0.1); }
+  .footer-col:last-child { border-right: none; }
+  .footer-col h4 { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 500; color: var(--white); margin-bottom: 24px; padding-bottom: 14px; border-bottom: 1px solid rgba(184,150,12,0.2); }
+  .footer-col a { display: flex; align-items: center; gap: 8px; color: var(--muted); text-decoration: none; font-size: 13px; padding: 6px 0; transition: color 0.3s; }
+  .footer-col a::before { content: '—'; color: var(--gold); font-size: 10px; }
+  .footer-col a:hover { color: var(--gold); }
+  .footer-col p { color: var(--muted); font-size: 13px; line-height: 1.8; }
+  .footer-copyright { padding: 24px 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; font-size: 12px; color: var(--muted); }
+  .footer-copyright a { color: var(--gold); text-decoration: none; }
+
+  /* BACK TO TOP */
+  #back-top { position: fixed; bottom: 30px; right: 30px; z-index: 9999; width: 48px; height: 48px; background: var(--gold); display: flex; align-items: center; justify-content: center; color: var(--dark); font-size: 16px; cursor: pointer; opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(12px); transition: opacity 0.35s ease, visibility 0.35s ease, transform 0.35s ease, background 0.3s; text-decoration: none; }
+  #back-top.visible { opacity: 1; visibility: visible; pointer-events: all; transform: translateY(0); }
+  #back-top:hover { background: var(--gold-light); transform: translateY(-3px); }
+
+  /* ANIMATIONS */
+  .fade-up { opacity: 0; transform: translateY(40px); transition: opacity 0.8s ease, transform 0.8s ease; }
+  .fade-up.visible { opacity: 1; transform: translateY(0); }
+  .fade-up:nth-child(2) { transition-delay: 0.15s; }
+  .fade-up:nth-child(3) { transition-delay: 0.3s; }
+  .fade-up:nth-child(4) { transition-delay: 0.45s; }
+
+  /* PROJECT PLACEHOLDER */
+  .project-placeholder { width: 100%; height: 100%; background: linear-gradient(135deg, var(--dark-3) 0%, var(--dark) 100%); display: flex; align-items: center; justify-content: center; font-size: 48px; color: rgba(184,150,12,0.2); }
+
+  /* GALLERY PLACEHOLDER */
+  .gallery-placeholder { width: 100%; height: 100%; background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%); display: flex; align-items: center; justify-content: center; font-size: 36px; color: rgba(184,150,12,0.2); }
+
+  /* RESPONSIVE */
+  @media (max-width: 1100px) {
+    .team-grid { grid-template-columns: repeat(3, 1fr); }
+    .footer-links-bar { grid-template-columns: repeat(2, 1fr); }
+    .objectives-grid { grid-template-columns: repeat(2, 1fr); }
+    .projects-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 900px) {
+    .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 50px; }
+    .reg-grid { grid-template-columns: 1fr 1fr; }
+    .team-grid { grid-template-columns: repeat(2, 1fr); }
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    .nav-links { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; right: 0; background: var(--dark-2); padding: 20px; gap: 0; border-top: 1px solid rgba(184,150,12,0.2); }
+    .nav-links.open { display: flex; }
+    .nav-links a { padding: 14px 20px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .nav-toggle { display: block; }
+    .container { padding: 0 24px; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .stat-item { border-right: none; border-bottom: 1px solid rgba(0,0,0,0.15); }
+    .stat-item:nth-child(odd) { border-right: 1px solid rgba(0,0,0,0.15); }
+    .stat-item:nth-last-child(-n+2) { border-bottom: none; }
+    .slide-content { padding: 30px 24px 90px; }
+    .slide-counter { left: 24px; }
+    .hero-controls { right: 24px; }
+    .about-content { padding-left: 0; }
+  }
+  @media (max-width: 600px) {
+    .reg-grid { grid-template-columns: 1fr; }
+    .team-grid, .gallery-grid, .projects-grid { grid-template-columns: 1fr; }
+    .objectives-grid { grid-template-columns: 1fr; }
+    .footer-links-bar { grid-template-columns: 1fr; }
+    .footer-col { border-right: none; border-bottom: 1px solid rgba(184,150,12,0.1); }
+    .activity-item { flex-direction: column; gap: 10px; }
+    .activity-num { width: auto; }
+    .stats-grid { grid-template-columns: 1fr; }
+    .stat-item { border-right: none !important; border-bottom: 1px solid rgba(0,0,0,0.12); padding: 18px 20px; }
+    .stat-item:last-child { border-bottom: none; }
+    .slide-content { padding: 20px 20px 90px; align-items: center; }
+    .slide-inner { max-width: 100%; }
+    .slide-title { font-size: clamp(30px, 9vw, 50px); margin-bottom: 12px; }
+    .slide-desc { font-size: 13px; margin-bottom: 20px; max-width: 100%; }
+    .btn-primary-gold, .btn-outline-gold { padding: 11px 20px; font-size: 11px; }
+    .slide-tag { font-size: 10px; margin-bottom: 12px; }
+    .slide-counter { left: 20px; bottom: 24px; }
+    .hero-controls { right: 16px; bottom: 18px; }
+    .hero-dots { bottom: 30px; }
+    #top-bar .container { flex-direction: column; align-items: center; gap: 8px; }
+    .top-info { flex-direction: column; gap: 4px; }
+    
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div id="top-bar">
+  <div class="container">
+    <div class="top-info">
+      <div class="top-info-item">
+        <i class="fas fa-clock"></i>
+        <span data-key="opening hours">Opening Hour: Sunday - Friday</span>
+        &nbsp;·&nbsp;
+        <span data-key="time">10:00 am - 5:00 pm</span>
+      </div>
+      <div class="top-info-item">
+        <i class="fas fa-phone"></i>
+        <span data-key="number">+977 12346789</span>
+      </div>
+    </div>
+    <div class="top-right">
+      <div class="social-links">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=thokar.skt@gmail.com" target="_blank" rel="noopener"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.facebook.com/bishnukumar.thokar" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/bk_thokar/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+      </div>
+      <button class="lang-btn" id="langToggleBtn" onclick="toggleLang()">
+        <span id="langLabel">ENG</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="container">
+    <a href="#hero" class="nav-logo">
+      <div class="nav-logo-icon"><i class="fas fa-leaf"></i></div>
+      <div class="nav-logo-text">
+        <span class="en-name">Environment Law Society Nepal - ELS Nepal</span>
+        <span class="ne-name">वातावरण कानून समाज नेपाल</span>
+      </div>
+    </a>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <a href="#about" data-key="nav_about">परिचय</a>
+      <a href="#team" data-key="nav_team">टोली</a>
+      <a href="#objectives" data-key="nav_obj">उद्देश्य</a>
+      <a href="#activities" data-key="nav_act">क्रियाकलाप</a>
+      <a href="#projects" data-key="nav_proj">परियोजना</a>
+      <a href="#contact" data-key="nav_contact" class="nav-cta" style="background:var(--gold);color:var(--dark)!important;padding:10px 22px!important;font-weight:600!important;">सम्पर्क</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="slide" id="slide-0">
+    <div class="slide-bg" style="background-image: url('img/c2.jpg')"></div>
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+      <div class="slide-inner">
+        <div class="slide-tag" data-key="slide_tag2">कानूनी पहल · नेपाल</div>
+        <h1 class="slide-title" data-key="slide_title2">प्राकृतिक<br><em data-key="slide_em2">सम्पदा संरक्षण</em></h1>
+        <p class="slide-desc" data-key="slide_desc2">दिगो विकास र मानिसको बाँच्न पाउने अधिकारको सम्मान गर्दै भावी सन्ततीको हकहितको संरक्षणका लागि हामी अग्रसर छौँ।</p>
+        <div class="slide-actions">
+          <a href="#team" class="btn-primary-gold"><span data-key="btn_team">हाम्रो टोली</span> <i class="fas fa-arrow-right"></i></a>
+          <a href="#objectives" class="btn-outline-gold"><span data-key="btn_obj">उद्देश्यहरू</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slide" id="slide-1">
+    <div class="slide-bg" style="background-image: url('img/c1.jpg')"></div>
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+      <div class="slide-inner">
+        <div class="slide-tag" data-key="slide_tag1">ELS Nepal · काठमाडौं स्थापित</div>
+        <h1 class="slide-title" data-key="slide_title1">वातावरणीय<br><em data-key="slide_em1">न्यायको लागि</em></h1>
+        <p class="slide-desc" data-key="slide_desc1">विश्वव्यापी जलवायु परिवर्तन र वातावरणीय ह्रासविरुद्ध मानव समुदाय, जीवजन्तु, वनस्पति र प्राकृतिक सम्पदाको संरक्षणका लागि प्रतिबद्ध।</p>
+        <div class="slide-actions">
+          <a href="#about" class="btn-primary-gold"><span data-key="btn_about">हाम्रो बारेमा</span> <i class="fas fa-arrow-right"></i></a>
+          <a href="#activities" class="btn-outline-gold"><span data-key="btn_act">क्रियाकलाप</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slide" id="slide-2">
+    <div class="slide-bg" style="background-image: url('img/c3.jpg')"></div>
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+      <div class="slide-inner">
+        <div class="slide-tag" data-key="slide_tag3">वातावरणीय न्याय · काठमाडौं</div>
+        <h1 class="slide-title" data-key="slide_title3">स्वच्छ<br><em data-key="slide_em3">वातावरण हाम्रो अधिकार</em></h1>
+        <p class="slide-desc" data-key="slide_desc3">वायु, जल, जमिन, जंगल र वनस्पति जस्ता प्राकृतिक सम्पदाको संरक्षण गरी समृद्ध, समतामूलक र शान्तिपूर्ण समाजको निर्माण।</p>
+        <div class="slide-actions">
+          <a href="#contact" class="btn-primary-gold"><span data-key="btn_contact">सम्पर्क गर्नुहोस्</span> <i class="fas fa-arrow-right"></i></a>
+          <a href="#projects" class="btn-outline-gold"><span data-key="btn_proj">परियोजनाहरू</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-counter"><span id="slideNum">01</span> / 03</div>
+  <div class="hero-dots">
+    <button class="hero-dot active" onclick="goToSlide(0)"></button>
+    <button class="hero-dot" onclick="goToSlide(1)"></button>
+    <button class="hero-dot" onclick="goToSlide(2)"></button>
+  </div>
+  <div class="hero-controls">
+    <button class="hero-prev" onclick="prevSlide()"><i class="fas fa-chevron-left"></i></button>
+    <button class="hero-next" onclick="nextSlide()"><i class="fas fa-chevron-right"></i></button>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<section id="stats">
+  <div class="stats-grid">
+    <div class="stat-item fade-up">
+      <div class="stat-icon"><i class="fas fa-bullhorn"></i></div>
+      <div class="stat-text">
+        <div class="stat-value" data-key="feature1">Public Awareness</div>
+        <div class="stat-label" data-key="feature1_desc">Conductinig awareness programs</div>
+      </div>
+    </div>
+    <div class="stat-item fade-up">
+      <div class="stat-icon"><i class="fas fa-balance-scale"></i></div>
+      <div class="stat-text">
+        <div class="stat-value" data-key="feature2">Legal Justice</div>
+        <div class="stat-label" data-key="feature2_desc">Initiation and advocacy in courts</div>
+      </div>
+    </div>
+    <div class="stat-item fade-up">
+      <div class="stat-icon"><i class="fas fa-flask"></i></div>
+      <div class="stat-text">
+        <div class="stat-value" data-key="feature3">Study & Research</div>
+        <div class="stat-label" data-key="feature3_desc">Conducting studies and research on environmental issues</div>
+      </div>
+    </div>
+    <div class="stat-item fade-up">
+      <div class="stat-icon"><i class="fas fa-handshake"></i></div>
+      <div class="stat-text">
+        <div class="stat-value" data-key="feature4">Partnerships</div>
+        <div class="stat-label" data-key="feature4_desc">National and international collaboration</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual fade-up">
+        <div class="about-identity-card">
+          <div class="aic-top-bar"></div>
+          <div class="aic-inner">
+            <div class="aic-leaf"><i class="fas fa-seedling"></i></div>
+            <div class="aic-org-ne" data-key="aic_ne">वातावरण कानून समाज नेपाल</div>
+            <div class="aic-org-en" data-key="aic_en">Environment Law Society Nepal<br>– ELS Nepal</div>
+            <div class="aic-divider"></div>
+            <div class="aic-quotes">
+              <div class="aic-quote-item">
+                <p class="aic-q-ne">"आजको संरक्षण नै भोलिको अधिकारको सुनिश्चितता हो।"</p>
+                <p class="aic-q-en">"Protecting nature today is the only way to secure tomorrow's rights."</p>
+              </div>
+              <div class="aic-quote-item">
+                <p class="aic-q-ne">"दिगो जीवनशैली विकल्प होइन, सम्पूर्ण जीवनको साझा जिम्मेवारी हो।"</p>
+                <p class="aic-q-en">"Sustainable living is not a choice, but a shared responsibility for all life."</p>
+              </div>
+              <div class="aic-quote-item">
+                <p class="aic-q-ne">"स्वच्छ वातावरणबाटै समतामूलक, शान्त र समृद्ध समाजको निर्माण सम्भव हुन्छ।"</p>
+                <p class="aic-q-en">"From conservation to justice, a healthy environment builds a peaceful and equitable society."</p>
+              </div>
+            </div>
+            <div class="aic-divider"></div>
+            <div class="aic-footer">
+              <div class="aic-est"><span data-key="aic_est">Est. 2077 B.S.</span></div>
+              <div class="aic-address" data-key="aic_addr">Kumari Dhara Galli, Kathmandu Metropolitan City – 10,<br>Kathmandu, Nepal</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-content fade-up">
+        <div class="section-label" data-key="about_lbl">हाम्रो परिचय</div>
+        <h2 class="section-title"><span data-key="about_h2a">वातावरणीय</span> <em data-key="about_h2b">न्याय र संरक्षण</em></h2>
+        <div class="divider"></div>
+        <p data-key="about_p1">विश्वव्यापी रूपमा भएको जलवायु परिवर्तन र वातावरणीय ह्रासबाट सिंगो मानव समुदाय, जीवजन्तु, वनस्पति, प्रकृति र प्राकृतिक सम्पदामाथि पारेको प्रतिकूल प्रभावका कारण आज विश्व सामु साझा चुनौतीको रूपमा वातावरण संरक्षण र सम्बर्द्धनको विषय रहेको छ।</p>
+        <p data-key="about_p2">प्राकृतिक सम्पदामाथिको अनुचित दोहन रोकी दिगो विकास र मानिसको बाँच्न पाउने अधिकारको सम्मान गर्दै भावी सन्ततीको हकहितको संरक्षणका लागि यो संस्था दर्ता ऐन, २०३४ को अधिनमा स्थापना गरिएको हो।</p>
+        <p data-key="about_p3">हामी वातावरण संरक्षण र सम्बर्द्धनको लागि निरन्तर प्रयास गर्दै छौं, जसले हाम्रो समुदायलाई एउटा स्वच्छ र सुरक्षित परिवेशमा बस्ने सुविधा प्रदान गर्दछ।</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REGISTRATION -->
+<section id="registration">
+  <div class="container">
+    <div class="fade-up">
+      <div class="section-label" data-key="reg_label">Registration &amp; Compliance</div>
+      <h2 class="section-title"><span data-key="reg_title">Legal </span><em data-key="reg_title_em">Credentials</em></h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="reg-grid">
+      <div class="reg-card fade-up delay-1">
+        <div class="reg-icon"><i class="fas fa-id-badge"></i></div>
+        <div class="reg-val" data-key="rc2_val"> <em>१०४०</em></div>
+        <div class="reg-key" data-key="rc2_key">स्थायी लेखा नम्बर</div>
+        <div class="reg-sub" data-key="rc2_sub"></div>
+      </div>
+      <div class="reg-card fade-up delay-2">
+        <div class="reg-icon"><i class="fas fa-landmark"></i></div>
+        <div class="reg-val" data-key="rc1_val">जिल्ला प्रशासन कार्यालय, <em>काठमाडौं</em></div>
+        <div class="reg-key" data-key="rc1_key">दर्ता नम्बर: <em>१०४०</em></div>
+        <div class="reg-sub" data-key="rc1_sub">दर्ता मिति: <em>२०७७/०८/१७ वि.सं.</em></div>
+      </div>
+
+      <div class="reg-card fade-up delay-3">
+        <div class="reg-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+        <div class="reg-val" data-key="rc3_val"><em>304012875</em></div>
+        <div class="reg-key" data-key="rc3_key">PAN Number</div>
+        <div class="reg-sub" data-key="rc3_sub">Inland Revenue Office, Kathmandu 1 (Tax Jurisdiction)</div>
+      </div>
+      <div class="reg-card fade-up delay-1">
+        <div class="reg-icon"><i class="fas fa-calendar-plus"></i></div>
+        <div class="reg-val" data-key="rc4_val"><em>2013</em>/04/12</div>
+        <div class="reg-key" data-key="rc4_key">Registration Date</div>
+        <div class="reg-sub" data-key="rc4_sub">2069/12/30 Bikram Sambat</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- TEAM -->
+<section id="team">
+  <div class="container">
+    <div class="team-header">
+      <div class="section-label" data-key="t">Meet Our Expert Attorneys</div>
+      <h2 class="section-title"><span data-key="team_title">Our</span> <em data-key="team_title_em">Legal Team</em></h2>
+    </div>
+    <div class="team-grid">
+      <div class="team-card fade-up">
+        <div class="team-img-wrap">
+          <img src="img/team1.jpg" alt="Padam Bahadur Shrestha">
+          <div class="team-img-overlay"></div>
+          <div class="team-social-overlay">
+            <a href="/cdn-cgi/l/email-protection#b9dcd5ca97d7dcc9d8d5f9ded4d8d0d597dad6d4"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.facebook.com/bishnukumar.thokar" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div class="team-info">
+          <h3 data-key="t1">Padam Bahadur Shrestha</h3>
+          <span class="role" data-key="t1_desc">Advocate | Consultant Lawyer</span><br>
+          <span class="role" data-key="t1_descc">Advocate | Consultant Lawyer</span>
+          <span class="role-ne">अध्यक्ष — Chairperson</span>
+        </div>
+      </div>
+      <div class="team-card fade-up">
+        <div class="team-img-wrap">
+          <img src="img/team2.JPG" alt="Bishnu Kumar Thokar">
+          <div class="team-img-overlay"></div>
+          <div class="team-social-overlay">
+            <a href="/cdn-cgi/l/email-protection#acd8c4c3c7cdde82dfc7d8eccbc1cdc5c082cfc3c1"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.facebook.com/bishnukumar.thokar" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div class="team-info">
+          <h3 data-key="t2">Bishnu Kumar Thokar</h3>
+          <span class="role" data-key="t2_desc">Advocate | Consultant Lawyer</span> <br>
+          <span class="role" data-key="t2_descc">Advocate | Consultant Lawyer</span>
+          <span class="role-ne">उपाध्यक्ष — Vice Chairperson</span>
+        </div>
+      </div>
+      <div class="team-card fade-up">
+        <div class="team-img-wrap">
+          <img src="img/team3.JPG" alt="Satkon Shrestha">
+          <div class="team-img-overlay"></div>
+          <div class="team-social-overlay">
+            <a href="#"><i class="fas fa-envelope"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div class="team-info">
+          <h3 data-key="t3">Satkon Shrestha</h3>
+          <span class="role" data-key="t3_desc">Advocate | Consultant Lawyer</span> <br>
+          <span class="role" data-key="t3_descc">Advocate | Consultant Lawyer</span>
+          <span class="role-ne">महासचिव — Secretary General</span>
+        </div>
+      </div>
+      <div class="team-card fade-up">
+        <div class="team-img-wrap">
+          <img src="img/team4.JPG" alt="Raju Phuyal">
+          <div class="team-img-overlay"></div>
+          <div class="team-social-overlay">
+            <a href="#"><i class="fas fa-envelope"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div class="team-info">
+          <h3 data-key="t4">Raju Phuyal</h3>
+          <span class="role" data-key="t4_desc">Advocate | Consultant Lawyer</span> <br>
+          <span class="role" data-key="t4_descc">Advocate | Consultant Lawyer</span>
+          <span class="role-ne">कोषाध्यक्ष — Treasurer</span>
+        </div>
+      </div>
+      <div class="team-card fade-up">
+        <div class="team-img-wrap">
+          <img src="img/team5.JPG" alt="Shanta Panta">
+          <div class="team-img-overlay"></div>
+          <div class="team-social-overlay">
+            <a href="#"><i class="fas fa-envelope"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div class="team-info">
+          <h3 data-key="t5">Shanta Panta</h3>
+          <span class="role" data-key="t5_desc">Advocate | Consultant Lawyer</span> <br>
+          <span class="role" data-key="t5_descc">Advocate | Consultant Lawyer</span>
+          <span class="role-ne">सदस्य — Member</span>
+        </div>
+      </div>
+      <div class="team-card fade-up">
+        <div class="team-img-wrap">
+          <img src="img/team6.JPG" alt="Joni Mainali">
+          <div class="team-img-overlay"></div>
+          <div class="team-social-overlay">
+            <a href="#"><i class="fas fa-envelope"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div class="team-info">
+          <h3 data-key="t6">Joni Mainali</h3>
+          <span class="role" data-key="t6_desc">Advocate | Consultant Lawyer</span> <br>
+          <span class="role" data-key="t6_descc">Advocate | Consultant Lawyer</span>
+          <span class="role-ne">सदस्य — Member</span>
+        </div>
+      </div>
+      <div class="team-card fade-up">
+        <div class="team-img-wrap">
+          <img src="img/team7.JPG" alt="Hardik Subedi">
+          <div class="team-img-overlay"></div>
+          <div class="team-social-overlay">
+            <a href="#"><i class="fas fa-envelope"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div class="team-info">
+          <h3 data-key="t7">Hardik Subedi</h3>
+          <span class="role" data-key="t7_desc">Advocate | Consultant Lawyer</span> <br>
+          <span class="role" data-key="t7_descc">Advocate | Consultant Lawyer</span>
+          <span class="role-ne">सदस्य — Member</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OBJECTIVES -->
+<section id="objectives">
+  <div class="container">
+    <div class="objectives-header">
+      <div class="section-label" data-key="obj_lbl">हाम्रो उद्देश्य</div>
+      <h2 class="section-title"><span data-key="obj_h2a">संस्थाका</span> <em data-key="obj_h2b">मुख्य उद्देश्यहरू</em></h2>
+    </div>
+    <div class="objectives-grid">
+      <div class="obj-card fade-up">
+        <div class="obj-num">०१</div>
+        <div class="obj-icon"><i class="fas fa-microscope"></i></div>
+        <p data-key="obj1">वातावरणको विषयमा अध्ययन, अनुसन्धान गरी राष्ट्रिय तथा अन्तर्राष्ट्रिय तालिम, गोष्ठी, छलफल, बहस संचालन गरी प्रभावकारी कार्यान्वयनको लागि पहल गर्ने।</p>
+      </div>
+      <div class="obj-card fade-up">
+        <div class="obj-num">०२</div>
+        <div class="obj-icon"><i class="fas fa-seedling"></i></div>
+        <p data-key="obj2">देशको प्राकृतिक स्रोत, जैविक विविधता, पानीको उपयोग तथा नेपालमा रहेको विभिन्न प्राकृतिक तथा साँस्कृतिक सम्पदाको संरक्षण गर्न विभिन्न कार्यक्रमको आयोजना गर्ने।</p>
+      </div>
+      <div class="obj-card fade-up">
+        <div class="obj-num">०३</div>
+        <div class="obj-icon"><i class="fas fa-scale-balanced"></i></div>
+        <p data-key="obj3">वातावरण संरक्षणसँग सरोकार भएको मुद्दाहरूमा संस्थाको तर्फबाट अदालतहरूमा, सम्बन्धित निकायहरूमा निवेदन दर्ता गर्ने र सो विषयमा बहस पैरवी गर्ने।</p>
+      </div>
+      <div class="obj-card fade-up">
+        <div class="obj-num">०४</div>
+        <div class="obj-icon"><i class="fas fa-landmark"></i></div>
+        <p data-key="obj4">वातावरण विकास तथा त्यसको संरक्षणको सम्बन्धमा अदालत र अन्य अर्धन्यायिक तथा अन्य निकायहरूको भूमिका प्रभावकारी बनाउन पहल गर्ने।</p>
+      </div>
+      <div class="obj-card fade-up">
+        <div class="obj-num">०५</div>
+        <div class="obj-icon"><i class="fas fa-bullhorn"></i></div>
+        <p data-key="obj5">वातावरण विकास र संरक्षण सम्बन्धी देशको विभिन्न भागमा जनचेतना कार्यक्रम संचालन गर्ने। वातावरण कानूनको शिक्षा र वातावरण अदालतको आवश्यकताको सम्बन्धमा प्रचार प्रसार गर्ने।</p>
+      </div>
+      <div class="obj-card fade-up">
+        <div class="obj-num">०६</div>
+        <div class="obj-icon"><i class="fas fa-handshake"></i></div>
+        <p data-key="obj6">विभिन्न राष्ट्रिय तथा अन्तर्राष्ट्रिय सरकारी तथा गैर सरकारी संघ संस्थाहरूसँग समन्वय तथा सम्पर्क गरी विभिन्न किसिमका गोष्ठी एवं सेमिनारहरू संचालन गर्ने।</p>
+      </div>
+      <div class="obj-card fade-up">
+        <div class="obj-num">०७</div>
+        <div class="obj-icon"><i class="fas fa-user-graduate"></i></div>
+        <p data-key="obj7">विभिन्न राष्ट्रिय तथा अन्तर्राष्ट्रिय सरकारी तथा गैर सरकारी संघ संस्थाहरूसँग समन्वय तथा सम्पर्क गरी विभिन्न किसिमका गोष्ठी एवं सेमिनारहरू संचालन गर्ने।</p>
+      </div>
+      <div class="obj-card fade-up">
+        <div class="obj-num">०८</div>
+        <div class="obj-icon"><i class="fas fa-lightbulb"></i></div>
+        <p data-key="obj8">विभिन्न राष्ट्रिय तथा अन्तर्राष्ट्रिय सरकारी तथा गैर सरकारी संघ संस्थाहरूसँग समन्वय तथा सम्पर्क गरी विभिन्न किसिमका गोष्ठी एवं सेमिनारहरू संचालन गर्ने।</p>
+      </div>
+      <div class="obj-card fade-up">
+        <div class="obj-num">०९</div>
+        <div class="obj-icon"><i class="fas fa-tree"></i></div>
+        <p data-key="obj9">विभिन्न राष्ट्रिय तथा अन्तर्राष्ट्रिय सरकारी तथा गैर सरकारी संघ संस्थाहरूसँग समन्वय तथा सम्पर्क गरी विभिन्न किसिमका गोष्ठी एवं सेमिनारहरू संचालन गर्ने।</p>
+      </div>
+      <div class="obj-card fade-up">
+        <div class="obj-num">१०</div>
+        <div class="obj-icon"><i class="fas fa-recycle"></i></div>
+        <p data-key="obj10">विभिन्न राष्ट्रिय तथा अन्तर्राष्ट्रिय सरकारी तथा गैर सरकारी संघ संस्थाहरूसँग समन्वय तथा सम्पर्क गरी विभिन्न किसिमका गोष्ठी एवं सेमिनारहरू संचालन गर्ने।</p>
+      </div>
+      <div class="obj-card fade-up hidden-obj">
+        <div class="obj-num">११</div>
+        <div class="obj-icon"><i class="fas fa-people-group"></i></div>
+        <p data-key="obj11">विभिन्न राष्ट्रिय तथा अन्तर्राष्ट्रिय सरकारी तथा गैर सरकारी संघ संस्थाहरूसँग समन्वय तथा सम्पर्क गरी विभिन्न किसिमका गोष्ठी एवं सेमिनारहरू संचालन गर्ने।</p>
+      </div>
+      <div class="obj-card fade-up hidden-obj">
+        <div class="obj-num">१२</div>
+        <div class="obj-icon"><i class="fas fa-file-lines"></i></div>
+        <p data-key="obj12">विभिन्न राष्ट्रिय तथा अन्तर्राष्ट्रिय सरकारी तथा गैर सरकारी संघ संस्थाहरूसँग समन्वय तथा सम्पर्क गरी विभिन्न किसिमका गोष्ठी एवं सेमिनारहरू संचालन गर्ने।</p>
+      </div>
+      <div class="obj-card fade-up hidden-obj">
+        <div class="obj-num">१३</div>
+        <div class="obj-icon"><i class="fas fa-seedling"></i></div>
+        <p data-key="obj13">विभिन्न राष्ट्रिय तथा अन्तर्राष्ट्रिय सरकारी तथा गैर सरकारी संघ संस्थाहरूसँग समन्वय तथा सम्पर्क गरी विभिन्न किसिमका गोष्ठी एवं सेमिनारहरू संचालन गर्ने।</p>
+      </div>
+      <div class="obj-card fade-up hidden-obj">
+        <div class="obj-num">१४</div>
+        <div class="obj-icon"><i class="fas fa-globe"></i></div>
+        <p data-key="obj14">विभिन्न राष्ट्रिय तथा अन्तर्राष्ट्रिय सरकारी तथा गैर सरकारी संघ संस्थाहरूसँग समन्वय तथा सम्पर्क गरी विभिन्न किसिमका गोष्ठी एवं सेमिनारहरू संचालन गर्ने।</p>
+      </div>
+      <div class="obj-card fade-up hidden-obj">
+        <div class="obj-num">१५</div>
+        <div class="obj-icon"><i class="fas fa-chart-line"></i></div>
+        <p data-key="obj15">विभिन्न राष्ट्रिय तथा अन्तर्राष्ट्रिय सरकारी तथा गैर सरकारी संघ संस्थाहरूसँग समन्वय तथा सम्पर्क गरी विभिन्न किसिमका गोष्ठी एवं सेमिनारहरू संचालन गर्ने।</p>
+      </div>
+    </div>
+    <div class="see-more-wrap">
+      <button class="btn-primary-gold" id="objSeeMoreBtn" onclick="toggleObjectives()">
+        <span data-key="see_more">थप हेर्नुहोस्</span> <i class="fas fa-chevron-down" id="objSeeMoreIcon"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ACTIVITIES -->
+<section id="activities">
+  <div class="container">
+    <div class="activities-header">
+      <div class="section-label" data-key="act_lbl">हाम्रा क्रियाकलाप</div>
+      <h2 class="section-title"><span data-key="act_h2a">संस्थाका</span> <em data-key="act_h2b">प्रमुख क्रियाकलापहरू</em></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="activities-list">
+      <a href="https://www.ashoktamang002.com.np" target="_blank" class="activity-item fade-up">
+        <div class="activity-num">०१</div>
+        <div class="activity-content">
+          <h3 data-key="act1_h">सर्वोच्च अदालतमा रिट दायर</h3>
+          <p data-key="act1_p">राजधानी विश्वकै सबैभन्दा प्रदूषित सहरहरूको सूचीमा परेको सम्बन्धमा सर्वोच्च अदालतमा रिट दायर गरिएको।</p>
+        </div>
+        <i class="fas fa-arrow-right activity-arrow"></i>
+      </a>
+      <a href="https://www.ashoktamang002.com.np" target="_blank" class="activity-item fade-up">
+        <div class="activity-num">०२</div>
+        <div class="activity-content">
+          <h3 data-key="act2_h">काठमाडौँ जिल्ला अदालतमा रिट दायर</h3>
+          <p data-key="act2_p">राजधानीको खानेपानीको गुणस्तर र ढल निकास प्रणालीले वातावरणमा पारेको प्रभावबारे काठमाडौँ जिल्ला अदालतमा रिट दायर गरिएको।</p>
+        </div>
+        <i class="fas fa-arrow-right activity-arrow"></i>
+      </a>
+      <a href="https://www.ashoktamang002.com.np" target="_blank" class="activity-item fade-up">
+        <div class="activity-num">०३</div>
+        <div class="activity-content">
+          <h3 data-key="act3_h">मेलुङ गाउँपालिका वातावरणीय मूल्याङ्कन</h3>
+          <p data-key="act3_p">मेलुङ गाउँपालिकाको वातावरणीय मूल्याङ्कन प्रतिवेदन जिल्ला प्रशासन कार्यालय, दोलखामा बुझाइएको।</p>
+        </div>
+        <i class="fas fa-arrow-right activity-arrow"></i>
+      </a>
+      <a href="https://www.ashoktamang002.com.np" target="_blank" class="activity-item fade-up hidden-activity">
+        <div class="activity-num">०४</div>
+        <div class="activity-content">
+          <h3 data-key="act4_h">जलविद्युत् आयोजना वातावरण प्रभाव मूल्याङ्कन</h3>
+          <p data-key="act4_p">दोलखामा जलविद्युत् आयोजना निर्माणका कारण वातावरणमा परेको प्रभावबारे मूल्याङ्कन गरी अदालतमा प्रतिवेदन बुझाइएको।</p>
+        </div>
+        <i class="fas fa-arrow-right activity-arrow"></i>
+      </a>
+    </div>
+    <div class="see-more-wrap">
+      <button class="btn-primary-gold" id="seeMoreBtn" onclick="toggleActivities()">
+        <span data-key="see_more">थप हेर्नुहोस्</span> <i class="fas fa-chevron-down" id="seeMoreIcon"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="projects-header">
+      <div class="section-label" data-key="proj_lbl">हाम्रा परियोजनाहरू</div>
+      <h2 class="section-title"><span data-key="proj_h2a">चालु</span> <em data-key="proj_h2b">परियोजनाहरू</em></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="projects-grid">
+      <a href="https://ashoktamang002.com.np" target="_blank" class="project-card fade-up">
+        <div class="project-img-wrap">
+          <div class="project-placeholder"><i class="fas fa-water"></i></div>
+          <div class="project-img-overlay"><i class="fas fa-external-link-alt"></i></div>
+        </div>
+        <div class="project-info">
+          <div class="project-tag" data-key="proj1_tag">जल प्रदूषण</div>
+          <h3 data-key="proj1_h">काठमाडौँ खानेपानी गुणस्तर परियोजना</h3>
+          <p data-key="proj1_p">राजधानीको खानेपानी प्रणालीमा भएको प्रदूषणको अनुसन्धान र कानूनी उपचारका लागि संचालित परियोजना।</p>
+          <span class="project-link" data-key="proj_read">थप पढ्नुहोस् <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+      <a href="https://ashoktamang002.com.np" target="_blank" class="project-card fade-up">
+        <div class="project-img-wrap">
+          <div class="project-placeholder"><i class="fas fa-smog"></i></div>
+          <div class="project-img-overlay"><i class="fas fa-external-link-alt"></i></div>
+        </div>
+        <div class="project-info">
+          <div class="project-tag" data-key="proj2_tag">वायु प्रदूषण</div>
+          <h3 data-key="proj2_h">काठमाडौँ वायु प्रदूषण न्यूनीकरण अभियान</h3>
+          <p data-key="proj2_p">विश्वकै प्रदूषित सहरहरूमा परेको राजधानीमा वायु प्रदूषण घटाउन सर्वोच्च अदालतमा दायर रिट परियोजना।</p>
+          <span class="project-link" data-key="proj_read">थप पढ्नुहोस् <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+      <a href="https://ashoktamang002.com.np" target="_blank" class="project-card fade-up">
+        <div class="project-img-wrap">
+          <div class="project-placeholder"><i class="fas fa-bolt"></i></div>
+          <div class="project-img-overlay"><i class="fas fa-external-link-alt"></i></div>
+        </div>
+        <div class="project-info">
+          <div class="project-tag" data-key="proj3_tag">जलविद्युत्</div>
+          <h3 data-key="proj3_h">दोलखा जलविद्युत् वातावरण परियोजना</h3>
+          <p data-key="proj3_p">दोलखामा जलविद्युत् आयोजना निर्माणले वातावरणमा पारेको प्रभावको मूल्याङ्कन र कानूनी पहल।</p>
+          <span class="project-link" data-key="proj_read">थप पढ्नुहोस् <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+      <a href="https://ashoktamang002.com.np" target="_blank" class="project-card fade-up">
+        <div class="project-img-wrap">
+          <div class="project-placeholder"><i class="fas fa-bolt"></i></div>
+          <div class="project-img-overlay"><i class="fas fa-external-link-alt"></i></div>
+        </div>
+        <div class="project-info">
+          <div class="project-tag" data-key="proj3_tag">जलविद्युत्</div>
+          <h3 data-key="proj3_h">दोलखा जलविद्युत् वातावरण परियोजना</h3>
+          <p data-key="proj3_p">दोलखामा जलविद्युत् आयोजना निर्माणले वातावरणमा पारेको प्रभावको मूल्याङ्कन र कानूनी पहल।</p>
+          <span class="project-link" data-key="proj_read">थप पढ्नुहोस् <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+      <a href="https://ashoktamang002.com.np" target="_blank" class="project-card fade-up hidden-proj">
+        <div class="project-img-wrap">
+          <div class="project-placeholder"><i class="fas fa-bolt"></i></div>
+          <div class="project-img-overlay"><i class="fas fa-external-link-alt"></i></div>
+        </div>
+        <div class="project-info">
+          <div class="project-tag" data-key="proj3_tag">जलविद्युत्</div>
+          <h3 data-key="proj3_h">दोलखा जलविद्युत् वातावरण परियोजना</h3>
+          <p data-key="proj3_p">दोलखामा जलविद्युत् आयोजना निर्माणले वातावरणमा पारेको प्रभावको मूल्याङ्कन र कानूनी पहल।</p>
+          <span class="project-link" data-key="proj_read">थप पढ्नुहोस् <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+      <a href="https://ashoktamang002.com.np" target="_blank" class="project-card fade-up hidden-proj">
+        <div class="project-img-wrap">
+          <div class="project-placeholder"><i class="fas fa-bolt"></i></div>
+          <div class="project-img-overlay"><i class="fas fa-external-link-alt"></i></div>
+        </div>
+        <div class="project-info">
+          <div class="project-tag" data-key="proj3_tag">जलविद्युत्</div>
+          <h3 data-key="proj3_h">दोलखा जलविद्युत् वातावरण परियोजना</h3>
+          <p data-key="proj3_p">दोलखामा जलविद्युत् आयोजना निर्माणले वातावरणमा पारेको प्रभावको मूल्याङ्कन र कानूनी पहल।</p>
+          <span class="project-link" data-key="proj_read">थप पढ्नुहोस् <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+    </div>
+    <div class="see-more-wrap">
+      <button class="btn-primary-gold" id="projSeeMoreBtn" onclick="toggleProjects()">
+        <span data-key="see_more">थप हेर्नुहोस्</span> <i class="fas fa-chevron-down" id="projSeeMoreIcon"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ELS NEPAL IN ACTION / GALLERY -->
+<section id="gallery">
+  <div class="container">
+    <div class="gallery-header">
+      <div class="section-label" data-key="gal_lbl">हाम्रा गतिविधिहरू</div>
+      <h2 class="section-title">ELS Nepal <em data-key="gal_em">कार्यरत</em></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item fade-up">
+        <div class="gallery-img-wrap">
+          <div class="gallery-placeholder"><i class="fas fa-camera"></i></div>
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-caption">
+          <h4 data-key="gal1_h">सर्वोच्च अदालत पहल</h4>
+          <p data-key="gal1_p">वायु प्रदूषण विरुद्ध रिट दायर कार्यक्रम, काठमाडौँ।</p>
+        </div>
+      </div>
+      <div class="gallery-item fade-up">
+        <div class="gallery-img-wrap">
+          <div class="gallery-placeholder"><i class="fas fa-camera"></i></div>
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-caption">
+          <h4 data-key="gal2_h">वातावरण जनचेतना कार्यक्रम</h4>
+          <p data-key="gal2_p">स्थानीय समुदायमा वातावरणीय शिक्षा कार्यक्रम।</p>
+        </div>
+      </div>
+      <div class="gallery-item fade-up">
+        <div class="gallery-img-wrap">
+          <div class="gallery-placeholder"><i class="fas fa-camera"></i></div>
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-caption">
+          <h4 data-key="gal3_h">दोलखा क्षेत्र भ्रमण</h4>
+          <p data-key="gal3_p">जलविद्युत् प्रभाव मूल्याङ्कनका लागि दोलखा भ्रमण।</p>
+        </div>
+      </div>
+      <div class="gallery-item fade-up">
+        <div class="gallery-img-wrap">
+          <div class="gallery-placeholder"><i class="fas fa-camera"></i></div>
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-caption">
+          <h4 data-key="gal4_h">कानूनी गोष्ठी</h4>
+          <p data-key="gal4_p">वातावरण कानून विषयक राष्ट्रिय गोष्ठी, काठमाडौँ।</p>
+        </div>
+      </div>
+      <div class="gallery-item fade-up">
+        <div class="gallery-img-wrap">
+          <div class="gallery-placeholder"><i class="fas fa-camera"></i></div>
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-caption">
+          <h4 data-key="gal5_h">युवा तालिम कार्यक्रम</h4>
+          <p data-key="gal5_p">युवा र महिलाहरूका लागि वातावरण अधिकार तालिम।</p>
+        </div>
+      </div>
+      <div class="gallery-item fade-up">
+        <div class="gallery-img-wrap">
+          <div class="gallery-placeholder"><i class="fas fa-camera"></i></div>
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-caption">
+          <h4 data-key="gal6_h">अदालत प्रतिवेदन</h4>
+          <p data-key="gal6_p">मेलुङ गाउँपालिका वातावरण प्रतिवेदन बुझाउने कार्यक्रम।</p>
+        </div>
+      </div>
+      <div class="gallery-item fade-up hidden-gal">
+        <div class="gallery-img-wrap">
+          <div class="gallery-placeholder"><i class="fas fa-camera"></i></div>
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-caption">
+          <h4 data-key="gal6_h">अदालत प्रतिवेदन</h4>
+          <p data-key="gal6_p">मेलुङ गाउँपालिका वातावरण प्रतिवेदन बुझाउने कार्यक्रम।</p>
+        </div>
+      </div>
+      <div class="gallery-item fade-up hidden-gal">
+        <div class="gallery-img-wrap">
+          <div class="gallery-placeholder"><i class="fas fa-camera"></i></div>
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-caption">
+          <h4 data-key="gal6_h">अदालत प्रतिवेदन</h4>
+          <p data-key="gal6_p">मेलुङ गाउँपालिका वातावरण प्रतिवेदन बुझाउने कार्यक्रम।</p>
+        </div>
+      </div>
+      <div class="gallery-item fade-up hidden-gal">
+        <div class="gallery-img-wrap">
+          <div class="gallery-placeholder"><i class="fas fa-camera"></i></div>
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-caption">
+          <h4 data-key="gal6_h">अदालत प्रतिवेदन</h4>
+          <p data-key="gal6_p">मेलुङ गाउँपालिका वातावरण प्रतिवेदन बुझाउने कार्यक्रम।</p>
+        </div>
+      </div>
+    </div>
+    <div class="see-more-wrap">
+      <button class="btn-primary-gold" id="galSeeMoreBtn" onclick="toggleGallery()">
+        <span data-key="see_more">थप हेर्नुहोस्</span> <i class="fas fa-chevron-down" id="galSeeMoreIcon"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h2><em data-key="contact_em">सम्पर्कमा</em> <span data-key="contact_h2">आउनुहोस्</span></h2>
+        <p data-key="contact_intro">हामी वातावरणीय संरक्षण, दिगो विकास तथा जिम्मेवार र दूरदर्शी पर्यावरणीय मूल्यमान्यताहरूको प्रवर्द्धनप्रति समान प्रतिबद्धता राख्ने राष्ट्रिय तथा अन्तर्राष्ट्रिय स्तरका प्रतिष्ठित संस्था, सङ्गठन तथा व्यक्तिहरूसँग सहकार्य तथा साझेदारीका अवसरहरूलाई सादर आमन्त्रण गर्दछौं।</p>
+        <div class="contact-details">
+          <div class="contact-detail-item">
+            <div class="contact-detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4 data-key="con_addr_lbl">ठेगाना</h4>
+              <span data-key="con_addr">अनामनगर, काठमाडौँ, नेपाल</span>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="contact-detail-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4 data-key="con_email_lbl">इमेल</h4>
+              <span data-key="con_email">elsnepal@gmail.com</span>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="contact-detail-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h4 data-key="con_reg_lbl">सम्पर्क नम्बर</h4>
+              <span data-key="con_reg_lbl_num">१०४० | PAN: ६१५०१५४९३</span>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="contact-detail-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h4 data-key="con_hours_lbl">कार्यालय समय</h4>
+              <span data-key="con_hours">आइतबार – शुक्रबार: बिहान १०:०० – साँझ ५:००</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="map-wrap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.3826099946497!2d85.32417507550773!3d27.705780176191987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190a63b5a1bf%3A0xc52b25f84b8fc4b8!2sAnamNagar%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1700000000000!5m2!1sen!2snp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer-bottom">
+    <div class="footer-links-bar">
+      <div class="footer-col">
+        <h4 data-key="fo_about">संस्थाको परिचय</h4>
+        <p data-key="fo_about_p">वातावरण कानून समाज नेपाल — नेपालभर वातावरणीय तथा व्यक्तिगत कानूनी न्यायको पक्षमा अग्रसर विशेषज्ञ अधिवक्ताहरूको सामूहिक प्रयास।</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-key="fo_areas">क्षेत्रहरू</h4>
+        <a href="#objectives" data-key="fo_a1">वातावरण कानून</a>
+        <a href="#objectives" data-key="fo_a2">जनचेतना अभियान</a>
+        <a href="#objectives" data-key="fo_a3">कानूनी शिक्षा</a>
+        <a href="#activities" data-key="fo_a4">न्यायिक पहल</a>
+        <a href="#projects" data-key="fo_a5">परियोजनाहरू</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-key="fo_links">उपयोगी लिंकहरू</h4>
+        <a href="#about" data-key="fo_l1">हाम्रो बारेमा</a>
+        <a href="#team" data-key="fo_l2">टोली</a>
+        <a href="#objectives" data-key="fo_l3">उद्देश्यहरू</a>
+        <a href="#activities" data-key="fo_l4">क्रियाकलापहरू</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-key="fo_contact">सम्पर्क</h4>
+        <a href="mailto:elsnepal@gmail.com"><i class="fas fa-envelope" style="color:var(--gold);margin-right:8px;"></i> <span data-key="fo_email">elsnepal@gmail.com</span></a>
+        <a href="#" onclick="return false;"><i class="fas fa-map-marker-alt" style="color:var(--gold);margin-right:8px;"></i> <span data-key="fo_addr">अनामनगर, काठमाडौँ</span></a>
+        <a href="#" onclick="return false;"><i class="fas fa-phone" style="color:var(--gold);margin-right:8px;"></i> <span data-key="fo_reg">दर्ता नं. १०४०</span></a>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <span data-key="fo_copy">© वातावरण कानून समाज नेपाल | सर्वाधिकार सुरक्षित</span>
+      <span data-key="fo_aff">नेपाल वातावरण समाज सम्बद्ध</span>
+    </div>
+  </div>
+</section>
+
+<a href="#" id="back-top" title="Back to top"><i class="fas fa-chevron-up"></i></a>
+
+<script>
+// =============================================
+// TRANSLATIONS
+// =============================================
+const translations = {
+  en: {
+    "opening hours": "Sunday - Friday",
+    time: "10:00 AM - 5:00 PM",
+    number: "+977 1234567890",
+    nav_about: "About",
+    nav_team: "Team",
+    nav_obj: "Objectives",
+    nav_act: "Activities",
+    nav_proj: "Projects",
+    nav_contact: "Contact",
+    slide_tag1: "ELS Nepal · Est. Kathmandu",
+    slide_title1: "Fighting for",
+    slide_em1: "Environmental Justice",
+    slide_desc1: "Climate change and environmental degradation threaten communities, biodiversity, and natural resources worldwide. We stand to protect Nepal's natural heritage.",
+    btn_about: "About Us",
+    btn_act: "Activities",
+    slide_tag2: "Legal Initiative · Nepal",
+    slide_title2: "Protecting",
+    slide_em2: "Natural Heritage",
+    slide_desc2: "We champion sustainable development and the right to a clean environment for present and future generations of Nepal.",
+    btn_team: "Our Team",
+    btn_obj: "Objectives",
+    slide_tag3: "Environmental Justice · Kathmandu",
+    slide_title3: "Clean Environment",
+    slide_em3: "is Our Right",
+    slide_desc3: "Protecting air, water, land, forests, and biodiversity to build a prosperous, equitable, and peaceful Nepali society.",
+    btn_contact: "Contact Us",
+    btn_proj: "Projects",
+    feature1: "Public Awareness",
+    feature1_desc: "Conducting awareness programs",
+    feature2: "Legal Justice",
+    feature2_desc: "Initiation and advocacy in courts",
+    feature3: "Study & Research",
+    feature3_desc: "Study and research on environmental issues",
+    feature4: "Partnership",
+    feature4_desc: "National and international collaboration",
+    about_lbl: "About Us",
+    about_h2a: "Environmental",
+    about_h2b: "Justice & Protection",
+    about_emblem_title: "Environment Law Society",
+    about_emblem_sub: "ENVIRONMENT LAW SOCIETY NEPAL",
+    reg_reg: "Reg. Number",
+    reg_pan: "PAN Number",
+    reg_ward: "Ward Certificate",
+    reg_year: "Established",
+    about_p1: "Amid accelerating global climate change and environmental degradation, the long-term impacts on human communities, wildlife, ecosystems, and natural resources have made environmental protection an urgent global priority. It is essential to prevent unsustainable resource exploitation, strengthen sustainable development, and uphold the fundamental right to live while safeguarding future generations.",
+    about_p2: "In this context, “Environment Law Society Nepal” was established under the Organizations Registration Act, 1977 (2034 B.S.) to promote a clean, healthy, and balanced environment. The organization is dedicated to conserving and sustainably managing key natural resources—air, water, land, forests, and biodiversity—while fostering a just and peaceful society.",
+    about_p3: "Founded in 2077 B.S., the institution is a non-profit, public welfare-oriented organization comprising seven experienced legal professionals working collectively to advance environmental justice and sustainability.",
+    reg_label: "Registration &amp; Compliance",
+    reg_title: "Legal&nbsp;", 
+    reg_title_em: "Credentials",
+    rc2_val: "Kathmandu Metropolitan City, <em>Ward No. 10</em>",
+    rc2_key: "Certificate No. <em>513</em>",
+    rc2_sub: "Registration Date: <em>2077-08-05 B.S.</em>",
+    rc1_val: "District Administration Office, <em>Kathmandu</em>",
+    rc1_key: "Registration No. <em>1040</em>",
+    rc1_sub: "Registration Date: <em>2077-08-17 B.S.</em>",
+    rc3_val: "Inland Revenue Office, <em>New Baneshwor</em>",
+    rc3_key: "Permanent Account Number (PAN). <em>615015493</em>",
+    rc3_sub: "Registration Date: <em>2077-10-19 B.S.</em>",
+    rc4_val: "Nepal Environment Society",
+    rc4_key: "Affiliation No. <em>1040</em>",
+    rc4_sub: "Affiliation Date: <em>2077-09-01 B.S.</em>",
+    t: "Our Team",
+    team_title: "Organization's",
+    team_title_em: "Members",
+    t1: "Padam Bahadur Shrestha",
+    t1_desc: "Advocate | Consultant Lawyer",
+    t1_descc: "LLB, LLM | 22 Years of Legal Expertise",
+    t2: "Bishnu Kumar Thokar",
+    t2_desc: "Advocate | Consultant Lawyer",
+    t2_descc: "LLB, LLM | 18 Years of Legal Expertise",
+    t3: "Satkon Shrestha",
+    t3_desc: "Advocate | Consultant Lawyer",
+    t3_descc: "LLB, LLM | 15 Years of Legal Expertise",
+    t4: "Raju Phuyal",
+    t4_desc: "Advocate | Consultant Lawyer",
+    t4_descc: "LLB, LLM | 12 Years of Legal Expertise",
+    t5: "Shanta Panta",
+    t5_desc: "Advocate | Consultant Lawyer",
+    t5_descc: "LLB, LLM | 10 Years of Legal Expertise",
+    t6: "Joni Mainali",
+    t6_desc: "Advocate | Consultant Lawyer",
+    t6_descc: "LLB, LLM | 8 Years of Legal Expertise",
+    t7: "Hardik Subedi",
+    t7_desc: "Advocate | Consultant Lawyer",
+    t7_descc: "LLB, LLM | 6 Years of Legal Expertise",
+    obj_lbl: "Our Objectives",
+    obj_h2a: "Core",
+    obj_h2b: "Objectives",
+    obj1: "This shall be a non-profit, public-interest social organization.",
+    obj2: "To conduct studies and research on environmental issues, and to organize national and international trainings, symposiums, discussions, and discourses to facilitate their effective implementation through special organizational initiatives.",
+    obj3: "To organize various programs aimed at conserving the nation's natural resources, biodiversity, water utilization, and the diverse natural and cultural heritages of Nepal.",
+    obj4: "To file petitions and litigate in courts and relevant authorities on behalf of the organization concerning environmental protection issues, and to advocate for the effective implementation of judicial decisions through comprehensive study and research.",
+    obj5: "To take initiatives to enhance the effectiveness of courts, quasi-judicial bodies, and other relevant authorities in the development and conservation of the environment.",
+    obj6: "To conduct public awareness programs across various parts of the country concerning environmental development and conservation.",
+    obj7: "To promote and advocate for environmental law education and the necessity of an environmental court. Furthermore, to conduct various programs emphasizing that a clean environment is a fundamental necessity.",
+    obj8: "To publish a regular awareness-oriented environmental journal on behalf of the organization, upon acquiring prior approval from the concerned authorities, to promote the sustainable development and conservation of the environment.",
+    obj9: "To undertake various awareness-raising activities on the environment and sustainable development, while upholding human rights, environmental justice, and the environmental rule of law.",
+    obj10: "To coordinate and liaise with various national and international governmental and non-governmental organizations to organize national and international level symposiums and seminars, and to participate in such programs with prior approval from the relevant authorities.",
+    obj11: "To conduct various awareness-building training programs by actively ensuring the participation of youths and women in environmental conservation efforts.",
+    obj12: "To undertake effective initiatives for the prevention and mitigation of climate change impacts by providing expert advice and recommendations at both the local level and in policy-making processes.",
+    obj13: "To extensively implement public awareness campaigns across schools, colleges, local government bodies, organizations, and community members for the effective dissemination of environmental legal education.",
+    obj14: "To conduct various programs aimed at promoting eco-friendly tourism enterprises.",
+    obj15: "To perform, or cause to be performed, any other necessary activities required to fulfill the objectives of the organization.",
+    act_lbl: "Our Activities",
+    act_h2a: "Key",
+    act_h2b: "Activities",
+    act1_h: "Writ Filed at Supreme Court",
+    act1_p: "A writ petition was filed at the Supreme Court regarding Kathmandu being listed among the world's most polluted cities.",
+    act2_h: "Writ Filed at Kathmandu District Court",
+    act2_p: "A writ petition was filed at Kathmandu District Court regarding the quality of drinking water and the impact of sewerage systems on the environment.",
+    act3_h: "Melung Rural Municipality Environmental Assessment",
+    act3_p: "An environmental assessment report of Melung Rural Municipality was submitted to the District Administration Office, Dolkha.",
+    act4_h: "Hydropower Project Environmental Impact Assessment",
+    act4_p: "An assessment of the environmental impact of hydropower project construction in Dolkha was conducted and a report was submitted to the court.",
+    see_more: "See More",
+    proj_lbl: "Our Projects",
+    proj_h2a: "Ongoing",
+    proj_h2b: "Projects",
+    proj1_tag: "Water Pollution",
+    proj1_h: "Kathmandu Drinking Water Quality Project",
+    proj1_p: "A project investigating pollution in the capital's water supply system and pursuing legal remedies for clean water rights.",
+    proj2_tag: "Air Pollution",
+    proj2_h: "Kathmandu Air Quality Campaign",
+    proj2_p: "Supreme Court writ project to reduce air pollution in Kathmandu, ranked among the world's most polluted cities.",
+    proj3_tag: "Hydropower",
+    proj3_h: "Dolkha Hydropower Environmental Project",
+    proj3_p: "Assessment of the environmental impact of hydropower project construction in Dolkha and related legal interventions.",
+    proj_read: "Read More",
+    gal_lbl: "Our Activities",
+    gal_em: "In Action",
+    gal1_h: "Supreme Court Initiative",
+    gal1_p: "Writ filing program against air pollution, Kathmandu.",
+    gal2_h: "Environmental Awareness Program",
+    gal2_p: "Environmental education program in local communities.",
+    gal3_h: "Dolkha Field Visit",
+    gal3_p: "Field visit to Dolkha for hydropower impact assessment.",
+    gal4_h: "Legal Seminar",
+    gal4_p: "National seminar on environmental law, Kathmandu.",
+    gal5_h: "Youth Training Program",
+    gal5_p: "Environmental rights training for youth and women.",
+    gal6_h: "Court Report Submission",
+    gal6_p: "Melung Rural Municipality environmental report submission.",
+    contact_em: "Get In",
+    contact_h2: "Touch",
+    contact_intro: "We cordially welcome opportunities for collaboration with national and international partners—including esteemed organizations, institutions, and individuals—who share our commitment to environmental stewardship, sustainability, and the promotion of responsible and forward-looking ecological values.",
+    con_addr_lbl: "Address",
+    con_addr: "Kumari dhara galli, kathmandu-10, kathmandu, Nepal",
+    con_email_lbl: "Email",
+    con_email: "elsnepal@gmail.com",
+    con_reg_lbl: "Contact Number",
+    con_reg_lbl_num: "+977 10615015493",
+    con_hours_lbl: "Office Hours",
+    con_hours: "Sunday – Friday: 10:00 AM – 5:00 PM",
+    fo_about: "About the Organization",
+    fo_about_p: "Environment Law Society Nepal — A collective effort of expert advocates championing environmental and legal justice across Nepal.",
+    fo_areas: "Practice Areas",
+    fo_a1: "Environmental Law",
+    fo_a2: "Awareness Campaigns",
+    fo_a3: "Legal Education",
+    fo_a4: "Judicial Advocacy",
+    fo_a5: "Projects",
+    fo_links: "Useful Links",
+    fo_l1: "About Us",
+    fo_l2: "Team",
+    fo_l3: "Objectives",
+    fo_l4: "Activities",
+    fo_contact: "Contact",
+    fo_email: "elsnepal@gmail.com",
+    fo_addr: "Kumari dhara galli, kathmandu-10, kathmandu, Nepal",
+    fo_reg: "+977 10615015493",
+    fo_copy: "© Environment Law Society Nepal | All Rights Reserved",
+    fo_aff: "Affiliated with Nepal Environment Society",
+  },
+  ne: {
+    "opening hours": "आइतबार - शुक्रबार",
+    time: "बिहान १०:०० - साँझ ५:००",
+    number: "+९७७ १२३४५६७८९०",
+    nav_about: "संस्थागत परिचय",
+    nav_team: "टिम",
+    nav_obj: "उद्देश्य",
+    nav_act: "क्रियाकलाप",
+    nav_proj: "परियोजना",
+    nav_contact: "सम्पर्क",
+    slide_tag1: "ELS Nepal · काठमाडौं स्थापित", 
+    slide_title1: "वातावरणीय",
+    slide_em1: "न्यायको लागि",
+    slide_desc1: "विश्वव्यापी जलवायु परिवर्तन र वातावरणीय ह्रासविरुद्ध मानव समुदाय, जीवजन्तु, वनस्पति र प्राकृतिक सम्पदाको संरक्षणका लागि प्रतिबद्ध।",
+    btn_about: "हाम्रो बारेमा",
+    btn_act: "क्रियाकलाप",
+    slide_tag2: "कानूनी पहल · नेपाल",
+    slide_title2: "प्राकृतिक",
+    slide_em2: "सम्पदा संरक्षण",
+    slide_desc2: "दिगो विकास र मानिसको बाँच्न पाउने अधिकारको सम्मान गर्दै भावी सन्ततीको हकहितको संरक्षणका लागि हामी अग्रसर छौँ।",
+    btn_team: "हाम्रो टोली",
+    btn_obj: "उद्देश्यहरू",
+    slide_tag3: "वातावरणीय न्याय · काठमाडौं",
+    slide_title3: "स्वच्छ",
+    slide_em3: "वातावरण हाम्रो अधिकार",
+    slide_desc3: "वायु, जल, जमिन, जंगल र वनस्पति जस्ता प्राकृतिक सम्पदाको संरक्षण गरी समृद्ध, समतामूलक र शान्तिपूर्ण समाजको निर्माण।",
+    btn_contact: "सम्पर्क गर्नुहोस्",
+    btn_proj: "परियोजनाहरू",
+    feature1: "जनचेतना",
+    feature1_desc: "सचेतना कार्यक्रम संचालन",
+    feature2: "कानूनी न्याय",
+    feature2_desc: "न्यायालयमा पहल र वकालत",
+    feature3: "अध्ययन-अनुसन्धान",
+    feature3_desc: "वातावरणीय सवालहरूमा अध्ययन तथा अनुसन्धान",
+    feature4: "साझेदारी",
+    feature4_desc: "राष्ट्रिय र अन्तर्राष्ट्रिय साझेदारी",
+    about_lbl: "हाम्रो परिचय",
+    about_h2a: "वातावरणीय",
+    about_h2b: "न्याय र संरक्षण",
+    about_emblem_title: "वातावरण कानून समाज",
+    about_emblem_sub: "ENVIRONMENT LAW SOCIETY NEPAL",
+    reg_reg: "दर्ता नम्बर",
+    reg_pan: "PAN नम्बर",
+    reg_ward: "वडा प्रमाणपत्र",
+    reg_year: "स्थापना",
+    about_p1: "विश्वव्यापी रुपमा तीव्र गतिमा भइरहेको जलवायु परिवर्तन तथा वातावरणीय ह्रासले सम्पूर्ण मानव समुदाय, जीवजन्तु, वनस्पति, प्रकृति तथा प्राकृतिक सम्पदामा गम्भीर र दीर्घकालीन प्रतिकूल प्रभाव पारिरहेको सन्दर्भमा वातावरण संरक्षण तथा सम्वर्द्धन आज विश्व समुदायसमक्ष साझा र अपरिहार्य चुनौतीको रूपमा उभिएको छ। प्राकृतिक स्रोत–साधनको अविवेकी तथा अनुचित दोहनलाई नियन्त्रण गर्दै दिगो विकासको अवधारणालाई सुदृढ बनाउनुका साथै प्रत्येक मानवको बाँच्न पाउने मौलिक अधिकारको सम्मान गर्दै भावी पुस्ताको हित संरक्षण गर्नु आजको आवश्यकता हो।",
+    about_p2: "यसै सन्दर्भमा वायु, जल, जमिन, वन–जंगल तथा जैविक विविधता जस्ता अमूल्य प्राकृतिक सम्पदाको संरक्षण, सम्वर्द्धन तथा प्रवर्द्धनमार्फत स्वच्छ, स्वस्थ र सन्तुलित वातावरण निर्माण गर्दै समृद्ध, समतामूलक तथा शान्तिपूर्ण समाजको स्थापना गर्ने मूल उद्देश्यका साथ संस्था दर्ता ऐन, २०३४ बमोजिम “वातावरण कानून समाज नेपाल” नामक संस्थाको स्थापना गरिएको हो। संस्थाको विधान यसै उद्देश्यलाई केन्द्रमा राखी विधिवत् तर्जुमा गरिएको छ।",
+    about_p3: "वि.सं. २०७७ मा स्थापना भएको यो संस्था एक मुनाफा वितरण नगर्ने, जनहितमुखी सामाजिक संस्था हो। यस संस्थामा वातावरण तथा कानूनी क्षेत्रसँग सम्बन्धित विषयमा उच्च शैक्षिक योग्यता तथा समृद्ध अनुभव हासिल गरेका सात जना दक्ष कानूनी विज्ञहरूको सक्रिय सहभागिता रहेको छ। ",
+    reg_label: "दर्ता र अनुपालन",
+    reg_title: "कानूनी&nbsp;",
+    reg_title_em: "योग्यता प्रमाणपत्र",
+    rc2_val: "काठमाडौं महानगरपालिका, <em>वडा नं. १०</em>",
+    rc2_key: "प्रमाणपत्र नम्बर. <em>५१३</em>",
+    rc2_sub: "दर्ता मिति: <em>२०७७-०८-०५ वि.सं.</em>",
+    rc1_val: "जिल्ला प्रशासन कार्यालय, <em>काठमाडौं</em>",
+    rc1_key: "दर्ता नम्बर. <em>१०४०</em>",
+    rc1_sub: "दर्ता मिति: <em>२०७७-०८-१७ वि.सं.</em>",
+    rc3_val: "आन्तरिक राजस्व कार्यालय, <em>नयाँ बानेश्वर</em>",
+    rc3_key: "स्थायी लेखा नम्बर. <em>६१५०१५४९३</em>",
+    rc3_sub: "दर्ता मिति: <em>२०७७-१०-१९ वि.सं.</em>",
+    rc4_val: "नेपाल वातावरण समाज",
+    rc4_key: "आबद्धता नम्बर. <em>१०४०</em>",
+    rc4_sub: "आबद्धता मिति: <em>२०७७-०९-०१ वि.सं.</em>",
+    t: "हाम्रो टिम",
+    team_title: "संस्थाका",
+    team_title_em: "सदस्यहरू",
+    t1: "पदम बहादुर श्रेष्ठ",
+    t1_desc: "अधिवक्ता | परामर्शदाता वकिल",
+    t1_descc: "एलएलबी, एलएलएम | २२ वर्षको कानूनी विशेषज्ञता",
+    t2: "विष्णु कुमार थोकर",
+    t2_desc: "अधिवक्ता | परामर्शदाता वकिल",
+    t2_descc: "एलएलबी, एलएलएम | १८ वर्षको कानूनी विशेषज्ञता",
+    t3: "षटकोण श्रेष्ठ",
+    t3_desc: "अधिवक्ता | परामर्शदाता वकिल",
+    t3_descc: "एलएलबी, एलएलएम | १५ वर्षको कानूनी विशेषज्ञता",
+    t4: "राजु फुयाल",
+    t4_desc: "अधिवक्ता | परामर्शदाता वकिल",
+    t4_descc: "एलएलबी, एलएलएम | १२ वर्षको कानूनी विशेषज्ञता",
+    t5: "शान्ता पन्त",
+    t5_desc: "अधिवक्ता | परामर्शदाता वकिल",
+    t5_descc: "एलएलबी, एलएलएम | १० वर्षको कानूनी विशेषज्ञता",
+    t6: "जोनी मैनाली",
+    t6_desc: "अधिवक्ता | परामर्शदाता वकिल",
+    t6_descc: "एलएलबी, एलएलएम | ८ वर्षको कानूनी विशेषज्ञता",
+    t7: "हर्दिक सुवेदी",
+    t7_desc: "अधिवक्ता | परामर्शदाता वकिल",
+    t7_descc: "एलएलबी, एलएलएम | ६ वर्षको कानूनी विशेषज्ञता",
+    obj_lbl: "हाम्रो उद्देश्य",
+    obj_h2a: "संस्थाका",
+    obj_h2b: "मुख्य उद्देश्यहरू",
+    obj1: "यो संस्था मुनाफा रहित, जनहित सामाजिक संस्था हुनेछ ।",
+    obj2: "वातावरणको विषयमा अध्ययन, अनुसन्धान गरी त्यस सम्बन्धि राष्ट्रिय तथा अन्तराष्ट्रिय तालिम, गोष्ठि, छलफल, बहस संचालन गरी प्रभावकारी कार्यान्वयनको लागी विशेष रुपमा संस्थाको तर्फवाट पहल गर्ने गराउने ।",
+    obj3: "देशको प्राकृतिक स्रोत, जैविक विविधता, पानीको उपयोग तथा नेपालमा रहेको विभिन्न प्राकृतिक तथा सांस्कृतिक सम्पदाको संरक्षण गर्न विभिन्न कार्यक्रमको आयोजना गर्ने ।",
+    obj4: "वातावरण संरक्षणसंग सरोकार भएको मुद्दाहरुमा संस्थाको तर्फबाट अदालतहरुमा, सम्बन्धित निकायहरुमा निवेदन दर्ता गर्ने र सो विषयमा वहस पैरवी गर्ने गराउने साथै न्यायालयबाट भएका निर्णयहरुको अध्ययन, अनुसन्धान गरी प्रभावकारी कार्यान्वयनको पक्षमा जोड दिने ।",
+    obj5: "वातावरणको विकास तथा त्यसको संरक्षणको सम्बन्धमा अदालत र अन्य अर्धन्यायिक तथा अन्य निकायहरुको भुमिका प्रभावकारी बनाउनपहल गर्ने गराउने ।",
+    obj6: "वातावरण विकास र संरक्षण सम्बन्धी देशको विभिन्न भागमा जनचेतना कार्यक्रम संचालन गर्ने ।",
+    obj7: "वातावरण कानूनको शिक्षा, वातावरण अदालतको आवश्यकताको सम्बन्धमा प्रचार प्रसार गर्ने । स्वच्छ वातावरण हाम्रो आवश्यकता भएकोले त्यस तर्फ विभिन्न कार्यक्रमहरु संचालन गर्ने गराउने ।",
+    obj8: "वातावरणको दिगो विकास र संरक्षणसमेत गर्न यस संस्थाको तर्फवाट एक नियमित जनचेतनामुलक वातावरण पत्रिका सम्बन्धित निकायको स्वीकृति लिएर समेत प्रकाशित गर्ने गराउने ।",
+    obj9: "मानवअधिकार, वातावरणीय न्याय र वातावरणीय कानूनी शासन कायम गर्दै वातावरण र दिगो विकासको विषयमा जनचेतना मुलक विभिन्न कार्यहरु संचालन गर्ने गराउने ।",
+    obj10: "विभिन्न राष्ट्रिय तथा अन्तर्राष्ट्रिय सरकारी तथा गैर सरकारी संघ संस्थाहरुसंग समन्वय तथा सम्पर्क गरि विभिन्न किसिमको राष्ट्रिय तथा अन्तर्राष्ट्रिय स्तरका गोष्ठी एवं सेमिनारहरु संचालन गर्ने तथा गराउने साथै त्यस्तो कार्यक्रमहरुमा सम्बन्धित निकायको स्वीकृती लिई सहभागी हुने ।",
+    obj11: "वातावरण संरक्षण गर्नको लागी युवा, महिलाहरुलाई समेत सहभागी गराई विभिन्न जनचेतनामुलक तालिम कार्यक्रमहरु गर्ने ।",
+    obj12: "जलवायु परिवर्तनको असर र यसको रोकथाम तथा न्यूनीकरणको लागी स्थानीय स्तरमा र नीति निर्माणमा समेत सल्लाह सुझावद्वारा प्रभावकारी कार्यहरु गर्ने ।",
+    obj13: "वातावरणीय कानूनी शिक्षाको प्रभावकारी प्रचार प्रसारको लागी स्कुल, कलेज, स्थानीयतह, संघ संस्था र समुदायका व्यक्तिहरुमा व्यापक रुपमा जनचेतनामुलक कार्यक्रमहरु लाने ।",
+    obj14: "वातावरण मैत्री पर्यटन व्यवसायलाई प्रवर्द्धन गर्न विभिन्न कार्यक्रमहरु संचालन गर्ने ।",
+    obj15: "संस्थाको उद्देश्य परिपुर्तिका लागि आवश्यक अन्य कार्यहरु गर्ने, गराउने ।",                                                       
+    act_lbl: "हाम्रा क्रियाकलाप",
+    act_h2a: "संस्थाका",
+    act_h2b: "प्रमुख क्रियाकलापहरू",
+    act1_h: "सर्वोच्च अदालतमा रिट दायर",
+    act1_p: "राजधानी विश्वकै सबैभन्दा प्रदूषित सहरहरूको सूचीमा परेको सम्बन्धमा सर्वोच्च अदालतमा रिट दायर गरिएको।",
+    act2_h: "काठमाडौँ जिल्ला अदालतमा रिट दायर",
+    act2_p: "राजधानीको खानेपानीको गुणस्तर र ढल निकास प्रणालीले वातावरणमा पारेको प्रभावबारे काठमाडौँ जिल्ला अदालतमा रिट दायर गरिएको।",
+    act3_h: "मेलुङ गाउँपालिका वातावरणीय मूल्याङ्कन",
+    act3_p: "मेलुङ गाउँपालिकाको वातावरणीय मूल्याङ्कन प्रतिवेदन जिल्ला प्रशासन कार्यालय, दोलखामा बुझाइएको।",
+    act4_h: "जलविद्युत् आयोजना वातावरण प्रभाव मूल्याङ्कन",
+    act4_p: "दोलखामा जलविद्युत् आयोजना निर्माणका कारण वातावरणमा परेको प्रभावबारे मूल्याङ्कन गरी अदालतमा प्रतिवेदन बुझाइएको।",
+    see_more: "थप हेर्नुहोस्",
+    proj_lbl: "हाम्रा परियोजनाहरू",
+    proj_h2a: "चालु",
+    proj_h2b: "परियोजनाहरू",
+    proj1_tag: "जल प्रदूषण",
+    proj1_h: "काठमाडौँ खानेपानी गुणस्तर परियोजना",
+    proj1_p: "राजधानीको खानेपानी प्रणालीमा भएको प्रदूषणको अनुसन्धान र कानूनी उपचारका लागि संचालित परियोजना।",
+    proj2_tag: "वायु प्रदूषण",
+    proj2_h: "काठमाडौँ वायु प्रदूषण न्यूनीकरण अभियान",
+    proj2_p: "विश्वकै प्रदूषित सहरहरूमा परेको राजधानीमा वायु प्रदूषण घटाउन सर्वोच्च अदालतमा दायर रिट परियोजना।",
+    proj3_tag: "जलविद्युत्",
+    proj3_h: "दोलखा जलविद्युत् वातावरण परियोजना",
+    proj3_p: "दोलखामा जलविद्युत् आयोजना निर्माणले वातावरणमा पारेको प्रभावको मूल्याङ्कन र कानूनी पहल।",
+    proj_read: "थप पढ्नुहोस्",
+    gal_lbl: "हाम्रा गतिविधिहरू",
+    gal_em: "कार्यरत",
+    gal1_h: "सर्वोच्च अदालत पहल",
+    gal1_p: "वायु प्रदूषण विरुद्ध रिट दायर कार्यक्रम, काठमाडौँ।",
+    gal2_h: "वातावरण जनचेतना कार्यक्रम",
+    gal2_p: "स्थानीय समुदायमा वातावरणीय शिक्षा कार्यक्रम।",
+    gal3_h: "दोलखा क्षेत्र भ्रमण",
+    gal3_p: "जलविद्युत् प्रभाव मूल्याङ्कनका लागि दोलखा भ्रमण।",
+    gal4_h: "कानूनी गोष्ठी",
+    gal4_p: "वातावरण कानून विषयक राष्ट्रिय गोष्ठी, काठमाडौँ।",
+    gal5_h: "युवा तालिम कार्यक्रम",
+    gal5_p: "युवा र महिलाहरूका लागि वातावरण अधिकार तालिम।",
+    gal6_h: "अदालत प्रतिवेदन",
+    gal6_p: "मेलुङ गाउँपालिका वातावरण प्रतिवेदन बुझाउने कार्यक्रम।",
+    contact_em: "सम्पर्कमा",
+    contact_h2: "आउनुहोस्",
+    contact_intro: "हामी वातावरणीय संरक्षण, दिगो विकास तथा जिम्मेवार र दूरदर्शी पर्यावरणीय मूल्यमान्यताहरूको प्रवर्द्धनप्रति समान प्रतिबद्धता राख्ने राष्ट्रिय तथा अन्तर्राष्ट्रिय स्तरका प्रतिष्ठित संस्था, सङ्गठन तथा व्यक्तिहरूसँग सहकार्य तथा साझेदारीका अवसरहरूलाई सादर आमन्त्रण गर्दछौं।",
+    con_addr_lbl: "ठेगाना",
+    con_addr: "कुमारी धारा गल्ली, काठमाडौं–१०, काठमाडौं, नेपाल",
+    con_email_lbl: "इमेल",
+    con_email: "elsnepal@gmail.com",
+    con_reg_lbl: "सम्पर्क नम्बर",
+    con_reg_lbl_num: "+९७७ १०६१५०१५४९३",
+    con_hours_lbl: "कार्यालय समय",
+    con_hours: "आइतबार – शुक्रबार: बिहान १०:०० – साँझ ५:००",
+    fo_about: "संस्थाको परिचय",
+    fo_about_p: "वातावरण कानून समाज नेपाल — नेपालभर वातावरणीय तथा व्यक्तिगत कानूनी न्यायको पक्षमा अग्रसर विशेषज्ञ अधिवक्ताहरूको सामूहिक प्रयास।",
+    fo_areas: "क्षेत्रहरू",
+    fo_a1: "वातावरण कानून",
+    fo_a2: "जनचेतना अभियान",
+    fo_a3: "कानूनी शिक्षा",
+    fo_a4: "न्यायिक पहल",
+    fo_a5: "परियोजनाहरू",
+    fo_links: "उपयोगी लिंकहरू",
+    fo_l1: "हाम्रो बारेमा",
+    fo_l2: "टोली",
+    fo_l3: "उद्देश्यहरू",
+    fo_l4: "क्रियाकलापहरू",
+    fo_contact: "सम्पर्क",
+    fo_email: "elsnepal@gmail.com",
+    fo_addr: "कुमारी धारा गल्ली, काठमाडौं–१०, काठमाडौं, नेपाल",
+    fo_reg: "+९७७ १०६१५०१५४९३",
+    fo_copy: "© वातावरण कानून समाज नेपाल | सर्वाधिकार सुरक्षित",
+    fo_aff: "नेपाल वातावरण समाज सम्बद्ध",
+  }
+};
+
+let currentLang = 'ne';
+
+function setLanguage(lang) {
+  // Standard data-key elements
+  document.querySelectorAll('[data-key]').forEach(el => {
+    const key = el.getAttribute('data-key');
+    if (translations[lang] && translations[lang][key] !== undefined) {
+      el.innerHTML = translations[lang][key];
+    }
+  });
+  // Team names/roles using data-key-ne / data-key-en
+  document.querySelectorAll('[data-key-ne]').forEach(el => {
+    const keyNe = el.getAttribute('data-key-ne');
+    const keyEn = el.getAttribute('data-key-en');
+    const key = lang === 'ne' ? keyNe : keyEn;
+    if (translations[lang] && translations[lang][key] !== undefined) {
+      el.innerHTML = translations[lang][key];
+    }
+  });
+  document.documentElement.lang = lang === 'ne' ? 'ne' : 'en';
+  document.body.style.fontFamily = lang === 'ne'
+    ? "'Noto Sans Devanagari', 'Outfit', sans-serif"
+    : "'Outfit', 'Noto Sans Devanagari', sans-serif";
+    // Update page title
+  document.title = lang === 'ne'
+    ? 'वातावरण कानून समाज नेपाल'
+    : 'Environment Law Society Nepal';
+}
+
+setLanguage('ne');
+
+function toggleLang() {
+  if (currentLang === 'en') {
+    currentLang = 'ne';
+    setLanguage('ne');
+    document.getElementById('langLabel').textContent = 'ENG';
+  } else {
+    currentLang = 'en';
+    setLanguage('en');
+    document.getElementById('langLabel').textContent = 'NEP';
+  }
+}
+
+// HERO SLIDER
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.hero-dot');
+const slideNumEl = document.getElementById('slideNum');
+let slideTimer;
+
+function goToSlide(n) {
+  slides[currentSlide].classList.remove('active');
+  dots[currentSlide].classList.remove('active');
+  currentSlide = (n + slides.length) % slides.length;
+  slides[currentSlide].classList.add('active');
+  dots[currentSlide].classList.add('active');
+  slideNumEl.textContent = String(currentSlide + 1).padStart(2, '0');
+  resetTimer();
+}
+function nextSlide() { goToSlide(currentSlide + 1); }
+function prevSlide() { goToSlide(currentSlide - 1); }
+function resetTimer() { clearInterval(slideTimer); slideTimer = setInterval(nextSlide, 6000); }
+resetTimer();
+
+window.addEventListener('load', () => {
+  slides[0].classList.add('active');
+  dots[0].classList.add('active');
+});
+
+// HERO HEIGHT
+function fixHeroHeight() {
+  const topBar = document.getElementById('top-bar');
+  const navbar = document.getElementById('navbar');
+  const hero = document.getElementById('hero');
+  const usedHeight = topBar.offsetHeight + navbar.offsetHeight;
+  hero.style.height = (window.innerHeight - usedHeight) + 'px';
+}
+fixHeroHeight();
+window.addEventListener('resize', fixHeroHeight);
+
+// SEE MORE OBJECTIVES
+let objectivesExpanded = false;
+function toggleObjectives() {
+  objectivesExpanded = !objectivesExpanded;
+  document.querySelectorAll('.hidden-obj').forEach(el => {
+    el.style.display = objectivesExpanded ? 'block' : 'none';
+  });
+  const icon = document.getElementById('objSeeMoreIcon');
+  const btn = document.getElementById('objSeeMoreBtn');
+  const label = btn.querySelector('[data-key="see_more"]');
+  if (objectivesExpanded) {
+    label.textContent = currentLang === 'ne' ? 'कम हेर्नुहोस्' : 'See Less';
+    icon.className = 'fas fa-chevron-up';
+  } else {
+    label.textContent = currentLang === 'ne' ? 'थप हेर्नुहोस्' : 'See More';
+    icon.className = 'fas fa-chevron-down';
+  }
+}
+
+// SEE MORE ACTIVITIES
+let activitiesExpanded = false;
+function toggleActivities() {
+  activitiesExpanded = !activitiesExpanded;
+  document.querySelectorAll('.hidden-activity').forEach(el => {
+    el.style.display = activitiesExpanded ? 'flex' : 'none';
+  });
+  const btn = document.getElementById('seeMoreBtn');
+  const icon = document.getElementById('seeMoreIcon');
+  const label = btn.querySelector('[data-key="see_more"]');
+  if (activitiesExpanded) {
+    label.textContent = currentLang === 'ne' ? 'कम हेर्नुहोस्' : 'See Less';
+    icon.className = 'fas fa-chevron-up';
+  } else {
+    label.textContent = currentLang === 'ne' ? 'थप हेर्नुहोस्' : 'See More';
+    icon.className = 'fas fa-chevron-down';
+  }
+}
+
+// SEE MORE PROJECTS
+let projectsExpanded = false;
+function toggleProjects() {
+  projectsExpanded = !projectsExpanded;
+  document.querySelectorAll('.hidden-proj').forEach(el => {
+    el.style.display = projectsExpanded ? 'block' : 'none';
+  });
+  const icon = document.getElementById('projSeeMoreIcon');
+  const btn = document.getElementById('projSeeMoreBtn');
+  const label = btn.querySelector('[data-key="see_more"]');
+  if (projectsExpanded) {
+    label.textContent = currentLang === 'ne' ? 'कम हेर्नुहोस्' : 'See Less';
+    icon.className = 'fas fa-chevron-up';
+  } else {
+    label.textContent = currentLang === 'ne' ? 'थप हेर्नुहोस्' : 'See More';
+    icon.className = 'fas fa-chevron-down';
+  }
+}
+
+//SEE MORE GALLERY
+let galleryExpanded = false;
+function toggleGallery() {
+  galleryExpanded = !galleryExpanded;
+  document.querySelectorAll('.hidden-gal').forEach(el => {
+    el.style.display = galleryExpanded ? 'block' : 'none';
+  });
+  const icon = document.getElementById('galSeeMoreIcon');
+  const btn = document.getElementById('galSeeMoreBtn');
+  const label = btn.querySelector('[data-key="see_more"]');
+  if (galleryExpanded) {
+    label.textContent = currentLang === 'ne' ? 'कम हेर्नुहोस्' : 'See Less';
+    icon.className = 'fas fa-chevron-up';
+  } else {
+    label.textContent = currentLang === 'ne' ? 'थप हेर्नुहोस्' : 'See More';
+    icon.className = 'fas fa-chevron-down';
+  }
+}
+
+// BACK TO TOP
+const backTop = document.getElementById('back-top');
+window.addEventListener('scroll', () => {
+  backTop.classList.toggle('visible', window.scrollY > window.innerHeight * 0.8);
+});
+backTop.addEventListener('click', e => {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// SCROLL ANIMATIONS
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// TEAM MOBILE TAP
+document.querySelectorAll('.team-card').forEach(card => {
+  card.addEventListener('click', () => {
+    const overlay = card.querySelector('.team-social-overlay');
+    const imgOverlay = card.querySelector('.team-img-overlay');
+    const isVisible = overlay.style.opacity === '1';
+    document.querySelectorAll('.team-card').forEach(c => {
+      c.querySelector('.team-social-overlay').style.opacity = '0';
+      c.querySelector('.team-img-overlay').style.opacity = '0';
+    });
+    if (!isVisible) { overlay.style.opacity = '1'; imgOverlay.style.opacity = '1'; }
+  });
+});
+
+// ACTIVE NAV
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.remove('open');
+  });
+});
+</script>
+</body>
+</html>
